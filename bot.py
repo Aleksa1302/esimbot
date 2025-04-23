@@ -86,16 +86,10 @@ def order_esim(user_id, memo, plan_id):
 
 def load_plans():
     try:
-        url = (
-            "https://raw.githubusercontent.com/"
-            "Aleksa1302/esimbot/refs/heads/main/Price.csv"
-        )
+        # fetch the latest Price.csv from GitHub
+        url = "https://raw.githubusercontent.com/Aleksa1302/esimbot/main/Price.csv"
         df = pd.read_csv(url)
-        df["Price(USD)"] = (
-            df["Price(USD)"]
-            .replace(r"[\$,]", "", regex=True)
-            .astype(float)
-        )
+        df['Price(USD)'] = df['Price(USD)'].replace(r'[\$,]', '', regex=True).astype(float)
         return df
     except Exception as e:
         logger.error(f"Failed to load Price.csv from GitHub: {e}")
