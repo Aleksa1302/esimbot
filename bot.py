@@ -91,11 +91,34 @@ def send_qr_code(update, text):
     return InputFile(bio, filename="qrcode.png")
 
 # === BOT COMMANDS ===
+
+async def region_selector(update: Update, context: CallbackContext):
+    query = update.callback_query
+    await query.answer()
+    selected_region = query.data.replace("REGION_", "")
+
+    plans_df = load_plans()
+    region_plans = plans_df[plans_df['Region'] == selected_region].sort_values(by='Price(USD)')
+
+    if region_plans.empty:
+        await query.message.reply_text("No plans available for this region.")
+        return
+
+    keyboard = []
+    for _, row in region_plans.iterrows():
+        label = f"{row['Name']} - ${row['Price(USD)']:.2f}"
+        data = f"PLAN_{row['ID']}_{row['Price(USD)']:.2f}"
+        keyboard.append([InlineKeyboardButton(label, callback_data=data)])
+    await query.message.reply_text(f"📡 Available plans for {selected_region}:", reply_markup=InlineKeyboardMarkup(keyboard))
 async def start(update: Update, context: CallbackContext):
     plans_df = load_plans()
     if plans_df.empty:
         await update.message.reply_text("No eSIM plans available at the moment. Please try again later.")
         return
+
+    regions = sorted(plans_df['Region'].unique())
+    keyboard = [[InlineKeyboardButton(region, callback_data=f"REGION_{region}")] for region in regions]
+    await update.message.reply_text("🌍 Choose a region:", reply_markup=InlineKeyboardMarkup(keyboard))
 
     keyboard = []
     for _, row in plans_df.iterrows():
@@ -200,6 +223,7 @@ async def admin(update: Update, context: CallbackContext):
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
+app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_").__call__)
 app.add_handler(CommandHandler("check", check))
 app.add_handler(CommandHandler("admin", admin))
 app.add_handler(CommandHandler("balance", balance))
