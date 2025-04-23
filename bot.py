@@ -94,12 +94,11 @@ def send_qr_code(update, text):
 
 async def whoami(update: Update, context: CallbackContext):
     user = update.message.from_user
-    text = (
-        f"👤 Your Telegram user ID is: `{user.id}`
-"
-        f"👤 Username: @{user.username}"
-    )
-    await update.message.reply_text(text, parse_mode='Markdown')
+    user_id = user.id
+    username = user.username or "(no username)"
+    message = f"👤 Your Telegram user ID is: `{user_id}`
+👤 Username: @{username}"
+    await update.message.reply_text(message, parse_mode='Markdown')
 
 async def help(update: Update, context: CallbackContext):
     help_text = (
