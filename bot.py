@@ -100,19 +100,19 @@ async def help(update: Update, context: CallbackContext):
 "
         "
 "
-        "*/start* – Start and choose a plan
+        "*/start* – Browse and select an eSIM plan by region
 "
-        "*/balance* – Check your balance
+        "*/balance* – View your current balance
 "
-        "*/check* – Check pending payment
+        "*/check* – Check if your payment was received
 "
-        "*/admin* – Admin stats (admin only)
+        "*/admin* – View sales stats (admin only)
 "
-        "*/topup <user_id> <amount>* – Add credit (admin only)
+        "*/topup <user_id> <amount>* – Add credit manually (admin only)
 "
         "
 "
-        "💳 To buy: Choose a region > pick a plan > follow payment instructions."
+        "💳 Tip: You can use USDT balance to activate plans instantly without sending again."
     )
     await update.message.reply_text(help_text, parse_mode='Markdown')
 
