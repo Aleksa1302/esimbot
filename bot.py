@@ -110,6 +110,8 @@ async def help(update: Update, context: CallbackContext):
 "
         "*/topup <user_id> <amount>* – Add credit manually (admin only)
 "
+        "*/upload_csv* – Upload or replace eSIM pricing (admin only)
+"
         "
 "
         "💳 Tip: You can use USDT balance to activate plans instantly without sending again."
