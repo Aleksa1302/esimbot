@@ -63,7 +63,10 @@ def send_qr_code(text: str) -> InputFile:
     return InputFile(bio, filename="qrcode.png")
 
 def check_tron_payment(memo: str, expected: float) -> float:
-    url = f"https://apilist.tronscanapi.com/api/transaction?sort=-timestamp&count=true&limit=20&start=0&address={WALLET_ADDRESS}"
+    url = (
+        f"https://apilist.tronscanapi.com/api/transaction"
+        f"?sort=-timestamp&count=true&limit=20&start=0&address={WALLET_ADDRESS}"
+    )
     try:
         data = requests.get(url, timeout=5).json()
         for tx in data.get("data", []):
@@ -75,20 +78,43 @@ def check_tron_payment(memo: str, expected: float) -> float:
         logger.error(f"TRON check error: {e}")
     return 0.0
 
-# === FETCH PACKAGES (REGION → PACKAGE) ===
+# === FETCH PACKAGES ===
 def fetch_packages(location_code: str = None) -> list[dict]:
-    url = "https://api.esimaccess.com/api/v1/open/package/list"
+    """
+    Fetch base data packages from open/package/list API.
+    Tries various keys in 'obj' to extract a list.
+    Logs raw response for debugging.
+    """
+    url     = "https://api.esimaccess.com/api/v1/open/package/list"
     headers = {"Authorization": ESIM_API_KEY, "Content-Type": "application/json"}
     payload = {"type": "BASE"}
     if location_code:
         payload["locationCode"] = location_code
+
     try:
         r = requests.post(url, headers=headers, json=payload, timeout=10)
         r.raise_for_status()
-        return r.json().get("obj", [])
+        data = r.json()
+        logger.info(f"package-list raw response: {data}")
+
+        if not data.get("success", False):
+            return []
+
+        obj = data.get("obj", {})
+        # Direct list
+        if isinstance(obj, list):
+            return obj
+        # Look for lists under common keys
+        for key in ("packageList", "list", "data", "packages"):
+            if isinstance(obj, dict) and key in obj and isinstance(obj[key], list):
+                return obj[key]
+        # Single-object fallback
+        if isinstance(obj, dict) and "packageCode" in obj and "price" in obj:
+            return [obj]
     except Exception as e:
         logger.error(f"Failed to fetch packages: {e}")
-        return []
+
+    return []
 
 def order_esim_open(memo: str, package_code: str, price_usd: float) -> str | None:
     url = "https://api.esimaccess.com/api/v1/open/esim/order"
@@ -137,7 +163,7 @@ async def help_cmd(update: Update, context: CallbackContext):
         "*/browse* – Browse available regions\n"
         "*/check* – Check pending payments or orders\n"
         "*/topup <amount>* – Request a top-up (QR + memo)\n"
-        "*/topup <user_id> <amount>* – Credit user immediately (admin)\n"
+        "*/topup <user_id> <amount>* – Credit user immediately (admin only)\n"
         "*/admin* – Sales stats (admin only)\n",
         parse_mode="Markdown"
     )
@@ -151,7 +177,7 @@ async def start(update: Update, context: CallbackContext):
     if user_id in ADMIN_IDS:
         menu.append([KeyboardButton("➕ Topup"), KeyboardButton("📊 Admin")])
     await update.message.reply_text(
-        "Welcome! Use the menu below:",
+        "Welcome! Use the menu below:", 
         reply_markup=ReplyKeyboardMarkup(menu, resize_keyboard=True)
     )
 
@@ -193,22 +219,18 @@ async def pkg_handler(update: Update, context: CallbackContext):
     price_usd = float(price_s)
     user_id   = query.from_user.id
 
-    # enforce minimum
     if price_usd < 5.0:
         await query.message.reply_text("⚠️ Minimum 5 USDT; extra will be credited.")
         price_usd = 5.0
 
-    # check balance
     c.execute("SELECT balance FROM balances WHERE user_id=?", (user_id,))
     row = c.fetchone(); bal = row[0] if row else 0.0
 
     if bal < price_usd:
-        # request top-up
         memo = generate_memo()
         uname = query.from_user.username or str(user_id)
         c.execute(
-            "INSERT INTO orders (user_id,username,amount,memo,plan_id) "
-            "VALUES (?,?,?,?,?)",
+            "INSERT INTO orders (user_id,username,amount,memo,plan_id) VALUES(?,?,?,?,?)",
             (user_id, uname, price_usd, memo, pkg_code)
         )
         conn.commit()
@@ -217,12 +239,12 @@ async def pkg_handler(update: Update, context: CallbackContext):
             f"`{WALLET_ADDRESS}`\nMemo: `{memo}`"
         )
         return await query.message.reply_photo(
-            photo=send_qr_code(txt),
-            caption=txt,
+            photo=send_qr_code(txt), 
+            caption=txt, 
             parse_mode="Markdown"
         )
 
-    # deduct balance & place order
+    # Deduct and place order
     new_bal = bal - price_usd
     c.execute("UPDATE balances SET balance=? WHERE user_id=?", (new_bal, user_id))
     conn.commit()
@@ -233,12 +255,11 @@ async def pkg_handler(update: Update, context: CallbackContext):
         return await query.message.reply_text("❌ Order failed—please try again.")
 
     c.execute("""
-        UPDATE orders SET memo=?, order_no=?, paid=1 
-        WHERE user_id=? AND plan_id=? AND paid=0
+      UPDATE orders SET memo=?, order_no=?, paid=1 
+      WHERE user_id=? AND plan_id=? AND paid=0
     """, (memo, order_no, user_id, pkg_code))
     conn.commit()
 
-    # poll for up to ~30s
     profiles = []
     for _ in range(15):
         profiles = query_esim_open(order_no)
@@ -248,10 +269,9 @@ async def pkg_handler(update: Update, context: CallbackContext):
 
     if not profiles:
         return await query.message.reply_text(
-            f"✔️ Order {order_no} placed, but profiles not ready yet. Try /check."
+            f"✔️ Order {order_no} placed; profiles not ready. Try /check."
         )
 
-    # send each profile
     for p in profiles:
         qr = p.get("qrCodeUrl") or p.get("ac")
         await query.message.reply_photo(photo=send_qr_code(qr), caption=qr)
@@ -259,9 +279,9 @@ async def pkg_handler(update: Update, context: CallbackContext):
 async def check(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     c.execute("""
-        SELECT order_no FROM orders 
-        WHERE user_id=? AND paid=1 AND order_no IS NOT NULL 
-        ORDER BY id DESC LIMIT 1
+      SELECT order_no FROM orders 
+      WHERE user_id=? AND paid=1 AND order_no IS NOT NULL 
+      ORDER BY id DESC LIMIT 1
     """, (user_id,))
     row = c.fetchone()
     if not row:
@@ -269,7 +289,7 @@ async def check(update: Update, context: CallbackContext):
     order_no = row[0]
     profiles = query_esim_open(order_no)
     if not profiles:
-        return await update.message.reply_text("⏳ Still allocating, try again later.")
+        return await update.message.reply_text("⏳ Still allocating; try again later.")
     for p in profiles:
         qr = p.get("qrCodeUrl") or p.get("ac")
         await update.message.reply_photo(photo=send_qr_code(qr), caption=qr)
@@ -283,23 +303,21 @@ async def balance(update: Update, context: CallbackContext):
 async def topup(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     args    = context.args
-    # Admin credit
-    if user_id in ADMIN_IDS and len(args)==2:
+    if user_id in ADMIN_IDS and len(args) == 2:
         tgt, amt = args[0], float(args[1])
         c.execute("""
-            INSERT INTO balances(user_id,balance) VALUES(?,?) 
-            ON CONFLICT(user_id) DO UPDATE SET balance=balance+?
+          INSERT INTO balances(user_id,balance) VALUES(?,?) 
+          ON CONFLICT(user_id) DO UPDATE SET balance=balance+?
         """, (tgt, amt, amt))
         conn.commit()
-        return await update.message.reply_text(f"✅ Credited {amt:.2f} USDT to user {tgt}.")
-    # User top-up request
-    if len(args)==1:
+        return await update.message.reply_text(f"✅ Credited {amt:.2f} USDT to {tgt}.")
+    if len(args) == 1:
         amt   = float(args[0])
         memo  = generate_memo()
         uname = update.message.from_user.username or str(user_id)
         c.execute("""
-            INSERT INTO orders (user_id,username,amount,memo,plan_id) 
-            VALUES (?,?,?,?,?)
+          INSERT INTO orders (user_id,username,amount,memo,plan_id) 
+          VALUES(?,?,?,?,?)
         """, (user_id, uname, amt, memo, "TOPUP"))
         conn.commit()
         txt = (
@@ -307,9 +325,10 @@ async def topup(update: Update, context: CallbackContext):
             f"`{WALLET_ADDRESS}`\nMemo: `{memo}`"
         )
         return await update.message.reply_photo(
-            photo=send_qr_code(txt), caption=txt, parse_mode="Markdown"
+            photo=send_qr_code(txt), 
+            caption=txt, 
+            parse_mode="Markdown"
         )
-    # Fallback usage
     usage = "Usage: /topup <amount>" if user_id not in ADMIN_IDS else "Usage: /topup <user_id> <amount>"
     await update.message.reply_text(usage)
 
@@ -330,10 +349,10 @@ async def admin(update: Update, context: CallbackContext):
 
 async def handle_main_menu(update: Update, context: CallbackContext):
     txt, uid = update.message.text, update.message.from_user.id
-    if txt == "📦 Browse":     return await browse(update, context)
-    if txt == "💰 Balance":    return await balance(update, context)
-    if txt == "✅ Check":      return await check(update, context)
-    if txt == "📖 Help":       return await help_cmd(update, context)
+    if txt == "📦 Browse":    return await browse(update, context)
+    if txt == "💰 Balance":   return await balance(update, context)
+    if txt == "✅ Check":     return await check(update, context)
+    if txt == "📖 Help":      return await help_cmd(update, context)
     if txt == "➕ Topup" and uid in ADMIN_IDS:
         return await update.message.reply_text("Use `/topup <user_id> <amount>`", parse_mode="Markdown")
     if txt == "📊 Admin" and uid in ADMIN_IDS:
@@ -352,11 +371,11 @@ app.add_handler(CommandHandler("check",   check))
 app.add_handler(CommandHandler("topup",   topup))
 app.add_handler(CommandHandler("admin",   admin))
 
-# Callback buttons
+# Callback handlers
 app.add_handler(CallbackQueryHandler(region_selector, pattern="^REG_"))
 app.add_handler(CallbackQueryHandler(pkg_handler,      pattern="^PKG_"))
 
-# Main-menu text
+# Main-menu text handler
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_main_menu))
 
 if __name__ == "__main__":
