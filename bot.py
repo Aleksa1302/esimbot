@@ -96,8 +96,11 @@ async def whoami(update: Update, context: CallbackContext):
     user = update.message.from_user
     user_id = user.id
     username = user.username or "(no username)"
-    message = f"👤 Your Telegram user ID is: `{user_id}`
-👤 Username: @{username}"
+    message = (
+        f"👤 Your Telegram user ID is: `{user_id}`
+"
+        f"👤 Username: @{username}"
+    )
     await update.message.reply_text(message, parse_mode='Markdown')
 
 async def help(update: Update, context: CallbackContext):
