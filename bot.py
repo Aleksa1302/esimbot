@@ -25,6 +25,13 @@ TRONSCAN_API    = (
     "https://apilist.tronscanapi.com/api/transaction?"
     "sort=-timestamp&count=true&limit=20&start=0&address="
 )
+SHEET_CSV_URL   = os.getenv(
+    "SHEET_CSV_URL",
+    # fallback if you haven't set the env-var:
+    "https://docs.google.com/spreadsheets/"
+    "d/1pQwbepPuz7WGFstuYZzECtJrbOaYEc4YWR4eYw4h1uA/"
+    "export?format=csv&gid=302460899"
+)
 ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
 # === DATABASE SETUP ===
@@ -78,22 +85,33 @@ def order_esim(user_id: int, memo: str, plan_id: str) -> str | None:
         "email":       f"botuser{user_id}@esim.bot",
         "plan_id":     plan_id
     }
-    r = requests.post("https://api.esimaccess.com/v1/orders",
-                      headers=headers, json=payload, timeout=10)
+    r = requests.post(
+        "https://api.esimaccess.com/v1/orders",
+        headers=headers, json=payload, timeout=10
+    )
     if r.status_code == 200:
         return r.json().get("activation_code_url")
     return None
 
 def load_plans() -> pd.DataFrame:
+    """
+    Fetch your published Google Sheet as CSV, clean it,
+    and add Continent = Region for a two-level menu.
+    """
     try:
-        url = "https://raw.githubusercontent.com/Aleksa1302/esimbot/main/Price.csv"
-        df = pd.read_csv(url)
-        df["Price(USD)"] = df["Price(USD)"].replace(r"[\$,]", "", regex=True).astype(float)
-        # If you want to group by continent/country, add your CONTINENT_MAP logic here
-        df["Continent"] = df["Region"]  # simplified if you skip continents
+        df = pd.read_csv(SHEET_CSV_URL)
+        df["Price(USD)"] = (
+            df["Price(USD)"]
+            .replace(r"[\$,]", "", regex=True)
+            .astype(float)
+        )
+        # If your sheet has a Continent column, use that;
+        # otherwise we group by Region only (no continents).
+        # Here we just alias Continent=Region for a single level.
+        df["Continent"] = df.get("Continent", df["Region"])
         return df
     except Exception as e:
-        logger.error(f"Failed to load Price.csv: {e}")
+        logger.error(f"Failed to load plans from Google Sheet: {e}")
         return pd.DataFrame()
 
 def send_qr_code(text: str) -> InputFile:
@@ -104,18 +122,18 @@ def send_qr_code(text: str) -> InputFile:
     bio.seek(0)
     return InputFile(bio, filename="qrcode.png")
 
-# === COMMANDS ===
+# === BOT COMMANDS ===
 
 async def help_cmd(update: Update, context: CallbackContext):
     await update.message.reply_text(
         "\U0001F4D6 *eSIM Bot Help*\n\n"
         "*/start* – Show main menu\n"
-        "*/balance* – View your balance (includes your user ID)\n"
+        "*/balance* – View your balance (with your user ID)\n"
         "*/check* – Check pending payment(s)\n"
-        "*/topup <amount>* – Request a top-up payment (user)\n"
-        "*/topup <user_id> <amount>* – Credit user immediately (admin only)\n"
+        "*/topup <amount>* – Request a top-up (user)\n"
+        "*/topup <user_id> <amount>* – Credit user (admin only)\n"
         "*/admin* – Sales stats (admin only)\n\n"
-        "\U0001F4B3 Tip: You can use your USDT balance to buy plans instantly.",
+        "\U0001F4B3 Tip: You can use your USDT balance to purchase instantly.",
         parse_mode="Markdown"
     )
 
@@ -123,238 +141,191 @@ async def start(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     buttons = [
         [KeyboardButton("📦 Browse eSIMs"), KeyboardButton("💰 My Balance")],
-        [KeyboardButton("✅ Check Payment"),  KeyboardButton("📖 Help")]
+        [KeyboardButton("✅ Check Payment"), KeyboardButton("📖 Help")]
     ]
-    # Admin gets extra Topup / Stats buttons
     if user_id in ADMIN_IDS:
         buttons.append([KeyboardButton("➕ Topup"), KeyboardButton("📊 Admin Stats")])
-
     menu = ReplyKeyboardMarkup(buttons, resize_keyboard=True)
-    await update.message.reply_text(
-        "Welcome! Use the menu below to get started:",
-        reply_markup=menu
-    )
+    await update.message.reply_text("Welcome! Use the menu below to get started:", reply_markup=menu)
 
-# --- eSIM browsing flow (region→plan) ---
 async def browse_esims(update: Update, context: CallbackContext):
     df = load_plans()
     if df.empty:
         return await update.message.reply_text("No plans available right now.")
-    regions = sorted(df["Region"].unique())
-    kb = [[InlineKeyboardButton(r, callback_data=f"REGION_{r}")] for r in regions]
-    await update.message.reply_text(
-        "🌍 Choose a region:",
-        reply_markup=InlineKeyboardMarkup(kb)
-    )
+    # two-level: Continent → Country
+    continents = sorted(df["Continent"].unique())
+    kb = [[InlineKeyboardButton(c, callback_data=f"CONTINENT_{c}")] for c in continents]
+    await update.message.reply_text("🌎 Choose a continent:", reply_markup=InlineKeyboardMarkup(kb))
 
-async def region_selector(update: Update, context: CallbackContext):
-    query = update.callback_query
+async def continent_selector(update: Update, context: CallbackContext):
+    query     = update.callback_query
+    _, cont   = query.data.split("_", 1)
+    df        = load_plans()
+    countries = sorted(df[df["Continent"] == cont]["Region"].unique())
+    kb        = [[InlineKeyboardButton(c, callback_data=f"COUNTRY_{c}")] for c in countries]
     await query.answer()
-    region = query.data.split("_", 1)[1]
-    df = load_plans()
-    plans = df[df["Region"] == region].sort_values("Price(USD)")
-    kb = []
+    await query.message.reply_text(f"🌍 Countries in {cont}:", reply_markup=InlineKeyboardMarkup(kb))
+
+async def country_selector(update: Update, context: CallbackContext):
+    query   = update.callback_query
+    _, cn   = query.data.split("_", 1)
+    df      = load_plans()
+    plans   = df[df["Region"] == cn].sort_values("Price(USD)")
+    kb      = []
     for _, row in plans.iterrows():
-        price_tag = max(row["Price(USD)"], 5.0)
+        amt = max(row["Price(USD)"], 5.0)
         kb.append([InlineKeyboardButton(
             f"{row['Name']} – ${row['Price(USD)']:.2f}",
-            callback_data=f"PLAN_{row['ID']}_{price_tag:.2f}"
+            callback_data=f"PLAN_{row['ID']}_{amt:.2f}"
         )])
-    await query.message.reply_text(
-        f"📡 Plans for {region}:",
-        reply_markup=InlineKeyboardMarkup(kb)
-    )
+    await query.answer()
+    await query.message.reply_text(f"📡 Plans for {cn}:", reply_markup=InlineKeyboardMarkup(kb))
 
 async def button_handler(update: Update, context: CallbackContext):
-    query = update.callback_query
-    await query.answer()
-    _, plan_id, usd_s = query.data.split("_")
-    usd = float(usd_s)
-    user_id = query.from_user.id
+    query    = update.callback_query
+    _, pid, us = query.data.split("_")
+    usd      = float(us)
+    user_id  = query.from_user.id
 
     c.execute("SELECT balance FROM balances WHERE user_id=?", (user_id,))
-    row = c.fetchone()
-    balance = row[0] if row else 0.0
+    row      = c.fetchone()
+    bal      = row[0] if row else 0.0
 
-    # enforce minimum payment
     if usd < 5.0:
-        await query.message.reply_text(
-            "⚠️ Minimum payment is 5 USDT.\n"
-            "Any extra will be credited to your balance."
-        )
+        await query.answer("⚠️ Minimum 5 USDT required; extras are credited.")
         usd = 5.0
 
-    if balance >= usd:
-        new_bal = balance - usd
-        memo   = generate_memo()
-        url    = order_esim(user_id, memo, plan_id)
+    if bal >= usd:
+        new_bal = bal - usd
+        memo    = generate_memo()
+        url     = order_esim(user_id, memo, pid)
         if url:
-            c.execute(
-                "UPDATE balances SET balance=? WHERE user_id=?",
-                (new_bal, user_id)
-            )
+            c.execute("UPDATE balances SET balance=? WHERE user_id=?", (new_bal, user_id))
             conn.commit()
-            await query.message.reply_photo(
-                photo=send_qr_code(url),
-                caption=f"✅ eSIM activated!\n{url}"
-            )
+            await query.message.reply_photo(photo=send_qr_code(url),
+                                            caption=f"✅ eSIM activated!\n{url}")
         else:
-            await query.message.reply_text("❌ Ordering failed, please retry.")
+            await query.answer("❌ Ordering failed, please retry.")
     else:
-        memo  = generate_memo()
+        memo = generate_memo()
         uname = query.from_user.username or str(user_id)
         c.execute(
-            "INSERT INTO orders (user_id,username,amount,memo,plan_id) "
-            "VALUES (?,?,?,?,?)",
-            (user_id, uname, usd, memo, plan_id)
+            "INSERT INTO orders (user_id,username,amount,memo,plan_id) VALUES(?,?,?,?,?)",
+            (user_id, uname, usd, memo, pid)
         )
         conn.commit()
         pay_txt = (
             f"Send exactly *{usd:.2f} USDT (TRC20)* to:\n"
-            f"`{WALLET_ADDRESS}`\nMemo/Tag: `{memo}`"
+            f"`{WALLET_ADDRESS}`\nMemo: `{memo}`"
         )
-        await query.message.reply_photo(
-            photo=send_qr_code(pay_txt),
-            caption=pay_txt,
-            parse_mode="Markdown"
-        )
+        await query.message.reply_photo(photo=send_qr_code(pay_txt),
+                                        caption=pay_txt,
+                                        parse_mode="Markdown")
 
-# --- Check payments & credit balances ---
 async def check(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
-    c.execute(
-        "SELECT id,memo,amount FROM orders "
-        "WHERE user_id=? AND paid=0", (user_id,)
-    )
+    c.execute("SELECT id,memo,amount FROM orders WHERE user_id=? AND paid=0", (user_id,))
     row = c.fetchone()
     if not row:
         return await update.message.reply_text("No pending orders.")
-    order_id, memo, amt = row
+    oid, memo, amt = row
     paid_amt = check_tron_payment(memo, amt)
     if paid_amt:
-        c.execute("UPDATE orders SET paid=1 WHERE id=?", (order_id,))
+        c.execute("UPDATE orders SET paid=1 WHERE id=?", (oid,))
         c.execute(
             "INSERT INTO balances(user_id,balance) VALUES(?,?) "
             "ON CONFLICT(user_id) DO UPDATE SET balance=balance+?",
             (user_id, paid_amt, paid_amt)
         )
         conn.commit()
-        await update.message.reply_text(
-            f"✅ Received {paid_amt:.2f} USDT! Added to your balance."
-        )
+        await update.message.reply_text(f"✅ Received {paid_amt:.2f} USDT! Added to your balance.")
     else:
         await update.message.reply_text("❌ Payment not found yet.")
 
-# --- Show balance (with user ID) ---
 async def balance(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     c.execute("SELECT balance FROM balances WHERE user_id=?", (user_id,))
     row = c.fetchone()
     bal = row[0] if row else 0.0
-    await update.message.reply_text(
-        f"💰 Your balance: {bal:.2f} USDT\n"
-        f"👤 Your user ID: {user_id}"
-    )
+    await update.message.reply_text(f"💰 Balance: {bal:.2f} USDT\n👤 Your ID: {user_id}")
 
-# --- Top-up command for both users & admins ---
 async def topup(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     args    = context.args
 
-    # --- Admin flow: /topup <user_id> <amount> ---
+    # Admin credits
     if user_id in ADMIN_IDS and len(args) == 2:
-        tgt = args[0]
-        amt = float(args[1])
+        tgt, amt = args[0], float(args[1])
         c.execute(
             "INSERT INTO balances(user_id,balance) VALUES(?,?) "
             "ON CONFLICT(user_id) DO UPDATE SET balance=balance+?",
             (tgt, amt, amt)
         )
         conn.commit()
-        return await update.message.reply_text(
-            f"✅ Topped up {amt:.2f} USDT to user {tgt}."
-        )
+        return await update.message.reply_text(f"✅ Credited {amt:.2f} USDT to {tgt}.")
 
-    # --- User flow: /topup <amount> ---
+    # User top-up request
     if user_id not in ADMIN_IDS and len(args) == 1:
-        amt  = float(args[0])
+        amt = float(args[0])
         memo = generate_memo()
         uname = update.message.from_user.username or str(user_id)
         c.execute(
-            "INSERT INTO orders (user_id,username,amount,memo,plan_id) "
-            "VALUES (?,?,?,?,?)",
+            "INSERT INTO orders (user_id,username,amount,memo,plan_id) VALUES(?,?,?,?,?)",
             (user_id, uname, amt, memo, "TOPUP")
         )
         conn.commit()
         pay_txt = (
             f"🔋 Top-up request:\n"
-            f"Send exactly *{amt:.2f} USDT (TRC20)* to:\n"
-            f"`{WALLET_ADDRESS}`\nMemo/Tag: `{memo}`"
+            f"Send *{amt:.2f} USDT* to `{WALLET_ADDRESS}`\nMemo: `{memo}`"
         )
-        return await update.message.reply_photo(
-            photo=send_qr_code(pay_txt),
-            caption=pay_txt,
-            parse_mode="Markdown"
-        )
+        return await update.message.reply_photo(photo=send_qr_code(pay_txt),
+                                                caption=pay_txt,
+                                                parse_mode="Markdown")
 
-    # --- Fallback usage messages ---
-    if user_id in ADMIN_IDS:
-        await update.message.reply_text("Usage: /topup <user_id> <amount>")
-    else:
-        await update.message.reply_text("Usage: /topup <amount>")
+    # Fallback
+    usage = "Usage: /topup <amount>" if user_id not in ADMIN_IDS else "Usage: /topup <user_id> <amount>"
+    await update.message.reply_text(usage)
 
-# --- Admin stats ---
 async def admin(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     if user_id not in ADMIN_IDS:
         return await update.message.reply_text("Unauthorized.")
     c.execute("SELECT COUNT(*), SUM(amount) FROM orders WHERE paid=1")
-    cnt, tot = c.fetchone()
+    sold, rev = c.fetchone()
     c.execute("SELECT COUNT(DISTINCT user_id) FROM orders")
     users = c.fetchone()[0]
     await update.message.reply_text(
         f"📊 Sales Report:\n"
-        f"- eSIMs sold: {cnt}\n"
-        f"- Revenue: ${tot or 0:.2f}\n"
+        f"- eSIMs sold: {sold}\n"
+        f"- Revenue: ${rev or 0:.2f}\n"
         f"- Active users: {users}"
     )
 
-# --- Main-menu text handler ---
 async def handle_main_menu(update: Update, context: CallbackContext):
-    txt     = update.message.text
-    user_id = update.message.from_user.id
-
-    if txt == "📦 Browse eSIMs":
-        return await browse_esims(update, context)
-    if txt == "💰 My Balance":
-        return await balance(update, context)
-    if txt == "✅ Check Payment":
-        return await check(update, context)
-    if txt == "📖 Help":
-        return await help_cmd(update, context)
-    if txt == "➕ Topup" and user_id in ADMIN_IDS:
-        return await update.message.reply_text(
-            "Use `/topup <user_id> <amount>`", parse_mode="Markdown"
-        )
-    if txt == "📊 Admin Stats" and user_id in ADMIN_IDS:
-        return await admin(update, context)
-
+    txt, uid = update.message.text, update.message.from_user.id
+    if txt == "📦 Browse eSIMs":       return await browse_esims(update, context)
+    if txt == "💰 My Balance":        return await balance(update, context)
+    if txt == "✅ Check Payment":     return await check(update, context)
+    if txt == "📖 Help":              return await help_cmd(update, context)
+    if txt == "➕ Topup"  and uid in ADMIN_IDS:  return await update.message.reply_text("Use `/topup <user_id> <amount>`", parse_mode="Markdown")
+    if txt == "📊 Admin Stats" and uid in ADMIN_IDS: return await admin(update, context)
     await update.message.reply_text("Unknown option. Use the menu or /help.")
 
 # === SETUP & RUN ===
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
 # Slash commands
-app.add_handler(CommandHandler("start",  start))
-app.add_handler(CommandHandler("help",   help_cmd))
-app.add_handler(CommandHandler("balance",balance))
+app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("help",  help_cmd))
+app.add_handler(CommandHandler("balance", balance))
 app.add_handler(CommandHandler("check",  check))
 app.add_handler(CommandHandler("topup",  topup))
 app.add_handler(CommandHandler("admin",  admin))
 
-# Inline button handlers
-app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_"))
-app.add_handler(CallbackQueryHandler(button_handler,   pattern="^PLAN_"))
+# Inline callbacks
+app.add_handler(CallbackQueryHandler(continent_selector, pattern="^CONTINENT_"))
+app.add_handler(CallbackQueryHandler(country_selector,   pattern="^COUNTRY_"))
+app.add_handler(CallbackQueryHandler(button_handler,     pattern="^PLAN_"))
 
 # Main-menu text
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_main_menu))
