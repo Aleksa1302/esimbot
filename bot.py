@@ -13,11 +13,11 @@ import os
 
 # === CONFIG ===
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-WALLET_ADDRESS = 'TCSQBnCjaX9EDgD24V3C4dTkfi98PFfT3s'
+WALLET_ADDRESS = os.getenv("WALLET_ADDRESS")
 ESIM_API_KEY = os.getenv("ESIM_API_KEY")
 TRONSCAN_API = 'https://apilist.tronscanapi.com/api/transaction?sort=-timestamp&count=true&limit=20&start=0&address='
 PRICE_CSV = 'Price.csv'
-ADMIN_IDS = [13459164143]  # @MrAleks345 user ID
+ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))  # Comma-separated admin Telegram user IDs
 
 # === DB Setup ===
 conn = sqlite3.connect("esim_bot.db", check_same_thread=False)
@@ -223,7 +223,7 @@ async def admin(update: Update, context: CallbackContext):
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
-app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_").__call__)
+app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_"))
 app.add_handler(CommandHandler("check", check))
 app.add_handler(CommandHandler("admin", admin))
 app.add_handler(CommandHandler("balance", balance))
