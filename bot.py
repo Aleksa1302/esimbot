@@ -92,6 +92,28 @@ def send_qr_code(update, text):
 
 # === BOT COMMANDS ===
 
+async def help(update: Update, context: CallbackContext):
+    help_text = (
+        "📖 *eSIM Bot Help*
+"
+        "
+"
+        "*/start* – Start and choose a plan
+"
+        "*/balance* – Check your balance
+"
+        "*/check* – Check pending payment
+"
+        "*/admin* – Admin stats (admin only)
+"
+        "*/topup <user_id> <amount>* – Add credit (admin only)
+"
+        "
+"
+        "💳 To buy: Choose a region > pick a plan > follow payment instructions."
+    )
+    await update.message.reply_text(help_text, parse_mode='Markdown')
+
 async def region_selector(update: Update, context: CallbackContext):
     query = update.callback_query
     await query.answer()
@@ -222,6 +244,7 @@ async def admin(update: Update, context: CallbackContext):
 # === MAIN ===
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("help", help))
 app.add_handler(CallbackQueryHandler(button))
 app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_"))
 app.add_handler(CommandHandler("check", check))
