@@ -95,28 +95,18 @@ def send_qr_code(update, text):
 
 
 async def help(update: Update, context: CallbackContext):
-    help_text = (
-        "📖 *eSIM Bot Help*
-"
-        "
-"
-        "*/start* – Browse and select an eSIM plan by region
-"
-        "*/balance* – View your current balance
-"
-        "*/check* – Check if your payment was received
-"
-        "*/admin* – View sales stats (admin only)
-"
-        "*/topup <user_id> <amount>* – Add credit manually (admin only)
-"
-        "*/upload_csv* – Upload or replace eSIM pricing (admin only)
-"
-        "
-"
-        "💳 Tip: You can use USDT balance to activate plans instantly without sending again."
-    )
-    await update.message.reply_text(help_text, parse_mode='Markdown')
+   help_text = (
+    "📖 *eSIM Bot Help*\n"
+    "\n"
+    "*/start* – Browse and select an eSIM plan by region\n"
+    "*/balance* – View your current balance\n"
+    "*/check* – Check if your payment was received\n"
+    "*/admin* – View sales stats (admin only)\n"
+    "*/topup <user_id> <amount>* – Add credit manually (admin only)\n"
+    "\n"
+    "💳 Tip: You can use USDT balance to activate plans instantly without sending again."
+)
+
 
 async def region_selector(update: Update, context: CallbackContext):
     query = update.callback_query
