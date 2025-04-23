@@ -25,10 +25,10 @@ TRONSCAN_API    = (
     "https://apilist.tronscanapi.com/api/transaction?"
     "sort=-timestamp&count=true&limit=20&start=0&address="
 )
-# Now loading from your raw GitHub CSV:
+# === CONFIG ===
 SHEET_CSV_URL = os.getenv(
     "SHEET_CSV_URL",
-    "https://raw.githubusercontent.com/Aleksa1302/esimbot/refs/heads/main/lastest_prices.csv"
+    "https://raw.githubusercontent.com/Aleksa1302/esimbot/main/lastest_prices.csv"
 )
 ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
