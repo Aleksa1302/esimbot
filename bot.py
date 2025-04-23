@@ -92,6 +92,11 @@ def send_qr_code(update, text):
 
 # === BOT COMMANDS ===
 
+async def whoami(update: Update, context: CallbackContext):
+    user = update.message.from_user
+    await update.message.reply_text(f"👤 Your Telegram user ID is: `{user.id}`
+Username: @{user.username}", parse_mode='Markdown')
+
 async def help(update: Update, context: CallbackContext):
     help_text = (
         "📖 *eSIM Bot Help*
@@ -135,8 +140,8 @@ async def region_selector(update: Update, context: CallbackContext):
 async def start(update: Update, context: CallbackContext):
     plans_df = load_plans()
     if plans_df.empty:
-        await update.message.reply_text("No eSIM plans available at the moment. Please try again later.")
-        return
+    await update.message.reply_text("No eSIM plans found in the system. Please contact support or upload a new Price.csv.")
+    return
 
     regions = sorted(plans_df['Region'].unique())
     keyboard = [[InlineKeyboardButton(region, callback_data=f"REGION_{region}")] for region in regions]
@@ -244,6 +249,7 @@ async def admin(update: Update, context: CallbackContext):
 # === MAIN ===
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("whoami", whoami))
 app.add_handler(CommandHandler("help", help))
 app.add_handler(CallbackQueryHandler(button))
 app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_"))
