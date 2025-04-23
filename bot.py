@@ -27,32 +27,9 @@ TRONSCAN_API    = (
 )
 ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
-# === CONTINENT MAPPING ===
-# Extend this dict with any additional countries in your CSV
-CONTINENT_MAP = {
-    # North America
-    "USA": "North America",
-    "Canada": "North America",
-    "Mexico": "North America",
-    # Europe
-    "Serbia": "Europe",
-    "Germany": "Europe",
-    "France": "Europe",
-    # Asia
-    "China": "Asia",
-    "Japan": "Asia",
-    "India": "Asia",
-    # Oceania
-    "Australia": "Oceania",
-    # South America
-    "Brazil": "South America",
-    # Africa
-    "South Africa": "Africa",
-}
-
 # === DATABASE SETUP ===
 conn = sqlite3.connect("esim_bot.db", check_same_thread=False)
-c = conn.cursor()
+c    = conn.cursor()
 c.execute("""
 CREATE TABLE IF NOT EXISTS orders (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -77,58 +54,77 @@ conn.commit()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# === CONTINENT LOOKUP CACHE & FUNCTION ===
+continent_cache: dict[str, str] = {}
+
+def get_continent(country_name: str) -> str:
+    """Use RestCountries API to fetch continent for a given country."""
+    if country_name in continent_cache:
+        return continent_cache[country_name]
+    try:
+        resp = requests.get(
+            f"https://restcountries.com/v3.1/name/{country_name}?fullText=true",
+            timeout=5
+        )
+        data = resp.json()
+        continent = data[0]["continents"][0]
+    except Exception:
+        continent = "Other"
+    continent_cache[country_name] = continent
+    return continent
+
 # === UTILITIES ===
-def generate_memo():
+def generate_memo() -> str:
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
 
-def check_tron_payment(memo, expected_amount):
+def check_tron_payment(memo: str, expected_amount: float) -> float:
     try:
-        data = requests.get(TRONSCAN_API + WALLET_ADDRESS).json()
+        data = requests.get(TRONSCAN_API + WALLET_ADDRESS, timeout=5).json()
         for tx in data.get("data", []):
             if tx.get("data") and memo in tx["data"]:
                 amt = float(tx["tokenTransferInfo"]["amount_str"]) / 1e6
                 if abs(amt - expected_amount) < 0.01:
                     return amt
-        return 0
+        return 0.0
     except Exception as e:
         logger.error(f"TRON check error: {e}")
-        return 0
+        return 0.0
 
-def order_esim(user_id, memo, plan_id):
+def order_esim(user_id: int, memo: str, plan_id: str) -> str | None:
     headers = {"Authorization": f"Bearer {ESIM_API_KEY}"}
     payload = {
         "external_id": memo,
         "email":       f"botuser{user_id}@esim.bot",
         "plan_id":     plan_id
     }
-    r = requests.post(
-        "https://api.esimaccess.com/v1/orders",
-        headers=headers, json=payload
-    )
+    r = requests.post("https://api.esimaccess.com/v1/orders",
+                      headers=headers, json=payload, timeout=10)
     if r.status_code == 200:
         return r.json().get("activation_code_url")
     return None
 
-def load_plans():
+def load_plans() -> pd.DataFrame:
+    """Fetch Price.csv from GitHub, parse, clean, and add Continent column."""
     try:
         url = (
             "https://raw.githubusercontent.com/"
             "Aleksa1302/esimbot/main/Price.csv"
         )
         df = pd.read_csv(url)
+        # strip dollar signs, convert to float
         df["Price(USD)"] = (
             df["Price(USD)"]
             .replace(r"[\$,]", "", regex=True)
             .astype(float)
         )
-        # assign continent, defaulting to "Other"
-        df["Continent"] = df["Region"].map(CONTINENT_MAP).fillna("Other")
+        # dynamically assign continent
+        df["Continent"] = df["Region"].apply(get_continent)
         return df
     except Exception as e:
-        logger.error(f"Failed to load Price.csv from GitHub: {e}")
+        logger.error(f"Failed to load Price.csv: {e}")
         return pd.DataFrame()
 
-def send_qr_code(text):
+def send_qr_code(text: str) -> InputFile:
     qr = qrcode.make(text)
     bio = io.BytesIO()
     bio.name = "qrcode.png"
@@ -136,7 +132,8 @@ def send_qr_code(text):
     bio.seek(0)
     return InputFile(bio, filename="qrcode.png")
 
-# === COMMANDS ===
+# === BOT COMMANDS ===
+
 async def help_cmd(update: Update, context: CallbackContext):
     await update.message.reply_text(
         "\U0001F4D6 *eSIM Bot Help*\n\n"
@@ -145,12 +142,11 @@ async def help_cmd(update: Update, context: CallbackContext):
         "*/check* – Check pending payment\n"
         "*/admin* – Sales stats (admin only)\n"
         "*/topup <user_id> <amt>* – Credit user (admin only)\n\n"
-        "\U0001F4B3 Tip: You can use your USDT balance for instant purchases.",
+        "\U0001F4B3 You can use your USDT balance to buy plans instantly.",
         parse_mode="Markdown"
     )
 
 async def start(update: Update, context: CallbackContext):
-    """Show main menu—users get user options; admins get extra."""
     user_id = update.effective_user.id
     buttons = [
         [KeyboardButton("📦 Browse eSIMs"), KeyboardButton("💰 My Balance")],
@@ -178,7 +174,7 @@ async def browse_esims(update: Update, context: CallbackContext):
 async def continent_selector(update: Update, context: CallbackContext):
     query = update.callback_query
     await query.answer()
-    continent = query.data.split("_",1)[1]
+    continent = query.data.split("_", 1)[1]
     df = load_plans()
     countries = sorted(df[df["Continent"] == continent]["Region"].unique())
     kb = [[InlineKeyboardButton(c, callback_data=f"COUNTRY_{c}")] for c in countries]
@@ -190,15 +186,15 @@ async def continent_selector(update: Update, context: CallbackContext):
 async def country_selector(update: Update, context: CallbackContext):
     query = update.callback_query
     await query.answer()
-    country = query.data.split("_",1)[1]
+    country = query.data.split("_", 1)[1]
     df = load_plans()
     plans = df[df["Region"] == country].sort_values("Price(USD)")
     kb = []
     for _, row in plans.iterrows():
-        amt = max(row["Price(USD)"], 5.0)
+        price_tag = max(row["Price(USD)"], 5.0)
         kb.append([InlineKeyboardButton(
             f"{row['Name']} – ${row['Price(USD)']:.2f}",
-            callback_data=f"PLAN_{row['ID']}_{amt:.2f}"
+            callback_data=f"PLAN_{row['ID']}_{price_tag:.2f}"
         )])
     await query.message.reply_text(
         f"📡 Plans for {country}:",
@@ -219,7 +215,7 @@ async def button_handler(update: Update, context: CallbackContext):
     if usd < 5.0:
         await query.message.reply_text(
             "⚠️ Minimum payment is 5 USDT.\n"
-            "Extra will be credited to your balance."
+            "Any extra will be credited to your balance."
         )
         usd = 5.0
 
@@ -238,13 +234,13 @@ async def button_handler(update: Update, context: CallbackContext):
                 caption=f"✅ eSIM activated!\n{url}"
             )
         else:
-            await query.message.reply_text("❌ Ordering failed, please retry.")
+            await query.message.reply_text("❌ Ordering failed, try again.")
     else:
         memo  = generate_memo()
         uname = query.from_user.username or str(user_id)
         c.execute(
-            "INSERT INTO orders (user_id,username,amount,memo,plan_id) "
-            "VALUES (?,?,?,?,?)",
+            "INSERT INTO orders "
+            "(user_id,username,amount,memo,plan_id) VALUES (?,?,?,?,?)",
             (user_id, uname, usd, memo, plan_id)
         )
         conn.commit()
@@ -321,7 +317,7 @@ async def admin(update: Update, context: CallbackContext):
         f"- Active users: {users}"
     )
 
-# === MAIN MENU HANDLER ===
+# === MAIN-MENU HANDLER ===
 async def handle_main_menu(update: Update, context: CallbackContext):
     txt     = update.message.text
     user_id = update.message.from_user.id
@@ -340,12 +336,13 @@ async def handle_main_menu(update: Update, context: CallbackContext):
         return await update.message.reply_text(
             "Use `/topup <user_id> <amount>`", parse_mode="Markdown"
         )
+
     await update.message.reply_text("Unknown option. Use the menu or /help.")
 
 # === SETUP & RUN ===
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
-# Slash commands
+# Commands
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help",  help_cmd))
 app.add_handler(CommandHandler("balance", balance))
@@ -358,7 +355,7 @@ app.add_handler(CallbackQueryHandler(continent_selector, pattern="^CONTINENT_"))
 app.add_handler(CallbackQueryHandler(country_selector,   pattern="^COUNTRY_"))
 app.add_handler(CallbackQueryHandler(button_handler,     pattern="^PLAN_"))
 
-# Main-menu text
+# Main‐menu text
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_main_menu))
 
 if __name__ == "__main__":
