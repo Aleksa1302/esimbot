@@ -17,7 +17,7 @@ WALLET_ADDRESS = os.getenv("WALLET_ADDRESS")
 ESIM_API_KEY = os.getenv("ESIM_API_KEY")
 TRONSCAN_API = 'https://apilist.tronscanapi.com/api/transaction?sort=-timestamp&count=true&limit=20&start=0&address='
 PRICE_CSV = 'Price.csv'
-ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))  # Comma-separated admin Telegram user IDs
+ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
 # === DB Setup ===
 conn = sqlite3.connect("esim_bot.db", check_same_thread=False)
@@ -81,8 +81,7 @@ def load_plans():
         logger.error(f"Failed to load Price.csv: {e}")
         return pd.DataFrame()
 
-# === QR Code Generator ===
-def send_qr_code(update, text):
+def send_qr_code(text):
     qr = qrcode.make(text)
     bio = io.BytesIO()
     bio.name = 'qrcode.png'
@@ -90,23 +89,28 @@ def send_qr_code(update, text):
     bio.seek(0)
     return InputFile(bio, filename="qrcode.png")
 
-# === BOT COMMANDS ===
-
-
-
+# === COMMANDS ===
 async def help(update: Update, context: CallbackContext):
-   help_text = (
-    "📖 *eSIM Bot Help*\n"
-    "\n"
-    "*/start* – Browse and select an eSIM plan by region\n"
-    "*/balance* – View your current balance\n"
-    "*/check* – Check if your payment was received\n"
-    "*/admin* – View sales stats (admin only)\n"
-    "*/topup <user_id> <amount>* – Add credit manually (admin only)\n"
-    "\n"
-    "💳 Tip: You can use USDT balance to activate plans instantly without sending again."
-)
+    await update.message.reply_text(
+        "\U0001F4D6 *eSIM Bot Help*\n\n"
+        "*/start* – Browse and select an eSIM plan by region\n"
+        "*/balance* – View your current balance\n"
+        "*/check* – Check if your payment was received\n"
+        "*/admin* – View sales stats (admin only)\n"
+        "*/topup <user_id> <amount>* – Add credit manually (admin only)\n"
+        "\n\U0001F4B3 Tip: You can use USDT balance to activate plans instantly.",
+        parse_mode="Markdown"
+    )
 
+async def start(update: Update, context: CallbackContext):
+    plans_df = load_plans()
+    if plans_df.empty:
+        await update.message.reply_text("No eSIM plans found. Please contact support.")
+        return
+
+    regions = sorted(plans_df['Region'].unique())
+    keyboard = [[InlineKeyboardButton(region, callback_data=f"REGION_{region}")] for region in regions]
+    await update.message.reply_text("\U0001F30D Choose a region:", reply_markup=InlineKeyboardMarkup(keyboard))
 
 async def region_selector(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -123,25 +127,10 @@ async def region_selector(update: Update, context: CallbackContext):
     keyboard = []
     for _, row in region_plans.iterrows():
         label = f"{row['Name']} - ${row['Price(USD)']:.2f}"
-        data = f"PLAN_{row['ID']}_{row['Price(USD)']:.2f}"
+        price_display = max(row['Price(USD)'], 5.0)
+        data = f"PLAN_{row['ID']}_{price_display:.2f}"
         keyboard.append([InlineKeyboardButton(label, callback_data=data)])
-    await query.message.reply_text(f"📡 Available plans for {selected_region}:", reply_markup=InlineKeyboardMarkup(keyboard))
-async def start(update: Update, context: CallbackContext):
-    plans_df = load_plans()
-    if plans_df.empty:
-        await update.message.reply_text("No eSIM plans found in the system. Please contact support or upload a new Price.csv.")
-        return
-
-    regions = sorted(plans_df['Region'].unique())
-    keyboard = [[InlineKeyboardButton(region, callback_data=f"REGION_{region}")] for region in regions]
-    await update.message.reply_text("🌍 Choose a region:", reply_markup=InlineKeyboardMarkup(keyboard))
-
-    keyboard = []
-    for _, row in plans_df.iterrows():
-        label = f"{row['Region']} - {row['Name']} - ${row['Price(USD)']:.2f}"
-        data = f"PLAN_{row['ID']}_{row['Price(USD)']:.2f}"
-        keyboard.append([InlineKeyboardButton(label, callback_data=data)])
-    await update.message.reply_text("Welcome! Select your eSIM plan:", reply_markup=InlineKeyboardMarkup(keyboard))
+    await query.message.reply_text(f"\U0001F4F0 Plans for {selected_region}:", reply_markup=InlineKeyboardMarkup(keyboard))
 
 async def button(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -154,13 +143,17 @@ async def button(update: Update, context: CallbackContext):
     row = c.fetchone()
     balance = row[0] if row else 0.0
 
+    if usd < 5.0:
+        await query.message.reply_text("Minimum payment is 5 USDT. The extra will be stored as credit.")
+        usd = 5.0
+
     if balance >= usd:
         new_balance = balance - usd
         memo = generate_memo()
         esim_url = order_esim(user_id, memo, plan_id)
         if esim_url:
             c.execute("UPDATE balances SET balance=? WHERE user_id=?", (new_balance, user_id))
-            await query.message.reply_photo(photo=send_qr_code(update, esim_url), caption=f"✅ eSIM activated from balance!\n{esim_url}")
+            await query.message.reply_photo(photo=send_qr_code(esim_url), caption=f"✅ eSIM activated!\n{esim_url}")
         else:
             await query.message.reply_text("❌ Failed to order eSIM.")
         conn.commit()
@@ -169,8 +162,8 @@ async def button(update: Update, context: CallbackContext):
         username = query.from_user.username
         c.execute("INSERT INTO orders (user_id, username, amount, memo, plan_id) VALUES (?, ?, ?, ?, ?)", (user_id, username, usd, memo, plan_id))
         conn.commit()
-        payment_text = f"Send exactly {usd} USDT (TRC20) to:\n{WALLET_ADDRESS}\nMemo/Tag: {memo}"
-        await query.message.reply_photo(photo=send_qr_code(update, payment_text), caption=payment_text)
+        payment_text = f"Send exactly {usd} USDT (TRC20) to:\n`{WALLET_ADDRESS}`\nMemo/Tag: `{memo}`"
+        await query.message.reply_photo(photo=send_qr_code(payment_text), caption=payment_text, parse_mode='Markdown')
 
 async def check(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
@@ -188,7 +181,7 @@ async def check(update: Update, context: CallbackContext):
         conn.commit()
         await update.message.reply_text(f"✅ {paid_amount} USDT received! Added to your balance.")
     else:
-        await update.message.reply_text("❌ Payment not found yet. Please wait or try again later.")
+        await update.message.reply_text("❌ Payment not found yet. Please wait or try again.")
 
 async def balance(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
@@ -211,18 +204,6 @@ async def topup(update: Update, context: CallbackContext):
     conn.commit()
     await update.message.reply_text(f"✅ Topped up {amount} USDT to user {target_id}.")
 
-async def upload_csv(update: Update, context: CallbackContext):
-    user_id = update.message.from_user.id
-    if user_id not in ADMIN_IDS:
-        await update.message.reply_text("Unauthorized.")
-        return
-    if update.message.document:
-        file = await update.message.document.get_file()
-        await file.download_to_drive(custom_path=PRICE_CSV)
-        await update.message.reply_text("✅ Price.csv updated successfully.")
-    else:
-        await update.message.reply_text("❌ Please send a .csv file.")
-
 async def admin(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     if user_id not in ADMIN_IDS:
@@ -232,20 +213,19 @@ async def admin(update: Update, context: CallbackContext):
     count, total = c.fetchone()
     c.execute("SELECT DISTINCT user_id FROM orders")
     users = c.fetchall()
-    msg = f"📊 Sales Report:\n- Total Sales: {count} eSIMs\n- Total Revenue: ${total:.2f if total else 0}\n- Active Users: {len(users)}"
+    msg = f"📊 Sales Report:\n- Total Sales: {count} eSIMs\n- Total Revenue: ${total or 0:.2f}\n- Active Users: {len(users)}"
     await update.message.reply_text(msg)
 
 # === MAIN ===
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help", help))
-app.add_handler(CallbackQueryHandler(button))
-app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_"))
-app.add_handler(CommandHandler("check", check))
-app.add_handler(CommandHandler("admin", admin))
 app.add_handler(CommandHandler("balance", balance))
+app.add_handler(CommandHandler("check", check))
 app.add_handler(CommandHandler("topup", topup))
-app.add_handler(MessageHandler(filters.Document.FileExtension("csv"), upload_csv))
+app.add_handler(CommandHandler("admin", admin))
+app.add_handler(CallbackQueryHandler(button, pattern="^PLAN_"))
+app.add_handler(CallbackQueryHandler(region_selector, pattern="^REGION_"))
 
 if __name__ == '__main__':
     print("Bot is running...")
