@@ -25,10 +25,10 @@ TRONSCAN_API    = (
     "https://apilist.tronscanapi.com/api/transaction?"
     "sort=-timestamp&count=true&limit=20&start=0&address="
 )
-# Direct-download link for your published Google Sheet as CSV:
+# Now loading from your raw GitHub CSV:
 SHEET_CSV_URL = os.getenv(
     "SHEET_CSV_URL",
-    "https://drive.google.com/uc?export=download&id=1yGCYyeh7KOY3rfSKtoB9CnGkX79Jejg4"
+    "https://raw.githubusercontent.com/Aleksa1302/esimbot/refs/heads/main/lastest_prices.csv"
 )
 ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
@@ -93,9 +93,8 @@ def order_esim(user_id: int, memo: str, plan_id: str) -> str | None:
 
 def load_plans() -> pd.DataFrame:
     """
-    Fetch your Google Sheet as CSV, clean it,
-    and add a two-level menu: Continent → Country → Plans.
-    Assumes the sheet has columns: Continent, Region (country), ID, Name, Price(USD)
+    Fetch your GitHub CSV, clean it,
+    and ensure a Continent column for the menu.
     """
     try:
         df = pd.read_csv(SHEET_CSV_URL)
@@ -104,7 +103,7 @@ def load_plans() -> pd.DataFrame:
             .replace(r"[\$,]", "", regex=True)
             .astype(float)
         )
-        # Ensure Continent column exists; if not, fallback to Region
+        # Ensure Continent exists; if not, fallback to Region
         if "Continent" not in df.columns:
             df["Continent"] = df["Region"]
         return df
