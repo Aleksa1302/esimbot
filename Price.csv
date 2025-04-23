@@ -1,1 +1,1062 @@
-Type,Region,Name,Price(USD),Variant Price,Code,GBs,Validity(Days),Slug,Coverage,ID,Billing starts,Pre-Install Days,Speed,Support,TopUp Type,Breakout IP
+Type,Region,Name,Price(USD),Variant Price,Code,GBs,Validity(Days),Slug,Coverage,ID,Billing starts,Pre-Install Days,Speed,Support TopUp Type,Breakout IP
+Multi-Area,Global (120+ areas),Global (120+ areas) 1GB 7Days,$4.60,$9.20,GL-120,1,7,GL-120_1_7,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",PHS30M6EZ,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,Albania,Albania 100MB 7Days,$0.28,$0.56,AL,0,7,AL_0.1_7,AL,PFRQ8FIBC,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Albania,Albania 1GB/Day,$2.80,$5.60,AL,1,1,AL_1_Daily,AL,PT6YNFLX8,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Albania,Albania 2GB/Day,$5.30,$10.60,AL,2,1,AL_2_Daily,AL,PSXVB0YDP,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Albania,Albania 500MB/Day,$1.60,$3.20,AL,0,1,AL_0.5_Daily,AL,PP2FWWA8N,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Algeria,Algeria 100MB 7Days,$0.11,$0.22,DZ,0,7,DZ_0.1_7,DZ,PJVN54W3O,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Algeria,Algeria 3GB 30Days,$3.00,$6.00,DZ,3,30,DZ_3_30,DZ,PWI9OQIY7,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Argentina,Argentina 100MB 7Days,$0.46,$0.92,AR,0,7,AR_0.1_7,AR,PHDE7ZP42,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Argentina,Argentina 1GB/Day,$3.40,$6.80,AR,1,1,AR_1_Daily,AR,P0VDPD9F2,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Armenia,Armenia 100MB 7Days,$0.56,$1.12,AM,0,7,AM_0.1_7,AM,PZBBJD4HG,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Multi-Area,Asia (12 areas),Asia (12 areas) 1GB 7Days,$3.50,$7.00,AS-12,1,7,AS-12_1_7,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PMWKBKC8Q,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 3GB 15Days,$8.80,$17.60,AS-12,3,15,AS-12_3_15,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PDX275FW0,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas)  3GB 30Days,$4.80,$9.60,AS-7,3,30,AS-7_3_30,"TH,SG,VN,PH,ID,MY,KH",P0523NZM8,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 20GB 30Days,$40.00,$80.00,AS-20,20,30,AS-20_20_30,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",PALTQIBLC,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 3GB 30Days,$9.20,$18.40,AS-20,3,30,AS-20_3_30,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",PTPN61LUV,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 100MB 7Days,$0.11,$0.22,AU,0,7,AU_0.1_7,AU,PGWEQ1CSB,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Azerbaijan,Azerbaijan 100MB 7Days,$0.79,$1.58,AZ,0,7,AZ_0.1_7,AZ,PLYTQ0XIR,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bolivia,Bolivia 100MB 7Days,$0.63,$1.26,BO,0,7,BO_0.1_7,BO,PWB2NZA39,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Brazil,Brazil 100MB 7Days,$0.24,$0.48,BR,0,7,BR_0.1_7,BR,PTN42GL18,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cambodia,Cambodia 100MB 7Days,$0.26,$0.52,KH,0,7,KH_0.1_7,KH,P04JLSJF8,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Canada,Canada 100MB 7Days,$0.23,$0.46,CA,0,7,CA_0.1_7,CA,PT73ZDYVK,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Chile,Chile 100MB 7Days,$0.57,$1.14,CL,0,7,CL_0.1_7,CL,PMQYGG8GO,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,China mainland,China 1GB/Day,$0.65,$1.30,CN,1,1,CN_1_Daily,CN,P92TALXP8,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,China mainland,China 500MB/Day,$0.50,$1.00,CN,0,1,CN_0.5_Daily,CN,PZ60GWHNI,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,China mainland,China mainland 100MB 7Days,$0.10,$0.20,CN,0,7,CN_0.1_7,CN,PLSSSXN2L,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Colombia,Colombia 100MB 7Days,$0.56,$1.12,CO,0,7,CO_0.1_7,CO,PPHO2UDYS,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Dominican Republic,Dominican Republic 100MB 7Days,$0.58,$1.16,DO,0,7,DO_0.1_7,DO,PSW0PJJ42,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Egypt,Egypt 100MB 7Days,$0.22,$0.44,EG,0,7,EG_0.1_7,EG,PXG3YL37H,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Egypt,Egypt 20GB 30Days,$25.00,$50.00,EG,20,30,EG_20_30,EG,PIXA8CXUL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Egypt,Egypt 2GB/Day,$2.80,$5.60,EG,2,1,EG_2_Daily,EG,PZ23T9OT0,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Egypt,Egypt 3GB 30Days,$4.70,$9.40,EG,3,30,EG_3_30,EG,PNLOUKFKT,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,El Salvador,El Salvador 100MB 7Days,$0.57,$1.14,SV,0,7,SV_0.1_7,SV,P5LC2VD5D,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 2GB/Day,$2.90,$5.80,EU-30,2,1,EU-30_2_Daily,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PZ6R8ASH9,First Network Connection,180,3G/4G,Non-reloadable,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 3GB/Day,$4.40,$8.80,EU-30,3,1,EU-30_3_Daily,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PE01DJZS7,First Network Connection,180,3G/4G,Non-reloadable,UK/NO
+Single,Germany,Germany 1GB/Day,$0.85,$1.70,DE,1,1,DE_1_Daily,DE,PXB5F4VY4,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Multi-Area,Global (120+ areas),Global (120+ areas) 10GB 30Days,$34.00,$68.00,GL-120,10,30,GL-120_10_30,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",P34FHRF8J,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (120+ areas),Global (120+ areas) 1GB 365Days,$7.00,$14.00,GL-120,1,365,GL-120_1_365,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",PYMC5N31Z,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (120+ areas),Global (120+ areas) 20GB 30Days,$60.00,$120.00,GL-120,20,30,GL-120_20_30,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",PR3JZMC20,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (120+ areas),Global (120+ areas) 20GB 90Days,$66.50,$133.00,GL-120,20,90,GL-120_20_90,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",PB83STJL6,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (120+ areas),Global (120+ areas) 3GB 30Days,$11.40,$22.80,GL-120,3,30,GL-120_3_30,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",PW6P3DX2G,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (120+ areas),Global (120+ areas) 5GB 30Days,$18.00,$36.00,GL-120,5,30,GL-120_5_30,"PR,HK,PT,HN,PY,HR,HU,QA,ID,IE,IL,AE,IN,ZA,IS,IT,AL,AM,AR,AT,ZM,AU,AZ,RO,BA,RS,BE,RU,BG,JO,JP,BO,SA,BR,SC,SE,SG,BW,SI,SK,KE,SN,KG,CA,CD,SV,CF,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,UY,UZ,MT,MU,MW,MX,MY,ES,NE,NG,NI,NL,NO,FI,FR,NZ,GA,GB,OM,GH,GI,GR,GT,GU,GW,PA,XK,PE,PH,PK,PL",PEW54FVD9,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,Guam,Guam 10GB 30Days,$23.00,$46.00,GU,10,30,GU_10_30,GU,PMYQIPASB,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Guam,Guam 1GB 7Days,$3.60,$7.20,GU,1,7,GU_1_7,GU,PNCYQZAZN,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Guam,Guam 20GB 30Days,$40.00,$80.00,GU,20,30,GU_20_30,GU,P04857JJB,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Guam,Guam 3GB 15Days,$8.90,$17.80,GU,3,15,GU_3_15,GU,PKEMRQFAC,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Guam,Guam 3GB 30Days,$9.10,$18.20,GU,3,30,GU_3_30,GU,PEOWI61PF,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Guam,Guam 5GB 30Days,$13.60,$27.20,GU,5,30,GU_5_30,GU,PIN2SHYSA,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Guatemala,Guatemala 100MB 7Days,$0.57,$1.14,GT,0,7,GT_0.1_7,GT,PAQGBYCEU,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Honduras,Honduras 100MB 7Days,$0.57,$1.14,HN,0,7,HN_0.1_7,HN,P3WDTMWGS,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hong Kong (China),Hong Kong (China) 100MB 7Days,$0.10,$0.20,HK,0,7,HK_0.1_7,HK,P8TY7BI5M,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 10GB/Day,$4.60,$9.20,HK,10,1,HK_10_Daily,HK,PG9WP0YY6,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Hong Kong (China),Hong Kong 3GB/Day,$2.25,$4.50,HK,3,1,HK_3_Daily,HK,PE3UHN6BJ,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,India,India 100MB 7Days,$0.28,$0.56,IN,0,7,IN_0.1_7,IN,PNJCUC29S,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Indonesia,Indonesia 100MB 7Days,$0.13,$0.26,ID,0,7,ID_0.1_7,ID,P402OGJG8,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Italy,Italy 1GB/Day,$0.85,$1.70,IT,1,1,IT_1_Daily,IT,PZARONTRP,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Jamaica,Jamaica 100MB 7Days,$0.73,$1.46,JM,0,7,JM_0.1_7,JM,PTFBO8IJH,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jamaica,Jamaica 10GB 30Days,$50.58,$101.16,JM,10,30,JM_10_30,JM,PMB6QS4ZN,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jamaica,Jamaica 1GB 7Days,$7.10,$14.20,JM,1,7,JM_1_7,JM,P0CM6KM7E,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jamaica,Jamaica 20GB 30Days,$89.58,$179.16,JM,20,30,JM_20_30,JM,PLKIA6PIQ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jamaica,Jamaica 3GB 15Days,$17.60,$35.20,JM,3,15,JM_3_15,JM,P5KF3LWV4,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jamaica,Jamaica 3GB 30Days,$17.90,$35.80,JM,3,30,JM_3_30,JM,PTJ9SYG69,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jamaica,Jamaica 5GB 30Days,$26.00,$52.00,JM,5,30,JM_5_30,JM,PPDAG2ZLG,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Japan,Japan 100MB 7Days,$0.10,$0.20,JP,0,7,JP_0.1_7,JP,P6ZMSDS1G,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 10GB/Day,$7.30,$14.60,JP,10,1,JP_10_Daily,JP,PGURVYHQ1,First Network Connection,180,3G/4G,Non-reloadable,JP
+Single,Japan,Japan 5GB/Day,$4.40,$8.80,JP,5,1,JP_5_Daily,JP,PFFM6ED75,First Network Connection,180,3G/4G,Non-reloadable,JP
+Single,Jordan,Jordan 100MB 7Days,$0.18,$0.36,JO,0,7,JO_0.1_7,JO,PF8LJK42E,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Kazakhstan,Kazakhstan 100MB 7Days,$0.15,$0.30,KZ,0,7,KZ_0.1_7,KZ,PHGAWJM6O,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kenya,Kenya 100MB 7Days,$0.70,$1.40,KE,0,7,KE_0.1_7,KE,P9A3DBLOA,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kuwait,Kuwait 100MB 7Days,$0.28,$0.56,KW,0,7,KW_0.1_7,KW,PDM89TRPE,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 100MB 7Days,$0.10,$0.20,MY,0,7,MY_0.1_7,MY,PT4RIB8UL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Mauritius,Mauritius 1GB/Day,$4.90,$9.80,MU,1,1,MU_1_Daily,MU,PKXERFUDN,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Mauritius,Mauritius 2GB/Day,$5.40,$10.80,MU,2,1,MU_2_Daily,MU,PLHCEBQDV,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Mexico,Mexico 100MB 7Days,$0.24,$0.48,MX,0,7,MX_0.1_7,MX,PF4COP483,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Morocco,Morocco 100MB 7Days,$0.15,$0.30,MA,0,7,MA_0.1_7,MA,PNQOJTLBQ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Morocco,Morocco 10GB 30Days,$9.90,$19.80,MA,10,30,MA_10_30,MA,PO5WKZOPV,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Morocco,Morocco 1GB/Day,$1.40,$2.80,MA,1,1,MA_1_Daily,MA,PKUWF7BJC,First Network Connection,180,3G/4G/5G,Non-reloadable,BE
+Single,Morocco,Morocco 2GB/Day,$2.50,$5.00,MA,2,1,MA_2_Daily,MA,P33C3KC73,First Network Connection,180,3G/4G/5G,Non-reloadable,BE
+Single,Morocco,Morocco 3GB 30Days,$3.80,$7.60,MA,3,30,MA_3_30,MA,PPHIWSELT,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Morocco,Morocco 5GB 30Days,$5.70,$11.40,MA,5,30,MA_5_30,MA,P7BXAR31R,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,New Zealand,New Zealand 100MB 7Days,$0.19,$0.38,NZ,0,7,NZ_0.1_7,NZ,PLTOJ7B6Z,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Nicaragua,Nicaragua 100MB 7Days,$0.57,$1.14,NI,0,7,NI_0.1_7,NI,PUHSFBY6P,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Niger,Niger 100MB 7Days,$0.86,$1.72,NE,0,7,NE_0.1_7,NE,P8Y35DWA0,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Nigeria,Nigeria 100MB 7Days,$0.47,$0.94,NG,0,7,NG_0.1_7,NG,P0Q24KI1C,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Pakistan,Pakistan 100MB 7Days,$0.19,$0.38,PK,0,7,PK_0.1_7,PK,P96CDAE48,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Pakistan,Pakistan 3GB 30Days,$4.70,$9.40,PK,3,30,PK_3_30,PK,P70ZZFLRP,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Panama,Panama 100MB 7Days,$0.57,$1.14,PA,0,7,PA_0.1_7,PA,P76PJ8WFO,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Paraguay,Paraguay 100MB 7Days,$0.53,$1.06,PY,0,7,PY_0.1_7,PY,P0112XJDY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Peru,Peru 100MB 7Days,$0.65,$1.30,PE,0,7,PE_0.1_7,PE,PZ5R7GI4K,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Philippines,Philippines 100MB 7Days,$0.19,$0.38,PH,0,7,PH_0.1_7,PH,PXB3QI9EJ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Philippines,Philippines 10GB/Day,$15.00,$30.00,PH,10,1,PH_10_Daily,PH,P08FIDBBQ,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Puerto Rico,Puerto Rico 100MB 7Days,$0.38,$0.76,PR,0,7,PR_0.1_7,PR,PK5O2KUQT,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 100MB 7Days,$0.45,$0.90,QA,0,7,QA_0.1_7,QA,PIPAFTMRE,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 1GB/Day,$1.70,$3.40,QA,1,1,QA_1_Daily,QA,PMJUJWRQ8,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Reunion,Reunion 100MB 7Days,$0.28,$0.56,RE,0,7,RE_0.1_7,RE,PN1JR359K,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Russia,Russia 100MB 7Days,$0.40,$0.80,RU,0,7,RU_0.1_7,RU,PVP4RSUMR,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Senegal,Senegal 100MB 7Days,$0.86,$1.72,SN,0,7,SN_0.1_7,SN,PBBWJ5ZI6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Serbia,Serbia 100MB 7Days,$0.32,$0.64,RS,0,7,RS_0.1_7,RS,PHLQ4R8Z8,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Singapore,Singapore 100MB 7Days,$0.10,$0.20,SG,0,7,SG_0.1_7,SG,PS67RZTVO,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 10GB/Day,$9.00,$18.00,SG,10,1,SG_10_Daily,SG,P3LR5JXFO,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,South Africa,South Africa 100MB 7Days,$0.68,$1.36,ZA,0,7,ZA_0.1_7,ZA,PJ91RFXJL,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,South Africa,South Africa 1GB/Day,$3.40,$6.80,ZA,1,1,ZA_1_Daily,ZA,PBSI82U47,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,South Korea,South Korea 100MB 7Days,$0.10,$0.20,KR,0,7,KR_0.1_7,KR,PKLF9M3N7,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,South Korea,South Korea 10GB/Day,$8.00,$16.00,KR,10,1,KR_10_Daily,KR,P2XI9YHJG,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,South Korea,South Korea 5GB/Day,$3.90,$7.80,KR,5,1,KR_5_Daily,KR,PX9TSB16T,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Sri Lanka,Sri Lanka 100MB 7Days,$0.28,$0.56,LK,0,7,LK_0.1_7,LK,PWJT28BG0,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 1GB/Day,$2.20,$4.40,LK,1,1,LK_1_Daily,LK,PB6CYXWPA,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Sri Lanka,Sri Lanka 2GB/Day,$3.20,$6.40,LK,2,1,LK_2_Daily,LK,PSUGO9SDM,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Sri Lanka,Sri Lanka 3GB 30Days,$4.90,$9.80,LK,3,30,LK_3_30,LK,PTSKLWZVK,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 3GB/Day,$4.40,$8.80,LK,3,1,LK_3_Daily,LK,PGP70GWM9,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Sri Lanka,Sri Lanka 500MB/Day,$1.30,$2.60,LK,0,1,LK_0.5_Daily,LK,PF4K8XI0Q,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Sri Lanka,Sri Lanka 5GB/Day,$7.00,$14.00,LK,5,1,LK_5_Daily,LK,PWNVS0KKQ,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Switzerland,Switzerland 100MB 7Days,$0.10,$0.20,CH,0,7,CH_0.1_7,CH,P4PQQ616Q,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Tanzania,Tanzania 100MB 7Days,$0.68,$1.36,TZ,0,7,TZ_0.1_7,TZ,P1W5NQVN1,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 100MB 7Days,$0.12,$0.24,TH,0,7,TH_0.1_7,TH,PQ2I5PFIT,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Tunisia,Tunisia 100MB 7Days,$0.30,$0.60,TN,0,7,TN_0.1_7,TN,PMJ2GNEEK,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 100MB 7Days,$0.10,$0.20,TR,0,7,TR_0.1_7,TR,PL0M7ICXR,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 500MB 1Day,$0.30,$0.60,TR,0,1,TR_0.5_1,TR,P99PK3JV6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,United Arab Emirates,United Arab Emirates 100MB 7Days,$0.24,$0.48,AE,0,7,AE_0.1_7,AE,PFI5O971X,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 50GB 180Days,$112.55,$225.10,AE,50,180,AE_50_180,AE,PBJCBSZU1,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 100MB 7Days,$0.10,$0.20,GB,0,7,GB_0.1_7,GB,PBV0LO9CW,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 100MB 7Days,$0.11,$0.22,US,0,7,US_0.1_7,US,P3YTYXBRV,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Uruguay,Uruguay 100MB 7Days,$0.63,$1.26,UY,0,7,UY_0.1_7,UY,PDPRP70HM,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Uzbekistan,Uzbekistan 100MB 7Days,$0.15,$0.30,UZ,0,7,UZ_0.1_7,UZ,P5N4RG08H,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Vietnam,Vietnam 100MB 7Days,$0.18,$0.36,VN,0,7,VN_0.1_7,VN,PIK0SW14Q,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 10GB/Day,$13.60,$27.20,VN,10,1,VN_10_Daily,VN,PUHL77M18,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Vietnam,Vietnam 500MB/Day,$0.58,$1.15,VN,0,1,VN_0.5_Daily,VN,PTS4IGND3,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,South Africa,South Africa 1GB 7Days,$3.60,$7.20,ZA,1,7,ZA_1_7,ZA,MB026,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,South Africa,South Africa 3GB 30Days,$9.10,$18.20,ZA,3,30,ZA_3_30,ZA,MB065,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,South Africa,South Africa 5GB 30Days,$13.60,$27.20,ZA,5,30,ZA_5_30,ZA,MB036,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Multi-Area,Africa (25+ areas),Africa 1GB 7Days,$5.70,$11.40,AF-29,1,7,AF-29_1_7,"BF,LR,TZ,SC,SD,UG,MA,BW,MG,GA,KE,SN,ML,CD,GH,EG,CF,CG,CI,ZA,SZ,MW,TD,GW,RE,ZM,NE,NG,TN",CKH495,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Africa (25+ areas),Africa 3GB 30Days,$14.40,$28.80,AF-29,3,30,AF-29_3_30,"BF,LR,TZ,SC,SD,UG,MA,BW,MG,GA,KE,SN,ML,CD,GH,EG,CF,CG,CI,ZA,SZ,MW,TD,GW,RE,ZM,NE,NG,TN",P1XXDOD0C,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Africa (25+ areas),Africa 5GB 30Days,$21.00,$42.00,AF-29,5,30,AF-29_5_30,"BF,LR,TZ,SC,SD,UG,MA,BW,MG,GA,KE,SN,ML,CD,GH,EG,CF,CG,CI,ZA,SZ,MW,TD,GW,RE,ZM,NE,NG,TN",CKH497,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Asia (7 areas),Asia (7 areas) 10GB 30Days,$12.20,$24.40,AS-7,10,30,AS-7_10_30,"TH,SG,VN,PH,ID,MY,KH",JC168,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 1GB 7Days,$1.80,$3.60,AS-7,1,7,AS-7_1_7,"TH,SG,VN,PH,ID,MY,KH",JC165,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 20GB 30Days,$20.00,$40.00,AS-7,20,30,AS-7_20_30,"TH,SG,VN,PH,ID,MY,KH",JC169,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 3GB 15Days,$4.60,$9.20,AS-7,3,15,AS-7_3_15,"TH,SG,VN,PH,ID,MY,KH",JC166,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 50GB 180Days,$45.00,$90.00,AS-7,50,180,AS-7_50_180,"TH,SG,VN,PH,ID,MY,KH",P4GNDNA36,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 5GB 30Days,$7.00,$14.00,AS-7,5,30,AS-7_5_30,"TH,SG,VN,PH,ID,MY,KH",JC167,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 10GB 30Days,$23.00,$46.00,AS-20,10,30,AS-20_10_30,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC180,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 1GB 30 Days,$3.70,$7.40,AS-20,1,30,AS-20_1_30,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC177,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 1GB 7 Days,$3.60,$7.20,AS-20,1,7,AS-20_1_7,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC183,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 20GB 90 Days,$42.00,$84.00,AS-20,20,90,AS-20_20_90,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC181,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 3GB 15Days,$8.90,$17.80,AS-20,3,15,AS-20_3_15,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC179,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 50GB 180 Days,$89.00,$178.00,AS-20,50,180,AS-20_50_180,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC182,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (20 areas),Asia-20 5GB 30 Days,$13.60,$27.20,AS-20,5,30,AS-20_5_30,"MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",JC178,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (30+ areas),Asia-Pacific 6GB 8Days,$11.00,$22.00,AS-31,6,8,AS-31_6_8,"NP,BD,PS,HK,TW,JO,BH,JP,BN,QA,BT,SG,ID,KH,GE,OM,MN,MO,IL,UZ,IN,KR,CN,MY,KW,GU,KZ,AU,LA,VN,PH,PK,LK",AIS001,First Installation,180,3G/4G/5G,Non-reloadable,TH
+Single,Australia,Australia 1GB/Day,$1.00,$2.00,AU,1,1,AU_1_Daily,AU,PKAECJYPB,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Australia,Australia 500MB/Day,$0.50,$1.00,AU,0,1,AU_0.5_Daily,AU,PBLAOUJHR,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Canada,Canada 1.5GB/Day,$2.70,$5.40,CA,1,1,CA_1.5_Daily,CA,PDSKSPL0T,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Canada,Canada 1GB/Day,$1.80,$3.60,CA,1,1,CA_1_Daily,CA,P4SQTPX02,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Canada,Canada 2GB/Day,$3.60,$7.20,CA,2,1,CA_2_Daily,CA,P3BGO3VLL,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Canada,Canada 3GB 30Days,$5.90,$11.80,CA,3,30,CA_3_30,CA,PJYU684PF,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,PL
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 10GB 30Days,$9.90,$19.80,CN-3,10,30,CN-3_10_30,"MO,HK,CN",JC175,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 1GB 7Days,$1.50,$3.00,CN-3,1,7,CN-3_1_7,"MO,HK,CN",JC172,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 20GB 30Days,$16.80,$33.60,CN-3,20,30,CN-3_20_30,"MO,HK,CN",JC176,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 3GB 15Days,$3.70,$7.40,CN-3,3,15,CN-3_3_15,"MO,HK,CN",JC173,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 50GB 180Days,$37.00,$74.00,CN-3,50,180,CN-3_50_180,"MO,HK,CN",PJKYY3QTL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 5GB 30Days,$5.70,$11.40,CN-3,5,30,CN-3_5_30,"MO,HK,CN",JC174,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Europe (40+ areas),Europe 10GB 30Days,$19.00,$38.00,EU-42,10,30,EU-42_10_30,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",CKH486,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (40+ areas),Europe 1GB 7Days,$2.90,$5.80,EU-42,1,7,EU-42_1_7,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",CKH484,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (40+ areas),Europe 20GB 30Days,$32.00,$64.00,EU-42,20,30,EU-42_20_30,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",CKH500,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (40+ areas),Europe 20GB 90Days,$34.00,$68.00,EU-42,20,90,EU-42_20_90,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",P7VCE7FKY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (40+ areas),Europe 3GB 30Days,$7.30,$14.60,EU-42,3,30,EU-42_3_30,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",CKH006,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (40+ areas),Europe 50GB 180Days,$78.00,$156.00,EU-42,50,180,EU-42_50_180,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",PGXJN6W2T,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (40+ areas),Europe 5GB 30Days,$11.00,$22.00,EU-42,5,30,EU-42_5_30,"NO,RS,DE,RU,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,MK,GG,EE,GI,IM,CH,MT,IS,IT,GR,ES,AT,CY,AX,CZ,JE,PL,RO,LI,NL,TR",CKH007,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 1.5GB/Day,$2.20,$4.40,EU-30,1,1,EU-30_1.5_Daily,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",P34CJYA6C,First Network Connection,180,3G/4G,Non-reloadable,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 10GB 30Days,$9.90,$19.80,EU-30,10,30,EU-30_10_30,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",P50GVS8GN,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 1GB 30Days,$1.00,$2.00,EU-30,1,30,EU-30_1_30,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PM1HX6ES9,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 1GB 7Days,$1.50,$3.00,EU-30,1,7,EU-30_1_7,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PV048NCRG,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 1GB/Day,$1.50,$3.00,EU-30,1,1,EU-30_1_Daily,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PUDV52A3R,First Network Connection,180,3G/4G,Non-reloadable,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 20GB 30Days,$16.80,$33.60,EU-30,20,30,EU-30_20_30,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PHC4X21NC,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 20GB 90Days,$17.30,$34.60,EU-30,20,90,EU-30_20_90,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",P5NWWU08G,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 3GB 30Days,$3.80,$7.60,EU-30,3,30,EU-30_3_30,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PJK6T8JT2,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 50GB 180Days,$36.50,$73.00,EU-30,50,180,EU-30_50_180,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",PE70MYRZ5,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 5GB 30Days,$5.70,$11.40,EU-30,5,30,EU-30_5_30,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",P87F6RTKY,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (140+ areas),Global138 6GB 15Days,$25.00,$50.00,GL-144,6,15,GL-144_6_15,"PR,PS,HK,PT,HN,PY,HR,YE,HU,QA,GB-ENG,ID,IE,IL,IM,AE,IN,AF,ZA,IR,IS,IT,AL,AM,AT,RE,ZM,AU,AX,AZ,JE,ZW,RO,BA,RS,BD,BE,RU,BG,JO,JP,BH,BN,BO,SA,SB,SC,BT,SE,SG,SI,SJ,BY,SK,SM,KE,SN,KG,KH,CA,CD,SV,CG,CH,KR,SZ,CL,CN,KW,CO,CR,KZ,TD,LA,TJ,CY,CZ,TN,TO,LI,TR,LK,DE,TW,TZ,DK,LT,LU,WS-S,LV,DO,UA,TRNC,MC,MD,ME,MG,EC,MK,EE,MN,MO,EG,UY,UZ,MT,MU,MV,VA,MX,MY,ES,VG,VN,NG,NI,NL,NO,NP,FI,FJ,NR,FO,FR,NZ,GB-SCT,GB-NIR,GA,GB,OM,GE,GG,GH,GL,GR,GT,GU,PA,GB-WLS,PE,PG,PH,PK,PL",AIS002,First Installation,180,3G/4G,Non-reloadable,TH
+Multi-Area,Global (130+ areas),Global139 10GB 30Days,$113.00,$226.00,GL-139,10,30,GL-139_10_30,"PR,HK,PT,HN,PY,HR,YE,HU,QA,ID,IE,IL,IM,AE,IN,ZA,IS,IT,AL,AM,AR,AT,RE,ZM,AU,AX,AZ,JE,RO,BA,RS,BD,BE,RU,BF,BG,JO,JP,BH,BN,BO,SA,BR,SC,SD,SE,SG,BW,SI,BY,SK,KE,SN,KG,KH,CA,KI,CD,SV,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,DZ,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,MQ,UY,UZ,MT,MW,MX,MY,ES,NE,VN,NG,NI,NL,NO,FI,FR,NZ,GA,GB,WS,OM,GE,GG,GH,GI,GL,GR,GT,GW,PA,XK,PE,PH,PK,PL",CKH826,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (130+ areas),Global139 1GB 365Days,$38.00,$76.00,GL-139,1,365,GL-139_1_365,"PR,HK,PT,HN,PY,HR,YE,HU,QA,ID,IE,IL,IM,AE,IN,ZA,IS,IT,AL,AM,AR,AT,RE,ZM,AU,AX,AZ,JE,RO,BA,RS,BD,BE,RU,BF,BG,JO,JP,BH,BN,BO,SA,BR,SC,SD,SE,SG,BW,SI,BY,SK,KE,SN,KG,KH,CA,KI,CD,SV,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,DZ,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,MQ,UY,UZ,MT,MW,MX,MY,ES,NE,VN,NG,NI,NL,NO,FI,FR,NZ,GA,GB,WS,OM,GE,GG,GH,GI,GL,GR,GT,GW,PA,XK,PE,PH,PK,PL",PCQXBW5UJ,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (130+ areas),Global139 1GB 7Days,$17.50,$35.00,GL-139,1,7,GL-139_1_7,"PR,HK,PT,HN,PY,HR,YE,HU,QA,ID,IE,IL,IM,AE,IN,ZA,IS,IT,AL,AM,AR,AT,RE,ZM,AU,AX,AZ,JE,RO,BA,RS,BD,BE,RU,BF,BG,JO,JP,BH,BN,BO,SA,BR,SC,SD,SE,SG,BW,SI,BY,SK,KE,SN,KG,KH,CA,KI,CD,SV,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,DZ,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,MQ,UY,UZ,MT,MW,MX,MY,ES,NE,VN,NG,NI,NL,NO,FI,FR,NZ,GA,GB,WS,OM,GE,GG,GH,GI,GL,GR,GT,GW,PA,XK,PE,PH,PK,PL",CKH823,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (130+ areas),Global139 20GB 90Days,$206.00,$412.00,GL-139,20,90,GL-139_20_90,"PR,HK,PT,HN,PY,HR,YE,HU,QA,ID,IE,IL,IM,AE,IN,ZA,IS,IT,AL,AM,AR,AT,RE,ZM,AU,AX,AZ,JE,RO,BA,RS,BD,BE,RU,BF,BG,JO,JP,BH,BN,BO,SA,BR,SC,SD,SE,SG,BW,SI,BY,SK,KE,SN,KG,KH,CA,KI,CD,SV,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,DZ,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,MQ,UY,UZ,MT,MW,MX,MY,ES,NE,VN,NG,NI,NL,NO,FI,FR,NZ,GA,GB,WS,OM,GE,GG,GH,GI,GL,GR,GT,GW,PA,XK,PE,PH,PK,PL",PG3K0LHBC,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (130+ areas),Global139 3GB 30Days,$43.00,$86.00,GL-139,3,30,GL-139_3_30,"PR,HK,PT,HN,PY,HR,YE,HU,QA,ID,IE,IL,IM,AE,IN,ZA,IS,IT,AL,AM,AR,AT,RE,ZM,AU,AX,AZ,JE,RO,BA,RS,BD,BE,RU,BF,BG,JO,JP,BH,BN,BO,SA,BR,SC,SD,SE,SG,BW,SI,BY,SK,KE,SN,KG,KH,CA,KI,CD,SV,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,DZ,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,MQ,UY,UZ,MT,MW,MX,MY,ES,NE,VN,NG,NI,NL,NO,FI,FR,NZ,GA,GB,WS,OM,GE,GG,GH,GI,GL,GR,GT,GW,PA,XK,PE,PH,PK,PL",PHD8GZ2VN,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Global (130+ areas),Global139 5GB 30Days,$65.00,$130.00,GL-139,5,30,GL-139_5_30,"PR,HK,PT,HN,PY,HR,YE,HU,QA,ID,IE,IL,IM,AE,IN,ZA,IS,IT,AL,AM,AR,AT,RE,ZM,AU,AX,AZ,JE,RO,BA,RS,BD,BE,RU,BF,BG,JO,JP,BH,BN,BO,SA,BR,SC,SD,SE,SG,BW,SI,BY,SK,KE,SN,KG,KH,CA,KI,CD,SV,CG,CH,CI,KR,SZ,CL,CM,CN,KW,CO,CR,KZ,TD,TH,CY,CZ,TN,LI,TR,LK,DE,TW,LR,TZ,DK,LT,LU,LV,UA,UG,MA,MC,DZ,MD,ME,MG,US,EC,MK,ML,EE,MO,EG,MQ,UY,UZ,MT,MW,MX,MY,ES,NE,VN,NG,NI,NL,NO,FI,FR,NZ,GA,GB,WS,OM,GE,GG,GH,GI,GL,GR,GT,GW,PA,XK,PE,PH,PK,PL",CKH825,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,Hong Kong (China),Hong Kong 1GB/Day,$0.85,$1.70,HK,1,1,HK_1_Daily,HK,PPGUJ3XIX,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Hong Kong (China),Hong Kong 2GB/Day,$1.60,$3.20,HK,2,1,HK_2_Daily,HK,PJHK9ATRD,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,India,India 1GB/Day,$2.40,$4.80,IN,1,1,IN_1_Daily,IN,PYGUMRHX1,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,India,India 500MB/Day,$1.20,$2.40,IN,0,1,IN_0.5_Daily,IN,PGS3HB984,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Indonesia,Indonesia 1GB/Day,$0.90,$1.80,ID,1,1,ID_1_Daily,ID,PGBV9EXGK,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Indonesia,Indonesia 500MB/Day,$0.50,$1.00,ID,0,1,ID_0.5_Daily,ID,PXCJQ9KNR,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Malaysia,Malaysia 1GB/Day,$0.90,$1.80,MY,1,1,MY_1_Daily,MY,P4UTFE9WB,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Malaysia,Malaysia 2GB/Day,$1.70,$3.40,MY,2,1,MY_2_Daily,MY,POLZ7NLE0,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Malaysia,Malaysia 500MB/Day,$0.50,$1.00,MY,0,1,MY_0.5_Daily,MY,PAN6REMMI,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Middle East,Middle East 1GB 7Days,$7.00,$14.00,ME-13,1,7,ME-13_1_7,"QA,IL,AE,JO,BH,AZ,KW,AM,SA,TR,OM",CKH848,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Middle East,Middle East 3GB 30Days,$17.90,$35.80,ME-13,3,30,ME-13_3_30,"QA,IL,AE,JO,BH,AZ,KW,AM,SA,TR,OM",PNEKXVZKV,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Middle East,Middle East 5GB 30Days,$26.00,$52.00,ME-13,5,30,ME-13_5_30,"QA,IL,AE,JO,BH,AZ,KW,AM,SA,TR,OM",CKH850,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,New Zealand,New Zealand 1GB/Day,$1.50,$3.00,NZ,1,1,NZ_1_Daily,NZ,PDLIRFGHE,First Network Connection,180,3G/4G,Non-reloadable,
+Single,New Zealand,New Zealand 500MB/Day,$0.80,$1.60,NZ,0,1,NZ_0.5_Daily,NZ,PN7CXKOWL,First Network Connection,180,3G/4G,Non-reloadable,
+Multi-Area,North America (3 areas),North America 10GB 30Days,$15.20,$30.40,NA-3,10,30,NA-3_10_30,"MX,US,CA",CKH494,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America 1GB 30Days,$2.50,$5.00,NA-3,1,30,NA-3_1_30,"MX,US,CA",PWTE0W1Q4,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America 1GB 7Days,$2.30,$4.60,NA-3,1,7,NA-3_1_7,"MX,US,CA",CKH491,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America 20GB 90Days,$27.00,$54.00,NA-3,20,90,NA-3_20_90,"MX,US,CA",PVF7RTI3Y,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America 3GB 30Days,$5.90,$11.80,NA-3,3,30,NA-3_3_30,"MX,US,CA",PB9HFSUS0,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America 50GB 180Days,$58.00,$116.00,NA-3,50,180,NA-3_50_180,"MX,US,CA",POGTY0THV,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America 5GB 30Days,$8.80,$17.60,NA-3,5,30,NA-3_5_30,"MX,US,CA",CKH493,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Philippines,Philippines 1GB/Day,$1.50,$3.00,PH,1,1,PH_1_Daily,PH,PKOY9TRDZ,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Philippines,Philippines 2GB/Day,$3.00,$6.00,PH,2,1,PH_2_Daily,PH,PYKASRYFN,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Philippines,Philippines 500MB/Day,$0.80,$1.60,PH,0,1,PH_0.5_Daily,PH,PKI8J4QW7,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Singapore,Singapore 1GB/Day,$0.90,$1.80,SG,1,1,SG_1_Daily,SG,P7YECLII9,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Singapore,Singapore 2GB/Day,$1.80,$3.60,SG,2,1,SG_2_Daily,SG,PXAZ8ZALE,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Singapore,Singapore 500MB/Day,$0.50,$1.00,SG,0,1,SG_0.5_Daily,SG,PH83BFJ2F,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,South Africa,South Africa 10GB 30Days,$23.00,$46.00,ZA,10,30,ZA_10_30,ZA,MB041,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Multi-Area,South America (15+ areas),South America 10GB 30Days,$37.00,$74.00,SA-18,10,30,SA-18_10_30,"PR,SV,MQ,UY,HN,CL,PY,CO,BO,GT,CR,BR,AR,PA,PE,NI,EC",CKH490,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,South America (15+ areas),South America 1GB 7Days,$5.70,$11.40,SA-18,1,7,SA-18_1_7,"PR,SV,MQ,UY,HN,CL,PY,CO,BO,GT,CR,BR,AR,PA,PE,NI,EC",CKH487,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,South America (15+ areas),South America 3GB 15Days,$14.10,$28.20,SA-18,3,15,SA-18_3_15,"PR,SV,MQ,UY,HN,CL,PY,CO,BO,GT,CR,BR,AR,PA,PE,NI,EC",CKH488,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,South America (15+ areas),South America 3GB 30Days,$14.40,$28.80,SA-18,3,30,SA-18_3_30,"PR,SV,MQ,UY,HN,CL,PY,CO,BO,GT,CR,BR,AR,PA,PE,NI,EC",P6FNJUAP4,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,South America (15+ areas),South America 5GB 30Days,$21.00,$42.00,SA-18,5,30,SA-18_5_30,"PR,SV,MQ,UY,HN,CL,PY,CO,BO,GT,CR,BR,AR,PA,PE,NI,EC",CKH489,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,South Korea,South Korea 1GB/Day,$0.80,$1.60,KR,1,1,KR_1_Daily,KR,PR7PDLXPX,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,South Korea,South Korea 500MB/Day,$0.40,$0.80,KR,0,1,KR_0.5_Daily,KR,P21XNC9CT,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Thailand,Thailand 1GB/Day,$0.90,$1.80,TH,1,1,TH_1_Daily,TH,P5V3QF0VA,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Thailand,Thailand 500MB/Day,$0.50,$1.00,TH,0,1,TH_0.5_Daily,TH,PZ9GTBKFR,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,United Kingdom,United Kingdom 1GB/Day,$0.80,$1.60,GB,1,1,GB_1_Daily,GB,P0YFEWXGN,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United Kingdom,United Kingdom 2GB/Day,$1.55,$3.10,GB,2,1,GB_2_Daily,GB,P9XKTG7UW,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United Kingdom,United Kingdom 500MB/Day,$0.60,$1.20,GB,0,1,GB_0.5_Daily,GB,PF527KUIR,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 1.5GB/Day,$1.60,$3.20,US,1,1,US_1.5_Daily,US,P7KMNQCEM,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 1GB/Day,$1.30,$2.60,US,1,1,US_1_Daily,US,P5NHFJKUS,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 2GB/Day,$2.30,$4.60,US,2,1,US_2_Daily,US,P2D1OQDLK,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 3GB 15Days,$2.20,$4.40,US,3,15,US_3_15,US,PGDINBJBY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Aaland Islands,Aaland Islands 1GB 7Days,$1.80,$3.60,AX,1,7,AX_1_7,AX,CKH256,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Aaland Islands,Aaland Islands 20GB 30Days,$20.00,$40.00,AX,20,30,AX_20_30,AX,CKH740,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Aaland Islands,Aaland Islands 3GB 15Days,$4.60,$9.20,AX,3,15,AX_3_15,AX,CKH257,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Aaland Islands,Aaland Islands 3GB 30Days,$4.70,$9.40,AX,3,30,AX_3_30,AX,CKH105,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Aaland Islands,Aaland Islands 5GB 30Days,$7.00,$14.00,AX,5,30,AX_5_30,AX,CKH144,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Albania,Albania 10GB 30Days,$18.50,$37.00,AL,10,30,AL_10_30,AL,CKH952,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Albania,Albania 1GB 7Days,$2.90,$5.80,AL,1,7,AL_1_7,AL,CKH525,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Albania,Albania 20GB 30Days,$33.00,$66.00,AL,20,30,AL_20_30,AL,CKH953,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Albania,Albania 3GB 15Days,$6.00,$12.00,AL,3,15,AL_3_15,AL,CKH548,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Albania,Albania 3GB 30Days,$7.30,$14.60,AL,3,30,AL_3_30,AL,PL5JS8GQQ,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Albania,Albania 5GB 30Days,$11.00,$22.00,AL,5,30,AL_5_30,AL,CKH549,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Algeria,Algeria 10GB 30Days,$7.60,$15.20,DZ,10,30,DZ_10_30,DZ,CKH809,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Algeria,Algeria 1GB 7Days,$1.10,$2.20,DZ,1,7,DZ_1_7,DZ,CKH515,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Algeria,Algeria 20GB 30Days,$12.90,$25.80,DZ,20,30,DZ_20_30,DZ,CKH810,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Algeria,Algeria 3GB 15Days,$2.80,$5.60,DZ,3,15,DZ_3_15,DZ,CKH551,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Algeria,Algeria 5GB 30Days,$4.40,$8.80,DZ,5,30,DZ_5_30,DZ,CKH552,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,NL
+Single,Argentina,Argentina 1GB 7Days,$3.60,$7.20,AR,1,7,AR_1_7,AR,CKH293,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Argentina,Argentina 20GB 30Days,$40.00,$80.00,AR,20,30,AR_20_30,AR,CKH858,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Argentina,Argentina 3GB 15Days,$8.90,$17.80,AR,3,15,AR_3_15,AR,CKH294,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Armenia,Armenia 1GB 7Days,$5.70,$11.40,AM,1,7,AM_1_7,AM,CKH514,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Armenia,Armenia 20GB 30Days,$123.00,$246.00,AM,20,30,AM_20_30,AM,CKH776,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Armenia,Armenia 3GB 15Days,$14.10,$28.20,AM,3,15,AM_3_15,AM,CKH555,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Armenia,Armenia 3GB 30Days,$14.40,$28.80,AM,3,30,AM_3_30,AM,CKH030,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Multi-Area,Asia (12 areas),Asia (12 areas) 10GB 30Days,$22.90,$45.80,AS-12,10,30,AS-12_10_30,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",P32JCTKR0,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 1GB/Day,$3.40,$6.80,AS-12,1,1,AS-12_1_Daily,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PXJ8HG40S,First Network Connection,180,3G/4G,Non-reloadable,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 20GB 30Days,$39.90,$79.80,AS-12,20,30,AS-12_20_30,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PWXD16M3T,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 2GB/Day,$6.60,$13.20,AS-12,2,1,AS-12_2_Daily,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PVBKS19B4,First Network Connection,180,3G/4G,Non-reloadable,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 3GB 30Days,$9.00,$18.00,AS-12,3,30,AS-12_3_30,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PTHP265BC,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 3GB/Day,$8.70,$17.40,AS-12,3,1,AS-12_3_Daily,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PM5T3Z4UM,First Network Connection,180,3G/4G,Non-reloadable,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 500MB/Day,$1.90,$3.80,AS-12,0,1,AS-12_0.5_Daily,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",PACK04L3R,First Network Connection,180,3G/4G,Non-reloadable,HK
+Multi-Area,Asia (12 areas),Asia (12 areas) 5GB 30Days,$13.50,$27.00,AS-12,5,30,AS-12_5_30,"MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",P9ESS1C2D,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 1GB/Day,$1.70,$3.40,AS-7,1,1,AS-7_1_Daily,"TH,SG,VN,PH,ID,MY,KH",P0N8SUBG5,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 2GB/Day,$3.00,$6.00,AS-7,2,1,AS-7_2_Daily,"TH,SG,VN,PH,ID,MY,KH",PBZUB2S60,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 500MB/Day,$0.90,$1.80,AS-7,0,1,AS-7_0.5_Daily,"TH,SG,VN,PH,ID,MY,KH",PX5NT8Z4K,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Asia (7 areas),Asia (7 areas) 5GB/Day,$6.00,$12.00,AS-7,5,1,AS-7_5_Daily,"TH,SG,VN,PH,ID,MY,KH",PJ2W7KTJ4,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Australia,Australia 10GB 30Days,$4.70,$9.40,AU,10,30,AU_10_30,AU,JC101,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 10GB/Day,$9.30,$18.60,AU,10,1,AU_10_Daily,AU,PWV71AAT5,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Australia,Australia 1GB 7Days,$0.70,$1.40,AU,1,7,AU_1_7,AU,JC018,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 20GB 30Days,$8.20,$16.40,AU,20,30,AU_20_30,AU,JC102,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 2GB/Day,$2.00,$4.00,AU,2,1,AU_2_Daily,AU,PRUQ8T3B2,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Australia,Australia 3GB 15Days,$1.70,$3.40,AU,3,15,AU_3_15,AU,JC019,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 3GB 30Days,$1.90,$3.80,AU,3,30,AU_3_30,AU,PM2ZWH3G5,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 3GB/Day,$2.85,$5.70,AU,3,1,AU_3_Daily,AU,P4GHU52FZ,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Australia,Australia 50GB 180Days,$28.00,$56.00,AU,50,180,AU_50_180,AU,POU9P9TSZ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Australia,Australia 5GB 30Days,$2.70,$5.40,AU,5,30,AU_5_30,AU,JC020,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Austria,Austria 10GB 30Days,$6.10,$12.20,AT,10,30,AT_10_30,AT,CKH159,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Austria,Austria 1GB 7Days,$0.90,$1.80,AT,1,7,AT_1_7,AT,CKH157,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Austria,Austria 20GB 30Days,$10.60,$21.20,AT,20,30,AT_20_30,AT,CKH537,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Austria,Austria 3GB 15Days,$2.20,$4.40,AT,3,15,AT_3_15,AT,CKH158,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Austria,Austria 3GB 30Days,$2.30,$4.60,AT,3,30,AT_3_30,AT,CKH076,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Austria,Austria 50GB 180Days,$22.00,$44.00,AT,50,180,AT_50_180,AT,PJG7CZ02I,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Austria,Austria 5GB 30Days,$3.40,$6.80,AT,5,30,AT_5_30,AT,CKH115,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Azerbaijan,Azerbaijan 1GB 7Days,$7.10,$14.20,AZ,1,7,AZ_1_7,AZ,CKH281,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Azerbaijan,Azerbaijan 3GB 15Days,$17.60,$35.20,AZ,3,15,AZ_3_15,AZ,CKH282,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Azerbaijan,Azerbaijan 3GB 30Days,$17.90,$35.80,AZ,3,30,AZ_3_30,AZ,CKH032,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bahrain,Bahrain 1GB 7Days,$4.60,$9.20,BH,1,7,BH_1_7,BH,CKH289,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bahrain,Bahrain 1GB/Day,$4.50,$9.00,BH,1,1,BH_1_Daily,BH,PU3UL09EV,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Bahrain,Bahrain 2GB/Day,$8.90,$17.80,BH,2,1,BH_2_Daily,BH,PCF04T9CZ,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Bahrain,Bahrain 3GB 15Days,$11.20,$22.40,BH,3,15,BH_3_15,BH,CKH290,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bahrain,Bahrain 3GB 30Days,$11.40,$22.80,BH,3,30,BH_3_30,BH,CKH035,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bahrain,Bahrain 3GB/Day,$11.10,$22.20,BH,3,1,BH_3_Daily,BH,PX05WUEX1,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Bahrain,Bahrain 500MB/Day,$2.25,$4.50,BH,0,1,BH_0.5_Daily,BH,PS4XW6D9Y,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Bangladesh,Bangladesh 1GB 7Days,$2.90,$5.80,BD,1,7,BD_1_7,BD,JC110,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Bangladesh,Bangladesh 20GB 30Days,$32.00,$64.00,BD,20,30,BD_20_30,BD,JC156,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Bangladesh,Bangladesh 3GB 15Days,$7.20,$14.40,BD,3,15,BD_3_15,BD,JC112,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Bangladesh,Bangladesh 5GB 30Days,$11.00,$22.00,BD,5,30,BD_5_30,BD,JC113,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Belarus,Belarus 1GB 7Days,$2.10,$4.20,BY,1,7,BY_1_7,BY,EF4MLC10,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Belarus,Belarus 3GB 15Days,$6.30,$12.60,BY,3,15,BY_3_15,BY,ALL95F6M,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Belarus,Belarus 5GB 30Days,$10.50,$21.00,BY,5,30,BY_5_30,BY,G9EDN4W6,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Belgium,Belgium 10GB 30Days,$6.10,$12.20,BE,10,30,BE_10_30,BE,CKH204,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Belgium,Belgium 1GB 7Days,$0.90,$1.80,BE,1,7,BE_1_7,BE,CKH202,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Belgium,Belgium 1GB/Day,$0.85,$1.70,BE,1,1,BE_1_Daily,BE,PWRT10ZX4,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Belgium,Belgium 20GB 30Days,$10.60,$21.20,BE,20,30,BE_20_30,BE,CKH502,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Belgium,Belgium 3GB 15Days,$2.20,$4.40,BE,3,15,BE_3_15,BE,CKH203,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Belgium,Belgium 3GB 30Days,$2.30,$4.60,BE,3,30,BE_3_30,BE,CKH077,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Belgium,Belgium 50GB 180Days,$22.00,$44.00,BE,50,180,BE_50_180,BE,PJ4UJHAJC,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Belgium,Belgium 5GB 30Days,$3.40,$6.80,BE,5,30,BE_5_30,BE,CKH116,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bolivia,Bolivia 1GB 7Days,$5.70,$11.40,BO,1,7,BO_1_7,BO,CKH297,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bolivia,Bolivia 20GB 30Days,$99.00,$198.00,BO,20,30,BO_20_30,BO,CKH831,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bolivia,Bolivia 3GB 15Days,$16.80,$33.60,BO,3,15,BO_3_15,BO,CKH298,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bosnia and Herzegovina,Bosnia and Herzegovina 1GB 7Days,$4.60,$9.20,BA,1,7,BA_1_7,BA,CKH531,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Bosnia and Herzegovina,Bosnia and Herzegovina 3GB 15Days,$11.20,$22.40,BA,3,15,BA_3_15,BA,CKH563,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Botswana,Botswana 1GB 7Days,$7.10,$14.20,BW,1,7,BW_1_7,BW,CKH368,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Botswana,Botswana 3GB 15Days,$17.60,$35.20,BW,3,15,BW_3_15,BW,CKH397,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Brazil,Brazil 10GB 30Days Single Use,$22.80,$45.60,BR,10,30,BR_10_30_End,BR,P2QDY5WD1,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brazil,Brazil 1GB 7Days,$2.30,$4.60,BR,1,7,BR_1_7,BR,CKH301,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Brazil,Brazil 1GB 7Days Single Use,$2.80,$5.60,BR,1,7,BR_1_7_End,BR,P7QUD52XF,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brazil,Brazil 1GB/Day,$2.20,$4.40,BR,1,1,BR_1_Daily,BR,PT5G8VBW7,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brazil,Brazil 20GB 30Days,$25.00,$50.00,BR,20,30,BR_20_30,BR,CKH860,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Brazil,Brazil 3GB 15Days,$5.70,$11.40,BR,3,15,BR_3_15,BR,CKH317,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Brazil,Brazil 3GB 30Days Single Use,$7.50,$15.00,BR,3,30,BR_3_30_End,BR,P4J9BRTA3,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brazil,Brazil 500MB/Day,$1.10,$2.20,BR,0,1,BR_0.5_Daily,BR,P74QTP3AR,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brazil,Brazil 5GB 30Days Single Use,$12.50,$25.00,BR,5,30,BR_5_30_End,BR,PVYS147BB,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brazil,Brazil 5GB/Day,$8.70,$17.40,BR,5,1,BR_5_Daily,BR,PUQ2TP57A,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Brunei Darussalam,Brunei Darussalam 1GB 7Days,$4.60,$9.20,BN,1,7,BN_1_7,BN,CKH833,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Brunei Darussalam,Brunei Darussalam 1GB/Day,$14.50,$29.00,BN,1,1,BN_1_Daily,BN,PU2ENL69H,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Brunei Darussalam,Brunei Darussalam 20GB 30Days,$50.00,$100.00,BN,20,30,BN_20_30,BN,CKH837,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Brunei Darussalam,Brunei Darussalam 3GB 15Days,$11.20,$22.40,BN,3,15,BN_3_15,BN,CKH834,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Brunei Darussalam,Brunei Darussalam 500MB/Day,$9.30,$18.60,BN,0,1,BN_0.5_Daily,BN,PRWWKX908,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Bulgaria,Bulgaria 10GB 30Days,$6.10,$12.20,BG,10,30,BG_10_30,BG,CKH207,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bulgaria,Bulgaria 1GB 7Days,$0.90,$1.80,BG,1,7,BG_1_7,BG,CKH205,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bulgaria,Bulgaria 3GB 15Days,$2.20,$4.40,BG,3,15,BG_3_15,BG,CKH206,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bulgaria,Bulgaria 3GB 30Days,$2.30,$4.60,BG,3,30,BG_3_30,BG,CKH078,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Bulgaria,Bulgaria 50GB 180Days,$30.00,$60.00,BG,50,180,BG_50_180,BG,PQQINSIX3,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Burkina Faso,Burkina Faso 1GB 7Days,$7.10,$14.20,BF,1,7,BF_1_7,BF,CKH521,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Burkina Faso,Burkina Faso 3GB 15Days,$17.60,$35.20,BF,3,15,BF_3_15,BF,CKH572,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Burkina Faso,Burkina Faso 5GB 30Days,$26.00,$52.00,BF,5,30,BF_5_30,BF,CKH573,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cambodia,Cambodia 10GB 30Days,$15.20,$30.40,KH,10,30,KH_10_30,KH,JC149,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Cambodia,Cambodia 1GB 7Days,$2.30,$4.60,KH,1,7,KH_1_7,KH,JC109,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Cambodia,Cambodia 20GB 30Days,$25.00,$50.00,KH,20,30,KH_20_30,KH,JC150,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Cambodia,Cambodia 3GB 15Days,$5.70,$11.40,KH,3,15,KH_3_15,KH,JC115,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Cameroon,Cameroon 1GB 7Days,$7.10,$14.20,CM,1,7,CM_1_7,CM,CKH526,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cameroon,Cameroon 3GB 15Days,$17.60,$35.20,CM,3,15,CM_3_15,CM,CKH575,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Canada,Canada 10GB 30Days,$15.20,$30.40,CA,10,30,CA_10_30,CA,CKH778,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,PL
+Single,Canada,Canada 10GB 30Days Single Use,$18.00,$36.00,CA,10,30,CA_10_30_End,CA,P62Q7VLTJ,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Canada,Canada 1GB 7Days,$2.30,$4.60,CA,1,7,CA_1_7,CA,CKH516,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,PL
+Single,Canada,Canada 1GB 7Days Single Use,$2.50,$5.00,CA,1,7,CA_1_7_End,CA,PNGH5E6S7,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Canada,Canada 20GB 30Days,$25.00,$50.00,CA,20,30,CA_20_30,CA,CKH779,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,PL
+Single,Canada,Canada 3GB  30Days Single Use,$6.60,$13.20,CA,3,30,CA_3_30_End,CA,PUYZ1X5Z9,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Canada,Canada 3GB 15Days,$5.70,$11.40,CA,3,15,CA_3_15,CA,CKH578,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,PL
+Single,Canada,Canada 3GB/Day,$5.40,$10.80,CA,3,1,CA_3_Daily,CA,P58GBEZQ3,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Canada,Canada 500MB/Day,$0.90,$1.80,CA,0,1,CA_0.5_Daily,CA,PPPTNR783,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Canada,Canada 5GB  30Days Single Use,$10.00,$20.00,CA,5,30,CA_5_30_End,CA,PL1YY76UZ,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,Canada,Canada 5GB 30Days,$8.80,$17.60,CA,5,30,CA_5_30,CA,CKH579,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 10GB 30Days Single Use,$44.90,$89.80,CB-25,10,30,CB-24_10_30_End,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",PCHZ59M2J,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 1GB 7Days Single Use,$5.90,$11.80,CB-25,1,7,CB-24_1_7_End,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",PUSHF5X80,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 1GB/Day,$6.80,$13.60,CB-25,1,1,CB-24_1_Daily,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",P8JCL47FC,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 3GB 30Days Single Use,$14.90,$29.80,CB-25,3,30,CB-24_3_30_End,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",PQB69VW8U,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 500MB/Day,$3.00,$6.00,CB-25,0,1,CB-24_0.5_Daily,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",PX2WSA7L1,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 5GB 30Days Single Use,$26.90,$53.80,CB-25,5,30,CB-24_5_30_End,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",P7GA02CZP,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Caribbean (20+ areas),Caribbean (20+ areas) 5GB/Day,$35.00,$70.00,CB-25,5,1,CB-24_5_Daily,"BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",PX18HJ4XW,First Network Connection,180,3G/4G,Non-reloadable,PL
+Single,Central African Republic,Central African Republic 1GB 7Days,$7.10,$14.20,CF,1,7,CF_1_7,CF,CKH370,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Central African Republic,Central African Republic 3GB 15Days,$17.60,$35.20,CF,3,15,CF_3_15,CF,CKH399,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Central African Republic,Central African Republic 5GB 30Days,$26.00,$52.00,CF,5,30,CF_5_30,CF,CKH428,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Central Asia,Central Asia 10GB/Day,$10.80,$21.60,AS-5,10,1,AS-5_10_Daily,"UZ,PK,KG,KZ,LK",PGP9AZY26,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Central Asia,Central Asia 1GB/Day,$1.40,$2.80,AS-5,1,1,AS-5_1_Daily,"UZ,PK,KG,KZ,LK",PJA28XEA7,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Central Asia,Central Asia 500MB/Day,$0.60,$1.20,AS-5,0,1,AS-5_0.5_Daily,"UZ,PK,KG,KZ,LK",P712EDLGB,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Central Asia,Central Asia 5GB/Day,$6.00,$12.00,AS-5,5,1,AS-5_5_Daily,"UZ,PK,KG,KZ,LK",P9RS4VV0A,First Network Connection,180,3G/4G,Non-reloadable,PL
+Single,Chad,Chad 1GB 7Days,$5.70,$11.40,TD,1,7,TD_1_7,TD,CKH371,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Chad,Chad 3GB 15Days,$14.10,$28.20,TD,3,15,TD_3_15,TD,CKH400,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Chad,Chad 5GB 30Days,$21.00,$42.00,TD,5,30,TD_5_30,TD,CKH429,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Chile,Chile 1GB 7Days,$5.70,$11.40,CL,1,7,CL_1_7,CL,CKH302,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Chile,Chile 3GB 15Days,$14.10,$28.20,CL,3,15,CL_3_15,CL,CKH318,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 1GB/Day,$1.60,$3.20,CN-3,1,1,CN-3_1_Daily,"MO,HK,CN",P78RBUJQ4,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 2GB/Day,$2.50,$5.00,CN-3,2,1,CN-3_2_Daily,"MO,HK,CN",PY0WGY2C1,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 3GB 30Days,$3.90,$7.80,CN-3,3,30,CN-3_3_30,"MO,HK,CN",P4G59TWEY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 3GB/Day,$3.80,$7.60,CN-3,3,1,CN-3_3_Daily,"MO,HK,CN",PB64TT7WN,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,China (mainland HK Macao),China (mainland HK Macao) 500MB/Day,$0.90,$1.80,CN-3,0,1,CN-3_0.5_Daily,"MO,HK,CN",PN6QWT0Q4,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,China mainland,China 10GB 30Days,$4.70,$9.40,CN,10,30,CN_10_30,CN,JC055,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China 1GB 7Days,$0.70,$1.40,CN,1,7,CN_1_7,CN,JC052,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China 20GB 30Days,$8.20,$16.40,CN,20,30,CN_20_30,CN,JC090,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China 3GB 15Days,$1.70,$3.40,CN,3,15,CN_3_15,CN,JC053,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China 3GB 30Days,$1.80,$3.60,CN,3,30,CN_3_30,CN,P0R7HML2W,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China 50GB 180Days,$28.00,$56.00,CN,50,180,CN_50_180,CN,PXI7MA5MW,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China 5GB 30Days,$2.70,$5.40,CN,5,30,CN_5_30,CN,JC054,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 10GB 30Days,$15.20,$30.40,CNJPKR-3,10,30,CNJPKR-3_10_30,"JP,KR,CN",P5JHQ39EE,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 1GB 7Days,$2.30,$4.60,CNJPKR-3,1,7,CNJPKR-3_1_7,"JP,KR,CN",P4XU0X3CX,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 1GB/Day,$2.20,$4.40,CNJPKR-3,1,1,CNJPKR-3_1_Daily,"JP,KR,CN",P8SU7BG1W,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 20GB 30Days,$25.00,$50.00,CNJPKR-3,20,30,CNJPKR-3_20_30,"JP,KR,CN",P93F7ZCSY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 2GB/Day,$4.30,$8.60,CNJPKR-3,2,1,CNJPKR-3_2_Daily,"JP,KR,CN",P1Z74ZBVM,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 3GB 15Days,$5.70,$11.40,CNJPKR-3,3,15,CNJPKR-3_3_15,"JP,KR,CN",P9Q0XP8HU,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 3GB 30Days,$5.90,$11.80,CNJPKR-3,3,30,CNJPKR-3_3_30,"JP,KR,CN",P64BPV0PR,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 500MB/Day,$1.20,$2.40,CNJPKR-3,0,1,CNJPKR-3_0.5_Daily,"JP,KR,CN",PD4EBQ08R,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,China mainland & Japan & South Korea ,China mainland & Japan & South Korea 5GB 30Days,$8.80,$17.60,CNJPKR-3,5,30,CNJPKR-3_5_30,"JP,KR,CN",P5KZF2WY6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,China mainland,China mainland 10GB 30Days (nonhkip),$7.70,$15.40,CN,10,30,CN_10_30_nonhkip,CN,PYEJ62J8F,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,China mainland,China mainland 1GB 7Days (nonhkip),$1.15,$2.30,CN,1,7,CN_1_7_nonhkip,CN,PW3XK1K7U,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,China mainland,China mainland 1GB/Day (nonhkip),$1.10,$2.20,CN,1,1,CN_1_Daily_nonhkip,CN,P6JDSP39N,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,China mainland,China mainland 20GB 30Days (nonhkip),$15.70,$31.40,CN,20,30,CN_20_30_nonhkip,CN,P0XPU6NY1,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,China mainland,China mainland 2GB/Day,$1.20,$2.40,CN,2,1,CN_2_Daily,CN,PBUK9LV51,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,China mainland,China mainland 2GB/Day (nonhkip),$2.00,$4.00,CN,2,1,CN_2_Daily_nonhkip,CN,PYWR9L63K,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,China mainland,China mainland 3GB 15Days (nonhkip),$2.75,$5.50,CN,3,15,CN_3_15_nonhkip,CN,PG2YTC5T6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,China mainland,China mainland 500MB/Day (nonhkip),$0.60,$1.20,CN,0,1,CN_0.5_Daily_nonhkip,CN,PBA7XW0H5,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,China mainland,China mainland 5GB 30Days (nonhkip),$4.00,$8.00,CN,5,30,CN_5_30_nonhkip,CN,PJ21HG5FJ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,China mainland,China mainland 5GB/Day,$2.40,$4.80,CN,5,1,CN_5_Daily,CN,P78LXV6UX,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Colombia,Colombia 1GB 7Days,$5.70,$11.40,CO,1,7,CO_1_7,CO,CKH303,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Colombia,Colombia 3GB 15Days,$14.40,$28.80,CO,3,15,CO_3_15,CO,CKH319,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Congo,Congo 1GB 7Days,$5.70,$11.40,CG,1,7,CG_1_7,CG,MB023,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Congo,Congo 3GB 15Days,$14.10,$28.20,CG,3,15,CG_3_15,CG,MB028,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Congo,Congo 5GB 30Days,$21.00,$42.00,CG,5,30,CG_5_30,CG,MB033,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Costa Rica,Costa Rica 1GB 7Days,$4.60,$9.20,CR,1,7,CR_1_7,CR,CKH304,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Costa Rica,Costa Rica 3GB 15Days,$11.20,$22.40,CR,3,15,CR_3_15,CR,CKH320,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cote d'Ivoire,Cote d'Ivoire 1GB 7Days,$7.10,$14.20,CI,1,7,CI_1_7,CI,CKH374,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cote d'Ivoire,Cote d'Ivoire 3GB 15Days,$17.60,$35.20,CI,3,15,CI_3_15,CI,CKH403,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cote d'Ivoire,Cote d'Ivoire 5GB 30Days,$26.00,$52.00,CI,5,30,CI_5_30,CI,CKH432,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 10GB 30Days,$6.10,$12.20,HR,10,30,HR_10_30,HR,CKH162,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 1GB 7Days,$0.90,$1.80,HR,1,7,HR_1_7,HR,CKH160,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 20GB 30Days,$10.60,$21.20,HR,20,30,HR_20_30,HR,CKH539,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 3GB 15Days,$2.20,$4.40,HR,3,15,HR_3_15,HR,CKH161,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 3GB 30Days,$2.30,$4.60,HR,3,30,HR_3_30,HR,CKH079,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 50GB 180Days,$28.00,$56.00,HR,50,180,HR_50_180,HR,PQCZMPBQD,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Croatia,Croatia 5GB 30Days,$3.40,$6.80,HR,5,30,HR_5_30,HR,CKH118,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cyprus,Cyprus 10GB 30Days,$6.10,$12.20,CY,10,30,CY_10_30,CY,CKH210,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cyprus,Cyprus 1GB 7Days,$0.90,$1.80,CY,1,7,CY_1_7,CY,CKH208,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cyprus,Cyprus 3GB 15Days,$2.20,$4.40,CY,3,15,CY_3_15,CY,CKH209,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cyprus,Cyprus 3GB 30Days,$2.30,$4.60,CY,3,30,CY_3_30,CY,CKH080,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cyprus,Cyprus 50GB 180Days,$30.00,$60.00,CY,50,180,CY_50_180,CY,PXHQDYUBO,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Cyprus,Cyprus 5GB 30Days,$3.40,$6.80,CY,5,30,CY_5_30,CY,CKH119,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 10GB 30Days,$6.10,$12.20,CZ,10,30,CZ_10_30,CZ,CKH165,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 1GB 7Days,$0.90,$1.80,CZ,1,7,CZ_1_7,CZ,CKH163,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 20GB 30Days,$10.60,$21.20,CZ,20,30,CZ_20_30,CZ,CKH541,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 3GB 15Days,$2.20,$4.40,CZ,3,15,CZ_3_15,CZ,CKH164,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 3GB 30Days,$2.30,$4.60,CZ,3,30,CZ_3_30,CZ,CKH081,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 50GB 180Days,$30.00,$60.00,CZ,50,180,CZ_50_180,CZ,PVFLCUSP6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Czech Republic,Czech Republic 5GB 30Days,$3.40,$6.80,CZ,5,30,CZ_5_30,CZ,CKH120,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 10GB 30Days,$6.10,$12.20,DK,10,30,DK_10_30,DK,CKH168,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 1GB 7Days,$0.90,$1.80,DK,1,7,DK_1_7,DK,CKH166,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 20GB 30Days,$10.60,$21.20,DK,20,30,DK_20_30,DK,CKH543,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 3GB 15Days,$2.20,$4.40,DK,3,15,DK_3_15,DK,CKH167,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 3GB 30Days,$2.30,$4.60,DK,3,30,DK_3_30,DK,CKH082,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 50GB 180Days,$22.00,$44.00,DK,50,180,DK_50_180,DK,PJJEKFZJ0,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Denmark,Denmark 5GB 30Days,$3.40,$6.80,DK,5,30,DK_5_30,DK,CKH121,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Dominican Republic,Dominican Republic 1GB 7Days,$5.70,$11.40,DO,1,7,DO_1_7,DO,JC158,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Dominican Republic,Dominican Republic 20GB 30Days,$63.00,$126.00,DO,20,30,DO_20_30,DO,JC162,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Dominican Republic,Dominican Republic 3GB 15Days,$14.10,$28.20,DO,3,15,DO_3_15,DO,JC159,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Dominican Republic,Dominican Republic 5GB 30Days,$21.00,$42.00,DO,5,30,DO_5_30,DO,JC160,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Ecuador,Ecuador 1GB 7Days,$4.60,$9.20,EC,1,7,EC_1_7,EC,CKH305,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ecuador,Ecuador 3GB 15Days,$11.20,$22.40,EC,3,15,EC_3_15,EC,CKH321,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Egypt,Egypt 10GB 30Days,$12.20,$24.40,EG,10,30,EG_10_30,EG,MB039,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Egypt,Egypt 1GB 7Days,$1.80,$3.60,EG,1,7,EG_1_7,EG,MB024,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Egypt,Egypt 1GB/Day,$1.70,$3.40,EG,1,1,EG_1_Daily,EG,PK564ELYK,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Egypt,Egypt 3GB 15Days,$4.60,$9.20,EG,3,15,EG_3_15,EG,MB029,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Egypt,Egypt 500MB/Day,$1.00,$2.00,EG,0,1,EG_0.5_Daily,EG,P6XTH0M8D,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Egypt,Egypt 5GB 30Days,$8.80,$17.60,EG,5,30,EG_5_30,EG,MB034,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,El Salvador,El Salvador 1GB 7Days,$5.70,$11.40,SV,1,7,SV_1_7,SV,CKH306,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,El Salvador,El Salvador 3GB 15Days,$14.10,$28.20,SV,3,15,SV_3_15,SV,CKH322,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 10GB 30Days,$6.10,$12.20,EE,10,30,EE_10_30,EE,CKH213,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 1GB 7Days,$0.90,$1.80,EE,1,7,EE_1_7,EE,CKH211,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 20GB 30Days,$10.60,$21.20,EE,20,30,EE_20_30,EE,CKH710,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 3GB 15Days,$2.20,$4.40,EE,3,15,EE_3_15,EE,CKH212,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 3GB 30Days,$2.30,$4.60,EE,3,30,EE_3_30,EE,CKH083,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 50GB 180Days,$30.00,$60.00,EE,50,180,EE_50_180,EE,PF1EBHZY5,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Estonia,Estonia 5GB 30Days,$3.40,$6.80,EE,5,30,EE_5_30,EE,CKH122,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 300MB/Day,$0.45,$0.90,EU-30,0,1,EU-30_0.3_Daily,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",P82Y6VYRL,First Network Connection,180,3G/4G,Non-reloadable,UK/NO
+Multi-Area,Europe (30+ areas),Europe(30+ areas) 500MB/Day,$0.80,$1.60,EU-30,0,1,EU-30_0.5_Daily,"NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",P61RQP7ZW,First Network Connection,180,3G/4G,Non-reloadable,UK/NO
+Single,Finland,Finland 10GB 30Days,$4.70,$9.40,FI,10,30,FI_10_30,FI,CKH216,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Finland,Finland 1GB 7Days,$0.70,$1.40,FI,1,7,FI_1_7,FI,CKH214,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Finland,Finland 3GB 15Days,$1.70,$3.40,FI,3,15,FI_3_15,FI,CKH215,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Finland,Finland 3GB 30Days,$1.80,$3.60,FI,3,30,FI_3_30,FI,CKH084,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Finland,Finland 50GB 180Days,$28.00,$56.00,FI,50,180,FI_50_180,FI,PU4UANEPA,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Finland,Finland 5GB 30Days,$2.70,$5.40,FI,5,30,FI_5_30,FI,CKH123,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 10GB 30Days,$6.10,$12.20,FR,10,30,FR_10_30,FR,CKH992,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 1GB 7Days,$0.90,$1.80,FR,1,7,FR_1_7,FR,CKH990,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 1GB/Day,$0.85,$1.70,FR,1,1,FR_1_Daily,FR,PG0H26XJA,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,France,France 20GB 30Days,$10.60,$21.20,FR,20,30,FR_20_30,FR,CKH1005,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 2GB/Day,$1.20,$2.40,FR,2,1,FR_2_Daily,FR,P05WBGPG2,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,France,France 3GB 15Days,$2.20,$4.40,FR,3,15,FR_3_15,FR,CKH991,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 3GB 30Days,$2.30,$4.60,FR,3,30,FR_3_30,FR,CKH977,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 500MB/Day,$0.45,$0.90,FR,0,1,FR_0.5_Daily,FR,PL2WG7K9D,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,France,France 50GB 180Days,$22.00,$44.00,FR,50,180,FR_50_180,FR,P5ML89XJG,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 5GB 30Days,$3.40,$6.80,FR,5,30,FR_5_30,FR,CKH983,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,France,France 5GB/Day,$2.30,$4.60,FR,5,1,FR_5_Daily,FR,P2G8P5FHJ,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Gabon,Gabon 1GB 7Days,$4.60,$9.20,GA,1,7,GA_1_7,GA,CKH376,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Gabon,Gabon 3GB 15Days,$11.20,$22.40,GA,3,15,GA_3_15,GA,CKH405,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Georgia,Georgia 1GB 7Days,$1.50,$3.00,GE,1,7,GE_1_7,GE,CKH511,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Georgia,Georgia 20GB 30Days,$16.80,$33.60,GE,20,30,GE_20_30,GE,CKH743,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Georgia,Georgia 3GB 15Days,$3.70,$7.40,GE,3,15,GE_3_15,GE,CKH601,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Georgia,Georgia 3GB 30Days,$3.80,$7.60,GE,3,30,GE_3_30,GE,CKH970,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Georgia,Georgia 5GB 30Days,$5.70,$11.40,GE,5,30,GE_5_30,GE,CKH602,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Germany,Germany 10GB 30Days,$6.10,$12.20,DE,10,30,DE_10_30,DE,CKH995,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 1GB 7Days,$0.90,$1.80,DE,1,7,DE_1_7,DE,CKH993,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 20GB 30Days,$10.60,$21.20,DE,20,30,DE_20_30,DE,CKH1013,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 2GB/Day,$1.50,$3.00,DE,2,1,DE_2_Daily,DE,PQ6VQPJ28,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Germany,Germany 3GB 15Days,$2.20,$4.40,DE,3,15,DE_3_15,DE,CKH994,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 3GB 30Days,$2.30,$4.60,DE,3,30,DE_3_30,DE,CKH978,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 500MB/Day,$0.45,$0.90,DE,0,1,DE_0.5_Daily,DE,PQWSL862L,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Germany,Germany 50GB 180Days,$22.00,$44.00,DE,50,180,DE_50_180,DE,PMDYU8KU3,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 5GB 30Days,$3.40,$6.80,DE,5,30,DE_5_30,DE,CKH984,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Germany,Germany 5GB/Day,$2.50,$5.00,DE,5,1,DE_5_Daily,DE,P241WBSZG,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Gibraltar,Gibraltar 1GB 7Days,$2.90,$5.80,GI,1,7,GI_1_7,GI,CKH481,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Gibraltar,Gibraltar 3GB 15Days,$7.20,$14.40,GI,3,15,GI_3_15,GI,CKH482,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Gibraltar,Gibraltar 3GB 30Days,$7.30,$14.60,GI,3,30,GI_3_30,GI,CKH114,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 10GB 30Days,$6.10,$12.20,GR,10,30,GR_10_30,GR,CKH998,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 1GB 7Days,$0.90,$1.80,GR,1,7,GR_1_7,GR,CKH996,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 20GB 30Days,$10.60,$21.20,GR,20,30,GR_20_30,GR,CKH1007,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 3GB 15Days,$2.20,$4.40,GR,3,15,GR_3_15,GR,CKH997,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 3GB 30Days,$2.30,$4.60,GR,3,30,GR_3_30,GR,CKH979,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 50GB 180Days,$22.00,$44.00,GR,50,180,GR_50_180,GR,PGLSEATB8,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Greece,Greece 5GB 30Days,$3.40,$6.80,GR,5,30,GR_5_30,GR,CKH985,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Guadeloupe,Guadeloupe 1GB 7Days,$2.90,$5.80,GP,1,7,GP_1_7,GP,CKH812,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,Guadeloupe,Guadeloupe 20GB 30Days,$32.00,$64.00,GP,20,30,GP_20_30,GP,CKH816,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,Guadeloupe,Guadeloupe 3GB 15Days,$7.20,$14.40,GP,3,15,GP_3_15,GP,CKH813,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,UK/NO
+Single,Guatemala,Guatemala 1GB 7Days,$5.70,$11.40,GT,1,7,GT_1_7,GT,CKH309,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Guatemala,Guatemala 3GB 15Days,$14.10,$28.20,GT,3,15,GT_3_15,GT,CKH325,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Guernsey,Guernsey 1GB 7Days,$4.60,$9.20,GG,1,7,GG_1_7,GG,CKH608,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Guernsey,Guernsey 20GB 30Days,$50.00,$100.00,GG,20,30,GG_20_30,GG,CKH788,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Guernsey,Guernsey 3GB 15Days,$11.20,$22.40,GG,3,15,GG_3_15,GG,CKH609,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Guernsey,Guernsey 3GB 30Days,$11.40,$22.80,GG,3,30,GG_3_30,GG,CKH109,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Guernsey,Guernsey 5GB 30Days,$17.10,$34.20,GG,5,30,GG_5_30,GG,CKH148,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Multi-Area,Gulf Region,Gulf Region 10GB 30Days,$22.00,$44.00,ME-6,10,30,ME-6_10_30,"QA,AE,BH,IQ,KW,SA",P9DH2MUN5,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,PL
+Multi-Area,Gulf Region,Gulf Region 10GB/Day,$22.00,$44.00,ME-6,10,1,ME-6_10_Daily,"QA,AE,BH,IQ,KW,SA",PLR26GSE7,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Gulf Region,Gulf Region 1GB 7Days,$2.30,$4.60,ME-6,1,7,ME-6_1_7,"QA,AE,BH,IQ,KW,SA",PTJX062PT,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,PL
+Multi-Area,Gulf Region,Gulf Region 1GB/Day,$2.90,$5.80,ME-6,1,1,ME-6_1_Daily,"QA,AE,BH,IQ,KW,SA",P40YDJ9WA,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Gulf Region,Gulf Region 3GB 30Days,$6.80,$13.60,ME-6,3,30,ME-6_3_30,"QA,AE,BH,IQ,KW,SA",P8D7Q1CZY,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,PL
+Multi-Area,Gulf Region,Gulf Region 500MB/Day,$1.80,$3.60,ME-6,0,1,ME-6_0.5_Daily,"QA,AE,BH,IQ,KW,SA",PW9U86NGE,First Network Connection,180,3G/4G,Non-reloadable,PL
+Multi-Area,Gulf Region,Gulf Region 5GB 30Days,$10.80,$21.60,ME-6,5,30,ME-6_5_30,"QA,AE,BH,IQ,KW,SA",PK2BXX9B4,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,PL
+Multi-Area,Gulf Region,Gulf Region 5GB/Day,$10.80,$21.60,ME-6,5,1,ME-6_5_Daily,"QA,AE,BH,IQ,KW,SA",PLK713DWL,First Network Connection,180,3G/4G,Non-reloadable,PL
+Single,Honduras,Honduras 1GB 7Days,$4.60,$9.20,HN,1,7,HN_1_7,HN,CKH310,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Honduras,Honduras 3GB 15Days,$11.20,$22.40,HN,3,15,HN_3_15,HN,CKH326,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hong Kong (China),Hong Kong (China) 500MB/Day,$0.45,$0.90,HK,0,1,HK_0.5_Daily,HK,P6SW3B9NG,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Hong Kong (China),Hong Kong 10GB 30Days,$4.70,$9.40,HK,10,30,HK_10_30,HK,JC023,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 1GB 7Days,$0.70,$1.40,HK,1,7,HK_1_7,HK,JC021,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 20GB 30Days,$8.20,$16.40,HK,20,30,HK_20_30,HK,JC104,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 3GB 15Days,$1.70,$3.40,HK,3,15,HK_3_15,HK,JC022,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 3GB 30Days,$1.80,$3.60,HK,3,30,HK_3_30,HK,JC004,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 50GB 180Days,$32.00,$64.00,HK,50,180,HK_50_180,HK,P4MCCLBKV,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hong Kong (China),Hong Kong 5GB 30Days,$2.70,$5.40,HK,5,30,HK_5_30,HK,JC005,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Hungary,Hungary 10GB 30Days,$6.10,$12.20,HU,10,30,HU_10_30,HU,CKH180,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hungary,Hungary 1GB 7Days,$0.90,$1.80,HU,1,7,HU_1_7,HU,CKH178,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hungary,Hungary 20GB 30Days,$10.60,$21.20,HU,20,30,HU_20_30,HU,CKH545,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hungary,Hungary 3GB 15Days,$2.20,$4.40,HU,3,15,HU_3_15,HU,CKH179,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hungary,Hungary 3GB 30Days,$2.30,$4.60,HU,3,30,HU_3_30,HU,CKH088,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hungary,Hungary 50GB 180Days,$22.00,$44.00,HU,50,180,HU_50_180,HU,PNLUHHYLQ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Hungary,Hungary 5GB 30Days,$3.40,$6.80,HU,5,30,HU_5_30,HU,CKH127,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 10GB 30Days,$9.90,$19.80,IS,10,30,IS_10_30,IS,CKH219,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 1GB 7Days,$1.50,$3.00,IS,1,7,IS_1_7,IS,CKH217,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 20GB 30Days,$16.80,$33.60,IS,20,30,IS_20_30,IS,CKH714,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 3GB 15Days,$3.70,$7.40,IS,3,15,IS_3_15,IS,CKH218,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 3GB 30Days,$3.80,$7.60,IS,3,30,IS_3_30,IS,CKH089,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 50GB 180Days,$37.00,$74.00,IS,50,180,IS_50_180,IS,PKK3BVKVF,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Iceland,Iceland 5GB 30Days,$5.70,$11.40,IS,5,30,IS_5_30,IS,CKH128,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,India,India 10GB 30Days,$19.00,$38.00,IN,10,30,IN_10_30,IN,JC140,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,India,India 1GB 7Days,$2.90,$5.80,IN,1,7,IN_1_7,IN,JC060,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,India,India 20GB 30Days,$32.00,$64.00,IN,20,30,IN_20_30,IN,JC141,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,India,India 2GB/Day,$4.00,$8.00,IN,2,1,IN_2_Daily,IN,PKS9FL7X0,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,India,India 3GB 15Days,$7.20,$14.40,IN,3,15,IN_3_15,IN,JC061,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,India,India 5GB 30Days,$11.00,$22.00,IN,5,30,IN_5_30,IN,JC062,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Indonesia,Indonesia 10GB 30Days,$4.70,$9.40,ID,10,30,ID_10_30,ID,JC059,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Indonesia,Indonesia 10GB 30Days (nonhkip),$8.65,$17.30,ID,10,30,ID_10_30_nonhkip,ID,PSGW82WV9,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Indonesia,Indonesia 10GB/Day,$8.00,$16.00,ID,10,1,ID_10_Daily,ID,P2KEH0D5E,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Indonesia,Indonesia 1GB 7Days,$0.70,$1.40,ID,1,7,ID_1_7,ID,JC056,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Indonesia,Indonesia 1GB 7Days (nonhkip),$1.30,$2.60,ID,1,7,ID_1_7_nonhkip,ID,PRG960RGE,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Indonesia,Indonesia 1GB/Day (nonhkip),$1.20,$2.40,ID,1,1,ID_1_Daily_nonhkip,ID,P2TU7X1XJ,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Indonesia,Indonesia 20GB 30Days,$8.20,$16.40,ID,20,30,ID_20_30,ID,JC143,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Indonesia,Indonesia 20GB 30Days (nonhkip),$12.00,$24.00,ID,20,30,ID_20_30_nonhkip,ID,PNRFJ542B,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Indonesia,Indonesia 2GB/Day,$1.60,$3.20,ID,2,1,ID_2_Daily,ID,P3RA09KRL,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Indonesia,Indonesia 2GB/Day (nonhkip),$2.05,$4.10,ID,2,1,ID_2_Daily_nonhkip,ID,P09WQCRL3,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Indonesia,Indonesia 3GB 15Days,$1.70,$3.40,ID,3,15,ID_3_15,ID,JC057,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Indonesia,Indonesia 3GB 15Days (nonhkip),$3.00,$6.00,ID,3,15,ID_3_15_nonhkip,ID,P0BS87WNL,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Indonesia,Indonesia 3GB 30Days,$1.80,$3.60,ID,3,30,ID_3_30,ID,P3H6TP1TU,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Indonesia,Indonesia 3GB/Day,$2.40,$4.80,ID,3,1,ID_3_Daily,ID,PWV1DH08R,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Indonesia,Indonesia 500MB/Day (nonhkip),$0.76,$1.52,ID,0,1,ID_0.5_Daily_nonhkip,ID,PC374AFNY,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Indonesia,Indonesia 5GB 30Days,$2.70,$5.40,ID,5,30,ID_5_30,ID,JC058,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Indonesia,Indonesia 5GB 30Days (nonhkip),$5.00,$10.00,ID,5,30,ID_5_30_nonhkip,ID,P0YGLXY82,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Iraq,Iraq 1GB/Day,$2.20,$4.40,IQ,1,1,IQ_1_Daily,IQ,PS0TRW67Y,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Iraq,Iraq 2GB/Day,$4.30,$8.60,IQ,2,1,IQ_2_Daily,IQ,PQ206NZYN,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Iraq,Iraq 3GB/Day,$5.60,$11.20,IQ,3,1,IQ_3_Daily,IQ,P3YAYU76M,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Iraq,Iraq 500MB/Day,$1.10,$2.20,IQ,0,1,IQ_0.5_Daily,IQ,P6XJ4XAA1,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Ireland,Ireland 10GB 30Days,$6.10,$12.20,IE,10,30,IE_10_30,IE,CKH222,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 1GB 7Days,$0.90,$1.80,IE,1,7,IE_1_7,IE,CKH220,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 1GB/Day,$0.85,$1.70,IE,1,1,IE_1_Daily,IE,PC0TA4B6L,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Ireland,Ireland 20GB 30Days,$10.60,$21.20,IE,20,30,IE_20_30,IE,CKH720,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 3GB 15Days,$2.20,$4.40,IE,3,15,IE_3_15,IE,CKH221,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 3GB 30Days,$2.30,$4.60,IE,3,30,IE_3_30,IE,CKH090,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 500MB 3Days,$0.60,$1.20,IE,0,3,IE_500M_3,IE,PC3TTT87P,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 50GB 180Days,$22.00,$44.00,IE,50,180,IE_50_180,IE,PJVVSY6IR,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Ireland,Ireland 5GB 30Days,$3.40,$6.80,IE,5,30,IE_5_30,IE,CKH129,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Isle of Man,Isle of Man 1GB 7Days,$1.10,$2.20,IM,1,7,IM_1_7,IM,CKH259,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Isle of Man,Isle of Man 20GB 30Days,$12.90,$25.80,IM,20,30,IM_20_30,IM,CKH745,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Isle of Man,Isle of Man 3GB 15Days,$2.80,$5.60,IM,3,15,IM_3_15,IM,CKH260,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Isle of Man,Isle of Man 3GB 30Days,$3.00,$6.00,IM,3,30,IM_3_30,IM,CKH106,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Isle of Man,Isle of Man 5GB 30Days,$4.40,$8.80,IM,5,30,IM_5_30,IM,CKH145,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Israel,Israel 10GB 30Days,$9.90,$19.80,IL,10,30,IL_10_30,IL,CKH226,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Israel,Israel 1GB 7Days,$1.50,$3.00,IL,1,7,IL_1_7,IL,CKH223,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Israel,Israel 1GB/Day,$2.90,$5.80,IL,1,1,IL_1_Daily,IL,P83SJWZ7Z,First Network Connection,180,3G/4G/5G,Non-reloadable,IL
+Single,Israel,Israel 20GB 30Days,$16.80,$33.60,IL,20,30,IL_20_30,IL,CKH722,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Israel,Israel 2GB/Day,$5.40,$10.80,IL,2,1,IL_2_Daily,IL,PQSCDP235,First Network Connection,180,3G/4G/5G,Non-reloadable,IL
+Single,Israel,Israel 3GB 15Days,$3.70,$7.40,IL,3,15,IL_3_15,IL,CKH224,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Israel,Israel 3GB 30Days,$3.80,$7.60,IL,3,30,IL_3_30,IL,CKH024,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Israel,Israel 3GB/Day,$8.00,$16.00,IL,3,1,IL_3_Daily,IL,PYCQ2P3E1,First Network Connection,180,3G/4G/5G,Non-reloadable,IL
+Single,Israel,Israel 500MB/Day,$1.85,$3.70,IL,0,1,IL_0.5_Daily,IL,P6EUQ8HV5,First Network Connection,180,3G/4G/5G,Non-reloadable,IL
+Single,Israel,Israel 50GB 180Days,$37.00,$74.00,IL,50,180,IL_50_180,IL,PWCDVUQGM,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Israel,Israel 5GB 30Days,$5.70,$11.40,IL,5,30,IL_5_30,IL,CKH225,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,IL
+Single,Italy,Italy 10GB 30Days,$6.10,$12.20,IT,10,30,IT_10_30,IT,CKH229,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 1GB 7Days,$0.90,$1.80,IT,1,7,IT_1_7,IT,CKH227,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 20GB 30Days,$10.60,$21.20,IT,20,30,IT_20_30,IT,CKH504,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 2GB/Day,$1.50,$3.00,IT,2,1,IT_2_Daily,IT,PMMQ41F5S,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Italy,Italy 3GB 15Days,$2.20,$4.40,IT,3,15,IT_3_15,IT,CKH228,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 3GB 30Days,$2.30,$4.60,IT,3,30,IT_3_30,IT,CKH091,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 500MB/Day,$0.45,$0.90,IT,0,1,IT_0.5_Daily,IT,P79VVN4GK,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Italy,Italy 50GB 180Days,$22.00,$44.00,IT,50,180,IT_50_180,IT,PX1CNITSE,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 5GB 30Days,$3.40,$6.80,IT,5,30,IT_5_30,IT,CKH130,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Italy,Italy 5GB/Day,$2.30,$4.60,IT,5,1,IT_5_Daily,IT,P9Z3HQ8HG,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Japan,Japan 10GB 30Days,$4.70,$9.40,JP,10,30,JP_10_30,JP,JC066,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 10GB 30Days (nonhkip),$7.50,$15.00,JP,10,30,JP_10_30_nonhkip,JP,PR2V54EPD,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Japan,Japan 1GB 7Days,$0.70,$1.40,JP,1,7,JP_1_7,JP,JC063,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 1GB 7Days (nonhkip),$1.20,$2.40,JP,1,7,JP_1_7_nonhkip,JP,P94JA3ZNK,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Japan,Japan 1GB/Day,$1.00,$2.00,JP,1,1,JP_1_Daily,JP,P9TF1FXDA,First Network Connection,180,3G/4G,Non-reloadable,JP
+Single,Japan,Japan 1GB/Day (nonhkip),$1.10,$2.20,JP,1,1,JP_1_Daily_nonhkip,JP,P1GCN5FS9,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Japan,Japan 20GB 30Days,$8.20,$16.40,JP,20,30,JP_20_30,JP,JC145,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 20GB 30Days (nonhkip),$12.50,$25.00,JP,20,30,JP_20_30_nonhkip,JP,P7U1JSX2H,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Japan,Japan 2GB/Day,$2.00,$4.00,JP,2,1,JP_2_Daily,JP,PPWBVT0BF,First Network Connection,180,3G/4G,Non-reloadable,JP
+Single,Japan,Japan 2GB/Day (nonhkip),$2.10,$4.20,JP,2,1,JP_2_Daily_nonhkip,JP,P2H1DV6JP,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Japan,Japan 3GB 15Days,$1.70,$3.40,JP,3,15,JP_3_15,JP,JC064,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 3GB 15Days (nonhkip),$3.25,$6.50,JP,3,15,JP_3_15_nonhkip,JP,PYA70JN8W,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Japan,Japan 3GB 30Days,$1.80,$3.60,JP,3,30,JP_3_30,JP,P2AJZD4YX,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 3GB/Day,$2.20,$4.40,JP,3,1,JP_3_Daily,JP,P0GTZA81N,First Network Connection,180,3G/4G,Non-reloadable,JP
+Single,Japan,Japan 500MB/Day,$0.50,$1.00,JP,0,1,JP_0.5_Daily,JP,P9JS074W4,First Network Connection,180,3G/4G,Non-reloadable,JP
+Single,Japan,Japan 500MB/Day (nonhkip),$0.60,$1.20,JP,0,1,JP_0.5_Daily_nonhkip,JP,PLVVS2N87,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Japan,Japan 50GB 180Days,$28.00,$56.00,JP,50,180,JP_50_180,JP,PL4E7JOWX,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 5GB 30Days,$2.70,$5.40,JP,5,30,JP_5_30,JP,JC065,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,JP
+Single,Japan,Japan 5GB 30Days (nonhkip),$4.50,$9.00,JP,5,30,JP_5_30_nonhkip,JP,PCUVF4Y91,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Jersey,Jersey 1GB 7Days,$0.70,$1.40,JE,1,7,JE_1_7,JE,CKH262,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jersey,Jersey 20GB 30Days,$8.20,$16.40,JE,20,30,JE_20_30,JE,CKH753,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jersey,Jersey 3GB 15Days,$1.70,$3.40,JE,3,15,JE_3_15,JE,CKH263,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jersey,Jersey 3GB 30Days,$1.80,$3.60,JE,3,30,JE_3_30,JE,CKH107,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jersey,Jersey 5GB 30Days,$2.70,$5.40,JE,5,30,JE_5_30,JE,CKH146,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jordan,Jordan 10GB 30Days,$12.20,$24.40,JO,10,30,JO_10_30,JO,CKH272,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Jordan,Jordan 1GB 7Days,$1.80,$3.60,JO,1,7,JO_1_7,JO,CKH269,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jordan,Jordan 20GB 30Days,$20.00,$40.00,JO,20,30,JO_20_30,JO,CKH790,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jordan,Jordan 3GB 15Days,$4.60,$9.20,JO,3,15,JO_3_15,JO,CKH270,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jordan,Jordan 3GB 30Days,$4.70,$9.40,JO,3,30,JO_3_30,JO,CKH026,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Jordan,Jordan 5GB 30Days,$7.00,$14.00,JO,5,30,JO_5_30,JO,CKH271,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Kazakhstan,Kazakhstan 10GB 30Days,$9.90,$19.80,KZ,10,30,KZ_10_30,KZ,CKH750,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kazakhstan,Kazakhstan 1GB 7Days,$1.50,$3.00,KZ,1,7,KZ_1_7,KZ,CKH1030,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kazakhstan,Kazakhstan 20GB 30Days,$16.80,$33.60,KZ,20,30,KZ_20_30,KZ,CKH751,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kazakhstan,Kazakhstan 3GB 15Days,$3.70,$7.40,KZ,3,15,KZ_3_15,KZ,CKH1031,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kazakhstan,Kazakhstan 5GB 30Days,$5.70,$11.40,KZ,5,30,KZ_5_30,KZ,CKH1032,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kenya,Kenya 1GB 7Days,$5.70,$11.40,KE,1,7,KE_1_7,KE,CKH379,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kenya,Kenya 3GB 15Days,$14.10,$28.20,KE,3,15,KE_3_15,KE,CKH408,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kenya,Kenya 5GB 30Days,$21.00,$42.00,KE,5,30,KE_5_30,KE,CKH437,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kosovo,Kosovo 1GB 7Days,$5.70,$11.40,XK,1,7,XK_1_7,XK,CKH530,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kosovo,Kosovo 3GB 15Days,$14.10,$28.20,XK,3,15,XK_3_15,XK,CKH625,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kosovo,Kosovo 5GB 30Days,$21.00,$42.00,XK,5,30,XK_5_30,XK,CKH626,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kuwait,Kuwait 1GB 7Days,$2.30,$4.60,KW,1,7,KW_1_7,KW,CKH512,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Kuwait,Kuwait 20GB 30Days,$25.00,$50.00,KW,20,30,KW_20_30,KW,CKH748,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Kuwait,Kuwait 3GB 15Days,$5.70,$11.40,KW,3,15,KW_3_15,KW,CKH628,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Kuwait,Kuwait 3GB 30Days,$5.90,$11.80,KW,3,30,KW_3_30,KW,CKH027,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Kuwait,Kuwait 5GB 30Days,$8.80,$17.60,KW,5,30,KW_5_30,KW,CKH629,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Kyrgyzstan,Kyrgyzstan 1GB 7Days,$2.30,$4.60,KG,1,7,KG_1_7,KG,CKH755,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kyrgyzstan,Kyrgyzstan 20GB 30Days,$39.00,$78.00,KG,20,30,KG_20_30,KG,CKH759,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Kyrgyzstan,Kyrgyzstan 3GB 15Days,$5.90,$11.80,KG,3,15,KG_3_15,KG,CKH756,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Latvia,Latvia 10GB 30Days,$6.10,$12.20,LV,10,30,LV_10_30,LV,CKH183,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Latvia,Latvia 1GB 7Days,$0.90,$1.80,LV,1,7,LV_1_7,LV,CKH181,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Latvia,Latvia 20GB 30Days,$10.60,$21.20,LV,20,30,LV_20_30,LV,CKH702,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Latvia,Latvia 3GB 15Days,$2.20,$4.40,LV,3,15,LV_3_15,LV,CKH182,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Latvia,Latvia 3GB 30Days,$2.30,$4.60,LV,3,30,LV_3_30,LV,CKH092,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Latvia,Latvia 50GB 180Days,$30.00,$60.00,LV,50,180,LV_50_180,LV,PUS1LIQUY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Latvia,Latvia 5GB 30Days,$3.40,$6.80,LV,5,30,LV_5_30,LV,CKH131,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Liberia,Liberia 1GB 7Days,$5.70,$11.40,LR,1,7,LR_1_7,LR,CKH380,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Liberia,Liberia 3GB 15Days,$14.10,$28.20,LR,3,15,LR_3_15,LR,CKH409,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Liberia,Liberia 5GB 30Days,$21.00,$42.00,LR,5,30,LR_5_30,LR,CKH438,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Liechtenstein,Liechtenstein 1GB 7Days,$1.50,$3.00,LI,1,7,LI_1_7,LI,CKH1015,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Liechtenstein,Liechtenstein 3GB 15Days,$3.70,$7.40,LI,3,15,LI_3_15,LI,CKH1021,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Liechtenstein,Liechtenstein 3GB 30Days,$3.80,$7.60,LI,3,30,LI_3_30,LI,CKH981,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 10GB 30Days,$9.90,$19.80,LT,10,30,LT_10_30,LT,CKH186,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 1GB 7Days,$0.90,$1.80,LT,1,7,LT_1_7,LT,CKH184,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 20GB 30Days,$16.80,$33.60,LT,20,30,LT_20_30,LT,CKH704,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 3GB 15Days,$2.20,$4.40,LT,3,15,LT_3_15,LT,CKH185,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 3GB 30Days,$2.30,$4.60,LT,3,30,LT_3_30,LT,CKH093,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 50GB 180Days,$37.00,$74.00,LT,50,180,LT_50_180,LT,PDCRKSTTY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Lithuania,Lithuania 5GB 30Days,$3.40,$6.80,LT,5,30,LT_5_30,LT,CKH132,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 10GB 30Days,$6.10,$12.20,LU,10,30,LU_10_30,LU,CKH232,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 1GB 7Days,$0.90,$1.80,LU,1,7,LU_1_7,LU,CKH230,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 20GB 30Days,$10.60,$21.20,LU,20,30,LU_20_30,LU,CKH716,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 3GB 15Days,$2.20,$4.40,LU,3,15,LU_3_15,LU,CKH231,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 3GB 30Days,$2.30,$4.60,LU,3,30,LU_3_30,LU,CKH094,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 50GB 180Days,$30.00,$60.00,LU,50,180,LU_50_180,LU,PQIWDILIV,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Luxembourg,Luxembourg 5GB 30Days,$3.40,$6.80,LU,5,30,LU_5_30,LU,CKH133,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Macao (China),Macao 10GB 30Days,$4.70,$9.40,MO,10,30,MO_10_30,MO,JC026,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 10GB 30Days (nonhkip),$7.00,$14.00,MO,10,30,MO_10_30_nonhkip,MO,PEM0EL2D9,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Macao (China),Macao 1GB 7Days,$0.70,$1.40,MO,1,7,MO_1_7,MO,JC024,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 1GB 7Days (nonhkip),$1.10,$2.20,MO,1,7,MO_1_7_nonhkip,MO,PNLL0N5F4,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Macao (China),Macao 1GB/Day (nonhkip),$1.05,$2.10,MO,1,1,MO_1_Daily_nonhkip,MO,P0EA95AKM,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Macao (China),Macao 20GB 30Days,$8.20,$16.40,MO,20,30,MO_20_30,MO,JC106,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 20GB 30Days (nonhkip),$12.00,$24.00,MO,20,30,MO_20_30_nonhkip,MO,PYY68S4KT,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Macao (China),Macao 2GB/Day (nonhkip),$2.00,$4.00,MO,2,1,MO_2_Daily_nonhkip,MO,PMC972NJJ,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Macao (China),Macao 3GB 15Days,$1.70,$3.40,MO,3,15,MO_3_15,MO,JC025,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 3GB 15Days (nonhkip),$2.80,$5.60,MO,3,15,MO_3_15_nonhkip,MO,PTJM6R2V5,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Macao (China),Macao 3GB 30Days,$1.80,$3.60,MO,3,30,MO_3_30,MO,JC010,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 500MB/Day (nonhkip),$0.65,$1.30,MO,0,1,MO_0.5_Daily_nonhkip,MO,P06DPM5ME,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Macao (China),Macao 50GB 180Days,$32.00,$64.00,MO,50,180,MO_50_180,MO,PDRBEISAJ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 5GB 30Days,$2.70,$5.40,MO,5,30,MO_5_30,MO,JC011,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Macao (China),Macao 5GB 30Days (nonhkip),$4.00,$8.00,MO,5,30,MO_5_30_nonhkip,MO,PBR7AJ6V0,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Madagascar,Madagascar 1GB 7Days,$4.60,$9.20,MG,1,7,MG_1_7,MG,CKH366,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Madagascar,Madagascar 3GB 15Days,$11.20,$22.40,MG,3,15,MG_3_15,MG,CKH395,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malawi,Malawi 1GB 7Days,$5.70,$11.40,MW,1,7,MW_1_7,MW,CKH367,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Malawi,Malawi 3GB 15Days,$14.10,$28.20,MW,3,15,MW_3_15,MW,CKH396,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Malawi,Malawi 5GB 30Days,$21.00,$42.00,MW,5,30,MW_5_30,MW,CKH425,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Malaysia,Malaysia 10GB 30Days,$4.70,$9.40,MY,10,30,MY_10_30,MY,JC030,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 10GB 30Days (nonhkip),$7.00,$14.00,MY,10,30,MY_10_30_nonhkip,MY,PLDG73P5E,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Malaysia,Malaysia 1GB 7Days,$0.70,$1.40,MY,1,7,MY_1_7,MY,JC027,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 1GB 7Days (nonhkip),$1.00,$2.00,MY,1,7,MY_1_7_nonhkip,MY,P298MQEKY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Malaysia,Malaysia 1GB/Day (nonhkip),$0.90,$1.80,MY,1,1,MY_1_Daily_nonhkip,MY,PKFR059MT,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Malaysia,Malaysia 20GB 30Days,$8.20,$16.40,MY,20,30,MY_20_30,MY,JC097,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 20GB 30Days (nonhkip),$12.00,$24.00,MY,20,30,MY_20_30_nonhkip,MY,P04JBY6XN,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Malaysia,Malaysia 2GB/Day (nonhkip),$1.70,$3.40,MY,2,1,MY_2_Daily_nonhkip,MY,P9BPF41DU,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Malaysia,Malaysia 3GB 15Days,$1.70,$3.40,MY,3,15,MY_3_15,MY,JC028,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 3GB 15Days (nonhkip),$2.60,$5.20,MY,3,15,MY_3_15_nonhkip,MY,P1UL34KDX,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Malaysia,Malaysia 500MB/Day (nonhkip),$0.50,$1.00,MY,0,1,MY_0.5_Daily_nonhkip,MY,PJJ7HCK42,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Malaysia,Malaysia 50GB 180Days,$28.00,$56.00,MY,50,180,MY_50_180,MY,PBAGTADCE,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 5GB 30Days,$2.70,$5.40,MY,5,30,MY_5_30,MY,JC029,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Malaysia,Malaysia 5GB 30Days (nonhkip),$4.00,$8.00,MY,5,30,MY_5_30_nonhkip,MY,PSG213EBL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Mali,Mali 1GB 7Days,$7.10,$14.20,ML,1,7,ML_1_7,ML,CKH381,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mali,Mali 3GB 15Days,$17.60,$35.20,ML,3,15,ML_3_15,ML,CKH410,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malta,Malta 10GB 30Days,$9.90,$19.80,MT,10,30,MT_10_30,MT,CKH189,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malta,Malta 1GB 7Days,$1.50,$3.00,MT,1,7,MT_1_7,MT,CKH187,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malta,Malta 20GB 30Days,$16.80,$33.60,MT,20,30,MT_20_30,MT,CKH706,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malta,Malta 3GB 15Days,$3.70,$7.40,MT,3,15,MT_3_15,MT,CKH188,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malta,Malta 3GB 30Days,$3.80,$7.60,MT,3,30,MT_3_30,MT,CKH095,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Malta,Malta 5GB 30Days,$5.70,$11.40,MT,5,30,MT_5_30,MT,CKH134,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mexico,Mexico 10GB 30Days,$15.20,$30.40,MX,10,30,MX_10_30,MX,P84BJ7UTL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mexico,Mexico 1GB 7Days,$2.30,$4.60,MX,1,7,MX_1_7,MX,CKH518,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mexico,Mexico 20GB 30Days,$25.00,$50.00,MX,20,30,MX_20_30,MX,CKH798,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mexico,Mexico 3GB 15Days,$5.70,$11.40,MX,3,15,MX_3_15,MX,CKH644,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mexico,Mexico 3GB 30Days,$5.90,$11.80,MX,3,30,MX_3_30,MX,P8DKZK30Q,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mexico,Mexico 5GB 30Days,$8.80,$17.60,MX,5,30,MX_5_30,MX,CKH645,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Moldova,Moldova 1GB 7Days,$1.80,$3.60,MD,1,7,MD_1_7,MD,CKH523,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Moldova,Moldova 3GB 15Days,$4.60,$9.20,MD,3,15,MD_3_15,MD,CKH647,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Monaco,Monaco 1GB 7Days,$7.10,$14.20,MC,1,7,MC_1_7,MC,CKH524,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Monaco,Monaco 3GB 15Days,$17.60,$35.20,MC,3,15,MC_3_15,MC,CKH650,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Monaco,Monaco 5GB 30Days,$26.00,$52.00,MC,5,30,MC_5_30,MC,CKH651,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Mongolia,Mongolia 1GB 7Days,$14.00,$28.00,MN,1,7,MN_1_7,MN,MB004,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Mongolia,Mongolia 3GB 15Days,$34.00,$68.00,MN,3,15,MN_3_15,MN,MB010,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Montenegro,Montenegro 1GB 7Days,$2.30,$4.60,ME,1,7,ME_1_7,ME,CKH1023,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Montenegro,Montenegro 3GB 15Days,$5.70,$11.40,ME,3,15,ME_3_15,ME,CKH1024,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Morocco,Morocco 1GB 7Days,$1.50,$3.00,MA,1,7,MA_1_7,MA,CKH382,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Morocco,Morocco 20GB 30Days,$16.80,$33.60,MA,20,30,MA_20_30,MA,CKH829,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Morocco,Morocco 3GB 15Days,$3.70,$7.40,MA,3,15,MA_3_15,MA,CKH411,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,BE
+Single,Morocco,Morocco 500MB/Day,$0.73,$1.46,MA,0,1,MA_0.5_Daily,MA,PRPJ3X0Y2,First Network Connection,180,3G/4G/5G,Non-reloadable,BE
+Single,Mozambique,Mozambique 1GB 7Days,$5.70,$11.40,MZ,1,7,MZ_1_7,MZ,MB043,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Mozambique,Mozambique 20GB 30Days,$63.00,$126.00,MZ,20,30,MZ_20_30,MZ,MB055,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Mozambique,Mozambique 3GB 15Days,$14.10,$28.20,MZ,3,15,MZ_3_15,MZ,MB047,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Nepal,Nepal 1GB 7Days,$8.90,$17.80,NP,1,7,NP_1_7,NP,MB003,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Nepal,Nepal 3GB 15Days,$21.00,$42.00,NP,3,15,NP_3_15,NP,MB013,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Netherlands,Netherlands 10GB 30Days,$6.10,$12.20,NL,10,30,NL_10_30,NL,CKH235,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Netherlands,Netherlands 1GB 7Days,$0.90,$1.80,NL,1,7,NL_1_7,NL,CKH233,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Netherlands,Netherlands 20GB 30Days,$10.60,$21.20,NL,20,30,NL_20_30,NL,CKH724,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Netherlands,Netherlands 3GB 15Days,$2.20,$4.40,NL,3,15,NL_3_15,NL,CKH234,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Netherlands,Netherlands 3GB 30Days,$2.30,$4.60,NL,3,30,NL_3_30,NL,CKH009,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Netherlands,Netherlands 50GB 180Days,$30.00,$60.00,NL,50,180,NL_50_180,NL,P6D7MCOBF,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Netherlands,Netherlands 5GB 30Days,$3.40,$6.80,NL,5,30,NL_5_30,NL,CKH010,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,New Zealand,New Zealand 10GB 30Days,$12.20,$24.40,NZ,10,30,NZ_10_30,NZ,JC082,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,New Zealand,New Zealand 1GB 7Days,$1.80,$3.60,NZ,1,7,NZ_1_7,NZ,JC031,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,New Zealand,New Zealand 20GB 30Days,$20.00,$40.00,NZ,20,30,NZ_20_30,NZ,JC083,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,New Zealand,New Zealand 2GB/Day,$2.90,$5.80,NZ,2,1,NZ_2_Daily,NZ,P7L62ZCMR,First Network Connection,180,3G/4G,Non-reloadable,
+Single,New Zealand,New Zealand 3GB 15Days,$4.60,$9.20,NZ,3,15,NZ_3_15,NZ,JC032,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,New Zealand,New Zealand 3GB/Day,$4.20,$8.40,NZ,3,1,NZ_3_Daily,NZ,P65ZSJGC3,First Network Connection,180,3G/4G,Non-reloadable,
+Single,New Zealand,New Zealand 50GB 180Days,$45.00,$90.00,NZ,50,180,NZ_50_180,NZ,PEIHJAQVY,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,New Zealand,New Zealand 5GB 30Days,$7.00,$14.00,NZ,5,30,NZ_5_30,NZ,JC033,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Nicaragua,Nicaragua 1GB 7Days,$4.60,$9.20,NI,1,7,NI_1_7,NI,CKH311,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Nicaragua,Nicaragua 3GB 15Days,$11.20,$22.40,NI,3,15,NI_3_15,NI,CKH327,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Niger,Niger 1GB 7Days,$7.10,$14.20,NE,1,7,NE_1_7,NE,CKH383,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Niger,Niger 3GB 15Days,$17.60,$35.20,NE,3,15,NE_3_15,NE,CKH412,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Nigeria,Nigeria 1GB 7Days,$4.60,$9.20,NG,1,7,NG_1_7,NG,CKH384,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Nigeria,Nigeria 3GB 15Days,$11.20,$22.40,NG,3,15,NG_3_15,NG,CKH413,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,North America (3 areas),North America  1GB 7Days Single Use,$2.50,$5.00,NA-3,1,7,NA-3_1_7_End,"MX,US,CA",PB2CS54LH,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 1.5GB/Day,$3.20,$6.40,NA-3,1,1,NA-3_1.5_Daily,"MX,US,CA",P5SQ1FXCQ,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Multi-Area,North America (3 areas),North America 10GB 30Days Single Use,$19.00,$38.00,NA-3,10,30,NA-3_10_30_End,"MX,US,CA",PF2BEFF37,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 10GB/Day,$15.10,$30.20,NA-3,10,1,NA-3_10_Daily,"MX,US,CA",PVT108ZDN,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 1GB/Day,$2.20,$4.40,NA-3,1,1,NA-3_1_Daily,"MX,US,CA",PCTEPKHJW,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 2GB/Day,$4.30,$8.60,NA-3,2,1,NA-3_2_Daily,"MX,US,CA",PWTRNZF6E,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Multi-Area,North America (3 areas),North America 3GB 30Days Single Use,$6.60,$13.20,NA-3,3,30,NA-3_3_30_End,"MX,US,CA",P2C6DT8XP,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 3GB/Day,$5.60,$11.20,NA-3,3,1,NA-3_3_Daily,"MX,US,CA",P5N9FP7RL,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Multi-Area,North America (3 areas),North America 500MB/Day,$1.15,$2.30,NA-3,0,1,NA-3_0.5_Daily,"MX,US,CA",PLF76MUC5,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 5GB   30Days Single Use,$10.00,$20.00,NA-3,5,30,NA-3_5_30_End,"MX,US,CA",PWPB9E2B6,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Multi-Area,North America (3 areas),North America 5GB/Day,$8.70,$17.40,NA-3,5,1,NA-3_5_Daily,"MX,US,CA",P8L7JA0WC,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,North Macedonia,North Macedonia of  1GB 7Days,$2.30,$4.60,MK,1,7,MK_1_7,MK,CKH517,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,North Macedonia,North Macedonia of  3GB 15Days,$5.70,$11.40,MK,3,15,MK_3_15,MK,CKH637,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,North Macedonia,North Macedonia of  5GB 30Days,$8.80,$17.60,MK,5,30,MK_5_30,MK,CKH638,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 10GB 30Days,$4.70,$9.40,NO,10,30,NO_10_30,NO,CKH1001,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 1GB 7Days,$0.70,$1.40,NO,1,7,NO_1_7,NO,CKH999,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 1GB/Day,$0.65,$1.30,NO,1,1,NO_1_Daily,NO,PL6FJ9N2A,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Norway,Norway 20GB 30Days,$8.20,$16.40,NO,20,30,NO_20_30,NO,CKH1009,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 3GB 15Days,$1.70,$3.40,NO,3,15,NO_3_15,NO,CKH1000,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 3GB 30Days,$1.80,$3.60,NO,3,30,NO_3_30,NO,CKH982,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 50GB 180Days,$28.00,$56.00,NO,50,180,NO_50_180,NO,PDUMILX5C,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Norway,Norway 5GB 30Days,$2.70,$5.40,NO,5,30,NO_5_30,NO,CKH988,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Oman,Oman 1GB 7Days,$5.70,$11.40,OM,1,7,OM_1_7,OM,CKH273,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Oman,Oman 20GB 30Days,$63.00,$126.00,OM,20,30,OM_20_30,OM,CKH807,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Oman,Oman 3GB 15Days,$14.10,$28.20,OM,3,15,OM_3_15,OM,CKH274,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Oman,Oman 3GB 30Days,$14.40,$28.80,OM,3,30,OM_3_30,OM,CKH028,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Pakistan,Pakistan 10GB 30Days,$12.20,$24.40,PK,10,30,PK_10_30,PK,JC152,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Pakistan,Pakistan 1GB 7Days,$1.80,$3.60,PK,1,7,PK_1_7,PK,JC111,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Pakistan,Pakistan 20GB 30Days,$20.00,$40.00,PK,20,30,PK_20_30,PK,JC153,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Pakistan,Pakistan 3GB 15Days,$4.60,$9.20,PK,3,15,PK_3_15,PK,JC129,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Pakistan,Pakistan 5GB 30Days,$7.00,$14.00,PK,5,30,PK_5_30,PK,JC130,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Panama,Panama 1GB 7Days,$4.60,$9.20,PA,1,7,PA_1_7,PA,CKH312,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Panama,Panama 3GB 15Days,$11.20,$22.40,PA,3,15,PA_3_15,PA,CKH328,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Paraguay,Paraguay 1GB 7Days,$4.60,$9.20,PY,1,7,PY_1_7,PY,CKH313,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Paraguay,Paraguay 3GB 15Days,$11.20,$22.40,PY,3,15,PY_3_15,PY,CKH329,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Peru,Peru 1GB 7Days,$5.70,$11.40,PE,1,7,PE_1_7,PE,CKH314,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Peru,Peru 20GB 30Days,$98.00,$196.00,PE,20,30,PE_20_30,PE,CKH862,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Peru,Peru 3GB 15Days,$14.10,$28.20,PE,3,15,PE_3_15,PE,CKH330,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Philippines,Philippine 3GB/Day,$4.50,$9.00,PH,3,1,PH_3_Daily,PH,P7H5ESZX4,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Philippines,Philippines 10GB 30Days,$12.20,$24.40,PH,10,30,PH_10_30,PH,JC037,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Philippines,Philippines 1GB 7Days,$1.80,$3.60,PH,1,7,PH_1_7,PH,JC034,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Philippines,Philippines 20GB 30Days,$20.00,$40.00,PH,20,30,PH_20_30,PH,JC099,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Philippines,Philippines 3GB 15Days,$4.60,$9.20,PH,3,15,PH_3_15,PH,JC035,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Philippines,Philippines 50GB 180Days,$45.00,$90.00,PH,50,180,PH_50_180,PH,PYEPCSNFU,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Philippines,Philippines 5GB 30Days,$7.00,$14.00,PH,5,30,PH_5_30,PH,JC036,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Poland,Poland 1GB 7Days,$0.70,$1.40,PL,1,7,PL_1_7,PL,CKH236,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Poland,Poland 20GB 30Days,$8.20,$16.40,PL,20,30,PL_20_30,PL,CKH726,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Poland,Poland 3GB 15Days,$1.70,$3.40,PL,3,15,PL_3_15,PL,CKH237,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Poland,Poland 3GB 30Days,$1.80,$3.60,PL,3,30,PL_3_30,PL,CKH096,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Poland,Poland 50GB 180Days,$28.00,$56.00,PL,50,180,PL_50_180,PL,PZMKJMCWN,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Poland,Poland 5GB 30Days,$2.70,$5.40,PL,5,30,PL_5_30,PL,CKH135,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Portugal,Portugal 10GB 30Days,$6.10,$12.20,PT,10,30,PT_10_30,PT,CKH1004,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Portugal,Portugal 1GB 7Days,$0.90,$1.80,PT,1,7,PT_1_7,PT,CKH1002,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Portugal,Portugal 1GB/Day,$0.85,$1.70,PT,1,1,PT_1_Daily,PT,P7R54NBNC,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Portugal,Portugal 20GB 30Days,$10.60,$21.20,PT,20,30,PT_20_30,PT,CKH1011,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Portugal,Portugal 3GB 15Days,$2.20,$4.40,PT,3,15,PT_3_15,PT,CKH1003,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Portugal,Portugal 3GB 30Days,$2.30,$4.60,PT,3,30,PT_3_30,PT,CKH980,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Portugal,Portugal 5GB 30Days,$3.40,$6.80,PT,5,30,PT_5_30,PT,CKH986,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Puerto Rico,Puerto Rico 1GB 7Days,$2.90,$5.80,PR,1,7,PR_1_7,PR,CKH315,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Puerto Rico,Puerto Rico 3GB 15Days,$7.20,$14.40,PR,3,15,PR_3_15,PR,CKH331,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Puerto Rico,Puerto Rico 5GB 30Days,$11.00,$22.00,PR,5,30,PR_5_30,PR,CKH347,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 1GB 7Days,$3.60,$7.20,QA,1,7,QA_1_7,QA,CKH513,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 20GB 30Days,$40.00,$80.00,QA,20,30,QA_20_30,QA,CKH762,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 3GB 15Days,$8.90,$17.80,QA,3,15,QA_3_15,QA,CKH667,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 3GB 30Days,$9.10,$18.20,QA,3,30,QA_3_30,QA,CKH029,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Qatar,Qatar 5GB 30Days,$13.60,$27.20,QA,5,30,QA_5_30,QA,CKH668,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Reunion,Reunion 1GB 7Days,$2.90,$5.80,RE,1,7,RE_1_7,RE,CKH365,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Reunion,Reunion 1GB/Day,$2.90,$5.80,RE,1,1,RE_1_Daily,RE,PHMS8J01F,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Reunion,Reunion 2GB/Day,$5.50,$11.00,RE,2,1,RE_2_Daily,RE,P1X3N5XFT,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Reunion,Reunion 3GB 15Days,$7.20,$14.40,RE,3,15,RE_3_15,RE,CKH394,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Reunion,Reunion 3GB/Day,$7.10,$14.20,RE,3,1,RE_3_Daily,RE,P530XLLHQ,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Reunion,Reunion 500MB/Day,$1.45,$2.90,RE,0,1,RE_0.5_Daily,RE,PQD094RUX,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Reunion,Reunion 5GB 30Days,$11.00,$22.00,RE,5,30,RE_5_30,RE,CKH423,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 10GB 30Days,$4.70,$9.40,RO,10,30,RO_10_30,RO,CKH241,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 1GB 7Days,$0.70,$1.40,RO,1,7,RO_1_7,RO,CKH239,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 20GB 30Days,$8.20,$16.40,RO,20,30,RO_20_30,RO,CKH728,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 3GB 15Days,$1.70,$3.40,RO,3,15,RO_3_15,RO,CKH240,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 3GB 30Days,$1.80,$3.60,RO,3,30,RO_3_30,RO,CKH098,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 50GB 180Days,$30.00,$60.00,RO,50,180,RO_50_180,RO,PBOG35WTO,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Romania,Romania 5GB 30Days,$2.70,$5.40,RO,5,30,RO_5_30,RO,CKH137,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Russia,Russia 1GB 7Days,$2.90,$5.80,RU,1,7,RU_1_7,RU,JC070,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Russia,Russia 3GB 15Days,$7.20,$14.40,RU,3,15,RU_3_15,RU,JC071,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Russia,Russia 3GB 30Days,$7.30,$14.60,RU,3,30,RU_3_30,RU,JC068,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Russia,Russia 5GB 30Days,$11.00,$22.00,RU,5,30,RU_5_30,RU,JC069,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Saudi Arabia,Saudi Arabia 10GB 30Days,$19.00,$38.00,SA,10,30,SA_10_30,SA,CKH280,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Saudi Arabia,Saudi Arabia 1GB 7Days,$2.90,$5.80,SA,1,7,SA_1_7,SA,CKH277,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Saudi Arabia,Saudi Arabia 20GB 30Days,$32.00,$64.00,SA,20,30,SA_20_30,SA,CKH800,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Saudi Arabia,Saudi Arabia 3GB 15Days,$7.20,$14.40,SA,3,15,SA_3_15,SA,CKH278,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Saudi Arabia,Saudi Arabia 3GB 30Days,$7.30,$14.60,SA,3,30,SA_3_30,SA,CKH036,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Saudi Arabia,Saudi Arabia 5GB 30Days,$11.00,$22.00,SA,5,30,SA_5_30,SA,CKH279,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Senegal,Senegal 1GB 7Days,$7.10,$14.20,SN,1,7,SN_1_7,SN,CKH385,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Senegal,Senegal 3GB 15Days,$17.60,$35.20,SN,3,15,SN_3_15,SN,CKH414,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Senegal,Senegal 5GB 30Days,$26.00,$52.00,SN,5,30,SN_5_30,SN,CKH443,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Serbia,Serbia 1GB 7Days,$2.90,$5.80,RS,1,7,RS_1_7,RS,CKH1016,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Serbia,Serbia 20GB 30Days,$32.00,$64.00,RS,20,30,RS_20_30,RS,CKH803,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Serbia,Serbia 3GB 15Days,$7.20,$14.40,RS,3,15,RS_3_15,RS,CKH677,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Serbia,Serbia 3GB 30Days,$7.30,$14.60,RS,3,30,RS_3_30,RS,CKH113,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Seychelles,Seychelles 1GB 7Days,$4.60,$9.20,SC,1,7,SC_1_7,SC,CKH386,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Seychelles,Seychelles 3GB 15Days,$11.20,$22.40,SC,3,15,SC_3_15,SC,CKH415,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Seychelles,Seychelles 5GB 30Days,$17.10,$34.20,SC,5,30,SC_5_30,SC,CKH444,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 10GB 30Days,$7.60,$15.20,SGMYTH-3,10,30,SGMYTH-3_10_30,"TH,SG,MY",PY5TK3XX6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 1GB 7Days,$1.10,$2.20,SGMYTH-3,1,7,SGMYTH-3_1_7,"TH,SG,MY",P86Y3TMFZ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 1GB/Day,$1.00,$2.00,SGMYTH-3,1,1,SGMYTH-3_1_Daily,"TH,SG,MY",PS6VQM34Q,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 20GB 30Days,$12.90,$25.80,SGMYTH-3,20,30,SGMYTH-3_20_30,"TH,SG,MY",P9NV1LJN6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 2GB/Day,$2.00,$4.00,SGMYTH-3,2,1,SGMYTH-3_2_Daily,"TH,SG,MY",PRPNZ697N,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 3GB 15Days,$2.80,$5.60,SGMYTH-3,3,15,SGMYTH-3_3_15,"TH,SG,MY",P71Q4REAB,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 3GB 30Days,$3.00,$6.00,SGMYTH-3,3,30,SGMYTH-3_3_30,"TH,SG,MY",PZ8NV3QK9,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 500MB/Day,$0.60,$1.20,SGMYTH-3,0,1,SGMYTH-3_0.5_Daily,"TH,SG,MY",PB9B7RVL0,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Multi-Area,Singapore & Malaysia & Thailand,Singapore & Malaysia & Thailand 5GB 30Days,$4.40,$8.80,SGMYTH-3,5,30,SGMYTH-3_5_30,"TH,SG,MY",PYX2W95MR,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 10GB 30Days,$4.70,$9.40,SG,10,30,SG_10_30,SG,JC041,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 10GB 30Days (nonhkip),$7.00,$14.00,SG,10,30,SG_10_30_nonhkip,SG,PWX40HHM7,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Singapore,Singapore 1GB 7Days,$0.70,$1.40,SG,1,7,SG_1_7,SG,JC038,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 1GB 7Days (nonhkip),$1.00,$2.00,SG,1,7,SG_1_7_nonhkip,SG,PMYUL0A89,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Singapore,Singapore 1GB/Day (nonhkip),$0.95,$1.90,SG,1,1,SG_1_Daily_nonhkip,SG,P2B5NQ3VH,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Singapore,Singapore 20GB 30Days,$8.20,$16.40,SG,20,30,SG_20_30,SG,JC092,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 20GB 30Days (nonhkip),$12.00,$24.00,SG,20,30,SG_20_30_nonhkip,SG,PN0S4RKN6,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Singapore,Singapore 2GB/Day (nonhkip),$1.80,$3.60,SG,2,1,SG_2_Daily_nonhkip,SG,PHDQJ3J94,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Singapore,Singapore 3GB 15Days (nonhkip),$2.80,$5.60,SG,3,15,SG_3_15_nonhkip,SG,P8FS5BQQ7,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Singapore,Singapore 3GB 30Days,$1.80,$3.60,SG,3,30,SG_3_30,SG,PR2GUXUD5,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 500MB/Day (nonhkip),$0.55,$1.10,SG,0,1,SG_0.5_Daily_nonhkip,SG,P07TJRC8Y,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Singapore,Singapore 50GB 30Days,$28.00,$56.00,SG,50,30,SG_50_30,SG,JC093,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 5GB 30Days,$2.70,$5.40,SG,5,30,SG_5_30,SG,JC040,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Singapore,Singapore 5GB 30Days (nonhkip),$4.00,$8.00,SG,5,30,SG_5_30_nonhkip,SG,P74SEFQ1M,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Slovakia,Slovakia 10GB 30Days,$6.10,$12.20,SK,10,30,SK_10_30,SK,CKH198,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovakia,Slovakia 1GB 7Days,$0.90,$1.80,SK,1,7,SK_1_7,SK,CKH196,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovakia,Slovakia 20GB 30Days,$10.60,$21.20,SK,20,30,SK_20_30,SK,CKH730,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovakia,Slovakia 3GB 15Days,$2.20,$4.40,SK,3,15,SK_3_15,SK,CKH197,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovakia,Slovakia 3GB 30Days,$2.30,$4.60,SK,3,30,SK_3_30,SK,CKH099,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovakia,Slovakia 50GB 180Days,$30.00,$60.00,SK,50,180,SK_50_180,SK,PG4XMKAYQ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovakia,Slovakia 5GB 30Days,$3.40,$6.80,SK,5,30,SK_5_30,SK,CKH138,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 10GB 30Days,$6.10,$12.20,SI,10,30,SI_10_30,SI,CKH244,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 1GB 7Days,$0.90,$1.80,SI,1,7,SI_1_7,SI,CKH242,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 20GB 30Days,$10.60,$21.20,SI,20,30,SI_20_30,SI,CKH732,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 3GB 15Days,$2.20,$4.40,SI,3,15,SI_3_15,SI,CKH243,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 3GB 30Days,$2.30,$4.60,SI,3,30,SI_3_30,SI,CKH100,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 50GB 180Days,$30.00,$60.00,SI,50,180,SI_50_180,SI,PCMQJGTVB,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Slovenia,Slovenia 5GB 30Days,$3.40,$6.80,SI,5,30,SI_5_30,SI,CKH139,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,South Korea,South Korea 10GB 30Days,$4.70,$9.40,KR,10,30,KR_10_30,KR,JC075,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,South Korea,South Korea 10GB 30Days (nonhkip),$7.50,$15.00,KR,10,30,KR_10_30_nonhkip,KR,PRT9KC28R,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,South Korea,South Korea 1GB 7Days,$0.70,$1.40,KR,1,7,KR_1_7,KR,JC072,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,South Korea,South Korea 1GB 7Days (nonhkip),$1.05,$2.10,KR,1,7,KR_1_7_nonhkip,KR,PU60C7NHY,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,South Korea,South Korea 1GB/Day (nonhkip),$0.95,$1.90,KR,1,1,KR_1_Daily_nonhkip,KR,P20PMGJQ5,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,South Korea,South Korea 20GB 30Days,$8.20,$16.40,KR,20,30,KR_20_30,KR,JC147,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,South Korea,South Korea 20GB 30Days (nonhkip),$12.50,$25.00,KR,20,30,KR_20_30_nonhkip,KR,PXYKK106H,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,South Korea,South Korea 2GB/Day,$1.60,$3.20,KR,2,1,KR_2_Daily,KR,PD97RF0HS,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,South Korea,South Korea 2GB/Day (nonhkip),$1.65,$3.30,KR,2,1,KR_2_Daily_nonhkip,KR,PLF859LWP,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,South Korea,South Korea 3GB 15Days,$1.70,$3.40,KR,3,15,KR_3_15,KR,JC073,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,South Korea,South Korea 3GB 15Days (nonhkip),$2.60,$5.20,KR,3,15,KR_3_15_nonhkip,KR,P2FQ0VL1B,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,South Korea,South Korea 3GB/Day,$2.40,$4.80,KR,3,1,KR_3_Daily,KR,P8Z0SR4YM,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,South Korea,South Korea 3GB/Day (nonhkip),$2.10,$4.20,KR,3,1,KR_3_Daily_nonhkip,KR,P0VZY58TB,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,South Korea,South Korea 500MB/Day (nonhkip),$0.55,$1.10,KR,0,1,KR_0.5_Daily_nonhkip,KR,PZ2UCMK37,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,South Korea,South Korea 5GB 30Days,$2.70,$5.40,KR,5,30,KR_5_30,KR,JC074,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,South Korea,South Korea 5GB 30Days (nonhkip),$4.25,$8.50,KR,5,30,KR_5_30_nonhkip,KR,PQ708AANE,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Spain,Spain 10GB 30Days,$6.10,$12.20,ES,10,30,ES_10_30,ES,CKH506,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Spain,Spain 1GB 7Days,$0.90,$1.80,ES,1,7,ES_1_7,ES,CKH245,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Spain,Spain 1GB/Day,$0.80,$1.60,ES,1,1,ES_1_Daily,ES,PZBY51PX0,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Spain,Spain 20GB 30Days,$10.60,$21.20,ES,20,30,ES_20_30,ES,CKH507,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Spain,Spain 2GB/Day,$1.00,$2.00,ES,2,1,ES_2_Daily,ES,P1BF5HDU2,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Spain,Spain 3GB 15Days,$2.20,$4.40,ES,3,15,ES_3_15,ES,CKH246,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Spain,Spain 3GB 30Days,$2.30,$4.60,ES,3,30,ES_3_30,ES,CKH002,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Spain,Spain 500MB/Day,$0.45,$0.90,ES,0,1,ES_0.5_Daily,ES,P6WL2RRH5,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,Spain,Spain 50GB 180Days,$22.00,$44.00,ES,50,180,ES_50_180,ES,PSUZGLKSQ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Spain,Spain 5GB 30Days,$3.40,$6.80,ES,5,30,ES_5_30,ES,CKH003,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sri Lanka,Sri Lanka 10GB 30Days,$15.40,$30.80,LK,10,30,LK_10_30,LK,JC085,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 1GB 7Days,$2.90,$5.80,LK,1,7,LK_1_7,LK,JC042,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 20GB 30Days,$28.00,$56.00,LK,20,30,LK_20_30,LK,JC086,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 3GB 15Days,$4.80,$9.60,LK,3,15,LK_3_15,LK,JC043,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 50GB 180Days,$71.00,$142.00,LK,50,180,LK_50_180,LK,PVCA0JAXV,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sri Lanka,Sri Lanka 5GB 30Days,$7.70,$15.40,LK,5,30,LK_5_30,LK,JC044,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Sudan,Sudan 1GB 7Days,$11.20,$22.40,SD,1,7,SD_1_7,SD,CKH388,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Sudan,Sudan 3GB 15Days,$27.00,$54.00,SD,3,15,SD_3_15,SD,CKH417,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Sudan,Sudan 5GB 30Days,$41.00,$82.00,SD,5,30,SD_5_30,SD,CKH446,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Swaziland,Swaziland 1GB 7Days,$7.10,$14.20,SZ,1,7,SZ_1_7,SZ,CKH389,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Swaziland,Swaziland 3GB 15Days,$17.60,$35.20,SZ,3,15,SZ_3_15,SZ,CKH418,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sweden,Sweden 10GB 30Days,$6.10,$12.20,SE,10,30,SE_10_30,SE,CKH201,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sweden,Sweden 1GB 7Days,$0.90,$1.80,SE,1,7,SE_1_7,SE,CKH199,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sweden,Sweden 20GB 30Days,$10.60,$21.20,SE,20,30,SE_20_30,SE,CKH734,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sweden,Sweden 3GB 15Days,$2.20,$4.40,SE,3,15,SE_3_15,SE,CKH200,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sweden,Sweden 3GB 30Days,$2.30,$4.60,SE,3,30,SE_3_30,SE,CKH101,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Sweden,Sweden 5GB 30Days,$3.40,$6.80,SE,5,30,SE_5_30,SE,CKH140,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 10GB 30Days,$6.10,$12.20,CH,10,30,CH_10_30,CH,CKH249,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 1GB 7Days,$0.90,$1.80,CH,1,7,CH_1_7,CH,CKH247,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 20GB 30Days,$10.60,$21.20,CH,20,30,CH_20_30,CH,CKH736,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 3GB 15Days,$2.20,$4.40,CH,3,15,CH_3_15,CH,CKH248,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 3GB 30Days,$2.30,$4.60,CH,3,30,CH_3_30,CH,CKH102,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 50GB 180Days,$22.00,$44.00,CH,50,180,CH_50_180,CH,PUOG8W99P,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Switzerland,Switzerland 5GB 30Days,$3.40,$6.80,CH,5,30,CH_5_30,CH,CKH141,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Tanzania,Tanzania 1GB 7Days,$3.60,$7.20,TZ,1,7,TZ_1_7,TZ,MB027,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Tanzania,Tanzania 3GB 15Days,$8.90,$17.80,TZ,3,15,TZ_3_15,TZ,MB032,First Network Connection,180,3G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 10GB 30Days,$4.70,$9.40,TH,10,30,TH_10_30,TH,JC047,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 10GB 30Days (nonhkip),$6.30,$12.60,TH,10,30,TH_10_30_nonhkip,TH,P4MBRSL75,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Thailand,Thailand 10GB/Day,$8.00,$16.00,TH,10,1,TH_10_Daily,TH,PZPE5LW98,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Thailand,Thailand 1GB 7Days,$0.70,$1.40,TH,1,7,TH_1_7,TH,JC045,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 1GB 7Days (nonhkip),$1.30,$2.60,TH,1,7,TH_1_7_nonhkip,TH,PH1M5M9DL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Thailand,Thailand 1GB/Day (nonhkip),$1.20,$2.40,TH,1,1,TH_1_Daily_nonhkip,TH,PPS28ZZ4H,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Thailand,Thailand 20GB 30Days,$8.20,$16.40,TH,20,30,TH_20_30,TH,JC080,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 20GB 30Days (nonhkip),$10.00,$20.00,TH,20,30,TH_20_30_nonhkip,TH,PZXY42KN5,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Thailand,Thailand 2GB/Day,$1.60,$3.20,TH,2,1,TH_2_Daily,TH,P2R7CWSN9,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Thailand,Thailand 2GB/Day (nonhkip),$2.00,$4.00,TH,2,1,TH_2_Daily_nonhkip,TH,PR73YYZN4,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Thailand,Thailand 3GB 15Days,$1.70,$3.40,TH,3,15,TH_3_15,TH,JC046,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 3GB 15Days (nonhkip),$2.60,$5.20,TH,3,15,TH_3_15_nonhkip,TH,PV67L3JSU,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Thailand,Thailand 3GB 30Days,$1.80,$3.60,TH,3,30,TH_3_30,TH,JC013,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 3GB/Day,$2.40,$4.80,TH,3,1,TH_3_Daily,TH,PJ0FB89GA,First Network Connection,180,3G/4G/5G,Non-reloadable,HK
+Single,Thailand,Thailand 500MB/Day (nonhkip),$0.75,$1.50,TH,0,1,TH_0.5_Daily_nonhkip,TH,PZH4CF30G,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Thailand,Thailand 50GB 180Days,$32.00,$64.00,TH,50,180,TH_50_180,TH,PNJW9PBXH,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 5GB 30Days,$2.70,$5.40,TH,5,30,TH_5_30,TH,JC014,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,HK
+Single,Thailand,Thailand 5GB 30Days (nonhkip),$4.00,$8.00,TH,5,30,TH_5_30_nonhkip,TH,PUX3JWK41,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Tunisia,Tunisia 10GB 30Days,$12.20,$24.40,TN,10,30,TN_10_30,TN,KR004,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Tunisia,Tunisia 1GB 7Days,$1.80,$3.60,TN,1,7,TN_1_7,TN,KR001,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Tunisia,Tunisia 1GB/Day,$1.70,$3.40,TN,1,1,TN_1_Daily,TN,PMV0HAP98,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Tunisia,Tunisia 3GB 30Days,$4.70,$9.40,TN,3,30,TN_3_30,TN,PXX3PDGRD,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Tunisia,Tunisia 5GB 30Days,$7.00,$14.00,TN,5,30,TN_5_30,TN,KR003,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 10GB 30Days,$4.20,$8.40,TR,10,30,TR_10_30,TR,CKH268,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 1GB 7Days,$0.46,$0.92,TR,1,7,TR_1_7,TR,CKH265,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 1GB/Day,$0.42,$0.84,TR,1,1,TR_1_Daily,TR,P1G6QKLC2,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Turkey,Turkey 20GB 30Days,$7.00,$14.00,TR,20,30,TR_20_30,TR,CKH738,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 2GB/Day,$0.80,$1.60,TR,2,1,TR_2_Daily,TR,PF1K57KAZ,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Turkey,Turkey 3GB 15Days,$1.39,$2.78,TR,3,15,TR_3_15,TR,CKH266,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 3GB 30Days,$1.42,$2.84,TR,3,30,TR_3_30,TR,CKH025,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 500MB/Day,$0.30,$0.60,TR,0,1,TR_0.5_Daily,TR,P4PJDQ93V,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Turkey,Turkey 50GB 180Days,$28.00,$56.00,TR,50,180,TR_50_180,TR,PAV5NMZ28,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 5GB 30Days,$2.30,$4.60,TR,5,30,TR_5_30,TR,CKH267,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,
+Single,Turkey,Turkey 5GB/Day,$1.80,$3.60,TR,5,1,TR_5_Daily,TR,P3V2FT7FJ,First Network Connection,180,3G/4G/5G,Non-reloadable,
+Single,Uganda,Uganda 1GB 7Days,$5.70,$11.40,UG,1,7,UG_1_7,UG,CKH392,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Uganda,Uganda 3GB 15Days,$14.10,$28.20,UG,3,15,UG_3_15,UG,CKH421,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Ukraine,Ukraine 10GB 30Days,$4.70,$9.40,UA,10,30,UA_10_30,UA,CKH252,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Ukraine,Ukraine 1GB 7Days,$0.70,$1.40,UA,1,7,UA_1_7,UA,CKH250,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Ukraine,Ukraine 1GB/Day,$0.65,$1.30,UA,1,1,UA_1_Daily,UA,P3AFY29GY,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Ukraine,Ukraine 3GB 15Days,$1.70,$3.40,UA,3,15,UA_3_15,UA,CKH251,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Ukraine,Ukraine 3GB 30Days,$1.80,$3.60,UA,3,30,UA_3_30,UA,CKH103,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Ukraine,Ukraine 5GB 30Days,$2.70,$5.40,UA,5,30,UA_5_30,UA,CKH142,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,United Arab Emirates,United Arab Emirates 10GB 30Days,$14.98,$29.96,AE,10,30,AE_10_30,AE,PQHJ267ZM,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 10GB 60Days,$14.98,$29.96,AE,10,60,AE_10_60,AE,CKH694,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 1GB 7Days,$2.20,$4.40,AE,1,7,AE_1_7,AE,CKH527,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 1GB/Day,$2.00,$4.00,AE,1,1,AE_1_Daily,AE,P6P4JNC5G,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United Arab Emirates,United Arab Emirates 20GB 30Days,$26.54,$53.08,AE,20,30,AE_20_30,AE,P0LWCN1S2,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 2GB/Day,$3.00,$6.00,AE,2,1,AE_2_Daily,AE,PRQJ9TH03,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United Arab Emirates,United Arab Emirates 3GB 15Days,$5.27,$10.54,AE,3,15,AE_3_15,AE,CKH692,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 3GB 30Days,$5.27,$10.54,AE,3,30,AE_3_30,AE,CKH031,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 500MB/Day,$1.20,$2.40,AE,0,1,AE_0.5_Daily,AE,PQWC3N4R1,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United Arab Emirates,United Arab Emirates 5GB 30Days,$8.39,$16.78,AE,5,30,AE_5_30,AE,CKH693,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Arab Emirates,United Arab Emirates 5GB/Day,$6.85,$13.70,AE,5,1,AE_5_Daily,AE,PVA0GD3V7,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United Kingdom,United Kingdom 10GB 30Days,$6.10,$12.20,GB,10,30,GB_10_30,GB,CKH255,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 1GB 7Days,$0.90,$1.80,GB,1,7,GB_1_7,GB,CKH253,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 20GB 30Days,$10.60,$21.20,GB,20,30,GB_20_30,GB,CKH509,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 3GB 15Days,$2.20,$4.40,GB,3,15,GB_3_15,GB,CKH254,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 3GB 30Days,$2.30,$4.60,GB,3,30,GB_3_30,GB,CKH104,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 50GB 180Days,$28.00,$56.00,GB,50,180,GB_50_180,GB,PLLWT4O6B,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United Kingdom,United Kingdom 5GB 30Days,$3.40,$6.80,GB,5,30,GB_5_30,GB,CKH143,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 10GB 30Days,$6.10,$12.20,US,10,30,US_10_30,US,PCRKRUHIL,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 10GB 30Days Single Use,$5.90,$11.80,US,10,30,US_10_30_End,US,PAQ367DAU,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,United States,United States 10GB/Day,$12.40,$24.80,US,10,1,US_10_Daily,US,P0VDH4W3H,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 1GB  7Days Single Use,$0.80,$1.60,US,1,7,US_1_7_End,US,PZNVW17M2,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,United States,United States 1GB 7Days,$0.90,$1.80,US,1,7,US_1_7,US,PHAJHEAYP,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 20GB 90Days,$10.80,$21.60,US,20,90,US_20_90,US,P1HAXMKHP,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 3GB  30Days Single Use,$2.20,$4.40,US,3,30,US_3_30_End,US,P50J6FMKJ,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,United States,United States 3GB 30Days,$2.30,$4.60,US,3,30,US_3_30,US,PKY3WHPRZ,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 3GB/Day,$3.80,$7.60,US,3,1,US_3_Daily,US,PZGX3L09J,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 500MB/Day,$0.86,$1.72,US,0,1,US_0.5_Daily,US,PCD8C1K9R,First Network Connection,180,3G/4G/5G,Non-reloadable,UK/NO
+Single,United States,United States 50GB 180Days,$35.00,$70.00,US,50,180,US_50_180,US,P3ICIKSE8,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,United States,United States 5GB  30Days Single Use,$3.25,$6.50,US,5,30,US_5_30_End,US,PA0GX5V6R,First Network Connection,180,3G/4G/5G,Non-reloadable,PL
+Single,United States,United States 5GB 30Days,$3.40,$6.80,US,5,30,US_5_30,US,PKJNMJIIU,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Uruguay,Uruguay 1GB 7Days,$4.60,$9.20,UY,1,7,UY_1_7,UY,CKH316,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Uruguay,Uruguay 3GB 15Days,$11.20,$22.40,UY,3,15,UY_3_15,UY,CKH332,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Uzbekistan,Uzbekistan 10GB 30Days,$9.90,$19.80,UZ,10,30,UZ_10_30,UZ,CKH766,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Uzbekistan,Uzbekistan 1GB 7Days,$1.50,$3.00,UZ,1,7,UZ_1_7,UZ,CKH1017,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Uzbekistan,Uzbekistan 3GB 30Days,$3.80,$7.60,UZ,3,30,UZ_3_30,UZ,PCHMVSA0P,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Uzbekistan,Uzbekistan 5GB 30Days,$5.70,$11.40,UZ,5,30,UZ_5_30,UZ,CKH1029,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Vietnam,Vietnam 10GB 30Days,$12.20,$24.40,VN,10,30,VN_10_30,VN,JC051,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 10GB 30Days (nonhkip),$12.20,$24.40,VN,10,30,VN_10_30_nonhkip,VN,P2UWBW9F4,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Vietnam,Vietnam 1GB 7Days,$1.80,$3.60,VN,1,7,VN_1_7,VN,JC048,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 1GB 7Days (nonhkip),$1.80,$3.60,VN,1,7,VN_1_7_nonhkip,VN,P06VBPU3J,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Vietnam,Vietnam 1GB/Day,$1.46,$2.92,VN,1,1,VN_1_Daily,VN,PT2J1Y4JX,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Vietnam,Vietnam 1GB/Day (nonhkip),$1.46,$2.92,VN,1,1,VN_1_Daily_nonhkip,VN,PP9NT7XP0,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Vietnam,Vietnam 20GB 30Days,$20.00,$40.00,VN,20,30,VN_20_30,VN,JC088,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 20GB 30Days (nonhkip),$20.00,$40.00,VN,20,30,VN_20_30_nonhkip,VN,PTNY9DB82,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Vietnam,Vietnam 2GB/Day,$2.80,$5.60,VN,2,1,VN_2_Daily,VN,PM2K0J3TX,First Network Connection,180,3G/4G,Non-reloadable,HK
+Single,Vietnam,Vietnam 2GB/Day (nonhkip),$2.80,$5.60,VN,2,1,VN_2_Daily_nonhkip,VN,PSCA610LL,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Vietnam,Vietnam 3GB 15Days,$4.60,$9.20,VN,3,15,VN_3_15,VN,JC049,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 3GB 15Days (nonhkip),$4.60,$9.20,VN,3,15,VN_3_15_nonhkip,VN,P41ERHYB6,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Vietnam,Vietnam 500MB/Day (nonhkip),$0.58,$1.16,VN,0,1,VN_0.5_Daily_nonhkip,VN,P9JL3S1GG,First Network Connection,180,3G/4G,Non-reloadable,
+Single,Vietnam,Vietnam 50GB 180Days,$45.00,$90.00,VN,50,180,VN_50_180,VN,PU3OJKPFD,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 5GB 30Days,$7.00,$14.00,VN,5,30,VN_5_30,VN,JC050,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Vietnam,Vietnam 5GB 30Days (nonhkip),$7.00,$14.00,VN,5,30,VN_5_30_nonhkip,VN,PEB708QBF,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,
+Single,Yemen,Yemen 1GB 7Days,$11.20,$22.40,YE,1,7,YE_1_7,YE,CKH285,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Yemen,Yemen 3GB 15Days,$27.00,$54.00,YE,3,15,YE_3_15,YE,CKH286,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Yemen,Yemen 5GB 30Days,$41.00,$82.00,YE,5,30,YE_5_30,YE,CKH287,First Network Connection,180,3G/4G,Data Reloadable for same area within validitity,HK
+Single,Zambia,Zambia 1GB 7Days,$4.60,$9.20,ZM,1,7,ZM_1_7,ZM,CKH393,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Zambia,Zambia 3GB 15Days,$11.20,$22.40,ZM,3,15,ZM_3_15,ZM,CKH422,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
+Single,Zambia,Zambia 5GB 30Days,$17.10,$34.20,ZM,5,30,ZM_5_30,ZM,CKH451,First Network Connection,180,3G/4G/5G,Data Reloadable for same area within validitity,UK/NO
