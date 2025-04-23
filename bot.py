@@ -20,22 +20,22 @@ from telegram.ext import (
 # === CONFIG ===
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 WALLET_ADDRESS = os.getenv("WALLET_ADDRESS")
-ESIM_API_KEY   = os.getenv("ESIM_API_KEY")
+ESIM_API_KEY   = os.getenv("ESIM_API_KEY")  # also used as RT-AccessCode
 ADMIN_IDS      = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
 
-# === DATABASE SETUP ===
+# === DATABASE ===
 conn = sqlite3.connect("esim_bot.db", check_same_thread=False)
 c    = conn.cursor()
 c.execute("""
 CREATE TABLE IF NOT EXISTS orders (
-  id         INTEGER PRIMARY KEY AUTOINCREMENT,
-  user_id    TEXT,
-  username   TEXT,
-  amount     REAL,
-  memo       TEXT,
-  plan_id    TEXT,
-  paid       INTEGER DEFAULT 0,
-  order_no   TEXT
+  id       INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id  TEXT,
+  username TEXT,
+  amount   REAL,
+  memo     TEXT,
+  plan_id  TEXT,
+  paid     INTEGER DEFAULT 0,
+  order_no TEXT
 )
 """)
 c.execute("""
@@ -50,16 +50,14 @@ conn.commit()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# === UTILITIES ===
+# === HELPERS ===
 def generate_memo() -> str:
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=12))
 
 def send_qr_code(text: str) -> InputFile:
     qr = qrcode.make(text)
-    bio = io.BytesIO()
-    bio.name = "qrcode.png"
-    qr.save(bio, "PNG")
-    bio.seek(0)
+    bio = io.BytesIO(); bio.name = "qrcode.png"
+    qr.save(bio, "PNG"); bio.seek(0)
     return InputFile(bio, filename="qrcode.png")
 
 def check_tron_payment(memo: str, expected: float) -> float:
@@ -78,49 +76,40 @@ def check_tron_payment(memo: str, expected: float) -> float:
         logger.error(f"TRON check error: {e}")
     return 0.0
 
-# === FETCH PACKAGES ===
+# === eSIMAccess OPEN API ===
+COMMON_HEADERS = {
+    "RT-AccessCode": ESIM_API_KEY,
+    "Content-Type":  "application/json"
+}
+
 def fetch_packages(location_code: str = None) -> list[dict]:
-    """
-    Fetch base data packages from open/package/list API.
-    Tries various keys in 'obj' to extract a list.
-    Logs raw response for debugging.
-    """
     url     = "https://api.esimaccess.com/api/v1/open/package/list"
-    headers = {"Authorization": ESIM_API_KEY, "Content-Type": "application/json"}
     payload = {"type": "BASE"}
     if location_code:
         payload["locationCode"] = location_code
-
     try:
-        r = requests.post(url, headers=headers, json=payload, timeout=10)
+        r = requests.post(url, headers=COMMON_HEADERS, json=payload, timeout=10)
         r.raise_for_status()
         data = r.json()
         logger.info(f"package-list raw response: {data}")
-
         if not data.get("success", False):
             return []
-
         obj = data.get("obj", {})
-        # Direct list
         if isinstance(obj, list):
             return obj
-        # Look for lists under common keys
-        for key in ("packageList", "list", "data", "packages"):
+        for key in ("packageList","list","data","packages"):
             if isinstance(obj, dict) and key in obj and isinstance(obj[key], list):
                 return obj[key]
-        # Single-object fallback
         if isinstance(obj, dict) and "packageCode" in obj and "price" in obj:
             return [obj]
     except Exception as e:
         logger.error(f"Failed to fetch packages: {e}")
-
     return []
 
 def order_esim_open(memo: str, package_code: str, price_usd: float) -> str | None:
-    url = "https://api.esimaccess.com/api/v1/open/esim/order"
-    headers = {"Authorization": ESIM_API_KEY, "Content-Type": "application/json"}
+    url       = "https://api.esimaccess.com/api/v1/open/esim/order"
     amt_units = int(price_usd * 10000)
-    payload = {
+    payload   = {
         "transactionId": memo,
         "amount":        amt_units,
         "packageInfoList": [{
@@ -130,7 +119,7 @@ def order_esim_open(memo: str, package_code: str, price_usd: float) -> str | Non
         }]
     }
     try:
-        r = requests.post(url, headers=headers, json=payload, timeout=15)
+        r = requests.post(url, headers=COMMON_HEADERS, json=payload, timeout=15)
         r.raise_for_status()
         data = r.json()
         if data.get("success"):
@@ -141,11 +130,10 @@ def order_esim_open(memo: str, package_code: str, price_usd: float) -> str | Non
     return None
 
 def query_esim_open(order_no: str) -> list[dict]:
-    url = "https://api.esimaccess.com/api/v1/open/esim/query"
-    headers = {"Authorization": ESIM_API_KEY, "Content-Type": "application/json"}
+    url     = "https://api.esimaccess.com/api/v1/open/esim/query"
     payload = {"orderNo": order_no, "pager": {"pageNum": 1, "pageSize": 20}}
     try:
-        r = requests.post(url, headers=headers, json=payload, timeout=10)
+        r = requests.post(url, headers=COMMON_HEADERS, json=payload, timeout=10)
         r.raise_for_status()
         data = r.json()
         return data.get("obj", {}).get("esimList", [])
@@ -160,25 +148,25 @@ async def help_cmd(update: Update, context: CallbackContext):
         "\U0001F4D6 *eSIM Bot Help*\n\n"
         "*/start* – Show main menu\n"
         "*/balance* – View your balance\n"
-        "*/browse* – Browse available regions\n"
-        "*/check* – Check pending payments or orders\n"
-        "*/topup <amount>* – Request a top-up (QR + memo)\n"
-        "*/topup <user_id> <amount>* – Credit user immediately (admin only)\n"
+        "*/browse* – Browse regions & plans\n"
+        "*/check* – Check pending orders\n"
+        "*/topup <amount>* – Request top-up (QR + memo)\n"
+        "*/topup <user_id> <amount>* – Credit user (admin only)\n"
         "*/admin* – Sales stats (admin only)\n",
         parse_mode="Markdown"
     )
 
 async def start(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
-    menu = [
+    kb = [
         [KeyboardButton("📦 Browse"), KeyboardButton("💰 Balance")],
         [KeyboardButton("✅ Check"),  KeyboardButton("📖 Help")]
     ]
     if user_id in ADMIN_IDS:
-        menu.append([KeyboardButton("➕ Topup"), KeyboardButton("📊 Admin")])
+        kb.append([KeyboardButton("➕ Topup"), KeyboardButton("📊 Admin")])
     await update.message.reply_text(
-        "Welcome! Use the menu below:", 
-        reply_markup=ReplyKeyboardMarkup(menu, resize_keyboard=True)
+        "Welcome! Use the menu below:",
+        reply_markup=ReplyKeyboardMarkup(kb, resize_keyboard=True)
     )
 
 async def browse(update: Update, context: CallbackContext):
@@ -192,20 +180,20 @@ async def browse(update: Update, context: CallbackContext):
 async def region_selector(update: Update, context: CallbackContext):
     await update.callback_query.answer()
     region = update.callback_query.data.split("_",1)[1]
-    pkgs = fetch_packages(location_code=region)
+    pkgs   = fetch_packages(location_code=region)
     if not pkgs:
         return await update.callback_query.message.reply_text(
             f"No plans at this time for region {region}."
         )
     kb = []
     for p in pkgs:
-        code = p.get("packageCode") or p.get("slug")
-        name = p.get("slug") or code
+        code      = p.get("packageCode") or p.get("slug")
+        name      = p.get("slug") or code
         price_usd = p.get("price",0) / 10000
-        display   = max(price_usd, 5.0)
+        disp      = max(price_usd, 5.0)
         kb.append([InlineKeyboardButton(
             f"{name} — ${price_usd:.2f}",
-            callback_data=f"PKG_{code}_{display:.2f}"
+            callback_data=f"PKG_{code}_{disp:.2f}"
         )])
     await update.callback_query.message.reply_text(
         f"📡 Packages in {region}:", 
@@ -213,21 +201,21 @@ async def region_selector(update: Update, context: CallbackContext):
     )
 
 async def pkg_handler(update: Update, context: CallbackContext):
-    query    = update.callback_query
+    query     = update.callback_query
     await query.answer()
     _, pkg_code, price_s = query.data.split("_")
     price_usd = float(price_s)
     user_id   = query.from_user.id
 
     if price_usd < 5.0:
-        await query.message.reply_text("⚠️ Minimum 5 USDT; extra will be credited.")
+        await query.message.reply_text("⚠️ Minimum 5 USDT; extra credited.")
         price_usd = 5.0
 
     c.execute("SELECT balance FROM balances WHERE user_id=?", (user_id,))
     row = c.fetchone(); bal = row[0] if row else 0.0
 
     if bal < price_usd:
-        memo = generate_memo()
+        memo  = generate_memo()
         uname = query.from_user.username or str(user_id)
         c.execute(
             "INSERT INTO orders (user_id,username,amount,memo,plan_id) VALUES(?,?,?,?,?)",
@@ -239,12 +227,12 @@ async def pkg_handler(update: Update, context: CallbackContext):
             f"`{WALLET_ADDRESS}`\nMemo: `{memo}`"
         )
         return await query.message.reply_photo(
-            photo=send_qr_code(txt), 
-            caption=txt, 
+            photo=send_qr_code(txt),
+            caption=txt,
             parse_mode="Markdown"
         )
 
-    # Deduct and place order
+    # Deduct & order
     new_bal = bal - price_usd
     c.execute("UPDATE balances SET balance=? WHERE user_id=?", (new_bal, user_id))
     conn.commit()
@@ -255,7 +243,7 @@ async def pkg_handler(update: Update, context: CallbackContext):
         return await query.message.reply_text("❌ Order failed—please try again.")
 
     c.execute("""
-      UPDATE orders SET memo=?, order_no=?, paid=1 
+      UPDATE orders SET memo=?,order_no=?,paid=1
       WHERE user_id=? AND plan_id=? AND paid=0
     """, (memo, order_no, user_id, pkg_code))
     conn.commit()
@@ -263,13 +251,12 @@ async def pkg_handler(update: Update, context: CallbackContext):
     profiles = []
     for _ in range(15):
         profiles = query_esim_open(order_no)
-        if profiles:
-            break
+        if profiles: break
         time.sleep(2)
 
     if not profiles:
         return await query.message.reply_text(
-            f"✔️ Order {order_no} placed; profiles not ready. Try /check."
+            f"✔️ Order {order_no} placed; profiles not ready yet. Try /check."
         )
 
     for p in profiles:
@@ -279,8 +266,8 @@ async def pkg_handler(update: Update, context: CallbackContext):
 async def check(update: Update, context: CallbackContext):
     user_id = update.message.from_user.id
     c.execute("""
-      SELECT order_no FROM orders 
-      WHERE user_id=? AND paid=1 AND order_no IS NOT NULL 
+      SELECT order_no FROM orders
+      WHERE user_id=? AND paid=1 AND order_no IS NOT NULL
       ORDER BY id DESC LIMIT 1
     """, (user_id,))
     row = c.fetchone()
@@ -306,7 +293,7 @@ async def topup(update: Update, context: CallbackContext):
     if user_id in ADMIN_IDS and len(args) == 2:
         tgt, amt = args[0], float(args[1])
         c.execute("""
-          INSERT INTO balances(user_id,balance) VALUES(?,?) 
+          INSERT INTO balances(user_id,balance) VALUES(?,?)
           ON CONFLICT(user_id) DO UPDATE SET balance=balance+?
         """, (tgt, amt, amt))
         conn.commit()
@@ -316,7 +303,7 @@ async def topup(update: Update, context: CallbackContext):
         memo  = generate_memo()
         uname = update.message.from_user.username or str(user_id)
         c.execute("""
-          INSERT INTO orders (user_id,username,amount,memo,plan_id) 
+          INSERT INTO orders (user_id,username,amount,memo,plan_id)
           VALUES(?,?,?,?,?)
         """, (user_id, uname, amt, memo, "TOPUP"))
         conn.commit()
@@ -325,8 +312,8 @@ async def topup(update: Update, context: CallbackContext):
             f"`{WALLET_ADDRESS}`\nMemo: `{memo}`"
         )
         return await update.message.reply_photo(
-            photo=send_qr_code(txt), 
-            caption=txt, 
+            photo=send_qr_code(txt),
+            caption=txt,
             parse_mode="Markdown"
         )
     usage = "Usage: /topup <amount>" if user_id not in ADMIN_IDS else "Usage: /topup <user_id> <amount>"
@@ -341,10 +328,8 @@ async def admin(update: Update, context: CallbackContext):
     c.execute("SELECT COUNT(DISTINCT user_id) FROM orders")
     users = c.fetchone()[0]
     await update.message.reply_text(
-        f"📊 Sales Report:\n"
-        f"- eSIMs sold: {sold}\n"
-        f"- Revenue: ${rev or 0:.2f}\n"
-        f"- Active users: {users}"
+        f"📊 Sales Report:\n- Sold: {sold} eSIMs\n"
+        f"- Revenue: ${rev or 0:.2f}\n- Active users: {users}"
     )
 
 async def handle_main_menu(update: Update, context: CallbackContext):
@@ -359,10 +344,9 @@ async def handle_main_menu(update: Update, context: CallbackContext):
         return await admin(update, context)
     await update.message.reply_text("Unknown option. Use /help.")
 
-# === SETUP & RUN ===
+# === SETUP ===
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
-# Slash commands
 app.add_handler(CommandHandler("start",   start))
 app.add_handler(CommandHandler("help",    help_cmd))
 app.add_handler(CommandHandler("balance", balance))
@@ -371,11 +355,9 @@ app.add_handler(CommandHandler("check",   check))
 app.add_handler(CommandHandler("topup",   topup))
 app.add_handler(CommandHandler("admin",   admin))
 
-# Callback handlers
 app.add_handler(CallbackQueryHandler(region_selector, pattern="^REG_"))
 app.add_handler(CallbackQueryHandler(pkg_handler,      pattern="^PKG_"))
 
-# Main-menu text handler
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_main_menu))
 
 if __name__ == "__main__":
