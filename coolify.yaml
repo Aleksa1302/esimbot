@@ -1,0 +1,3 @@
+name: esim-telegram-bot
+type: docker
+dockerfile: Dockerfile
